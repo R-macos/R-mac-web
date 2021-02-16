@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+<title>R for Mac OS X</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h1>R for Mac OS X</h1>
+
+<p>This directory contains binaries for a base distribution and packages to run on Mac OS X (release 10.6 and above). Mac OS 8.6 to 9.2 (and Mac OS X 10.1) are no longer supported but you can find the last supported release of R for these systems (which is R 1.7.1) <a href="../macos/">here</a>. Releases for old Mac OS X systems (through Mac OS X 10.5) and PowerPC Macs can be found in the <a href="old">old</a> directory.
+
+<p>Note: CRAN does not have Mac OS X systems and cannot check these binaries for viruses.
+Although we take precautions when assembling binaries, please use the normal precautions with downloaded executables. </p>
+
+<p>Package binaries for R versions older than 3.2.0 are only available from the <a href=https://cran-archive.r-project.org/bin/macosx/>CRAN archive</a> so users of such versions should adjust the CRAN mirror setting (<tt>https://cran-archive.r-project.org</tt>) accordingly.
+
+<!--
+<h2>R for Mac survey</h2>
+Please consider participating in the R for Mac survey which takes just one line to paste in R but help us to decide how to support Mac binaries in the future. See <a href="http://mac.R-project.org/survey/">here</a> for details.
+-->
+
+<h2>R 4.0.4 "Lost Library Book" released on 2021/02/15</h2>
+
+<!-- This binary distribution of R and the GUI supports 64-bit Intel based Macs on Mac OS X 10.9 (Mavericks) or higher. If you have older OS X version or PowerPC Macs you can either compile R from source or use an older R version.--><!-- It is possibly the last distribution supporting Mac OS X 10.5 (Leopard) and PowerPC architecture.
+<p>
+Since R 3.0.0 the binary is a single-arch build and contains only the x86_64 (64-bit Intel) architecture. PowerPC Macs and 32-bit Macs are only supported by building from sources or by older binary R versions. The default package type is <tt>"mac.binary"</tt> and the binary repository layout has changed accordingly.
+
+This binary distribution of R and the GUI supports both PowerPC and Intel based Macs. The corresponding binaries of R packages are available for both architectures as well. Starting with R 2.3.1, CRAN binaries support Mac OS X 10.4 (Tiger) and higher only. It is, however, possible to compile binaries for earlied OS X versions from sources. -->
+<!--
+<p>
+<b>Important:</b> since R 3.4.0 release we are now providing binaries for OS X 10.11 (El Capitan) and higher using non-Apple toolkit to provide support for OpenMP and C++17 standard features. To compile packages you may have to download tools from the <a href=tools/>tools</a> directory and read the corresponding note below. -->
+<p>
+<!-- R 2.8.0 uses updated optional libraries - Tcl/Tk 8.5.5 and cairo 1.8.0. In addition, better font support is provided for cairo-based devices such as the built-in X11 cairo and the Cairo package. All dependent libraries are fork()-safe and thus can be used in projects such as Rserve or RApache. 64-bit build for Mac OS X 10.5 (Leopard) will be available shortly. 
+<p> -->
+Please check the SHA1 checksum of the downloaded image to ensure that it has not been tampered with or corrupted during the mirroring process. For example type<br>
+<tt>openssl sha1 R-4.0.4.pkg</tt><br>
+in the <i>Terminal</i> application to print the SHA1 checksum for the R-4.0.4.pkg image. On Mac OS X 10.7 and later you can also validate the signature using <br><tt>pkgutil --check-signature R-4.0.4.pkg</tt>
+
+<h2>Latest release:</h2>
+<table border="0" width="90%">
+<tr valign=top>
+<td width="30%"><a href="R-4.0.4.pkg">R-4.0.4.pkg</a>&nbsp;(notarized&nbsp;and&nbsp;signed)<br>
+<font size=-2>SHA1-hash:&nbsp;0b2b3bc846f6ebc72a8bc0b53e6e85d600d95deb
+</font><br><font size=-1>(ca. 85MB)</font>
+</td>
+<td width="70%">
+<b>R 4.0.4</b> binary for macOS 10.13 (High Sierra) and higher, signed and notarized package. Contains R 4.0.4 framework, R.app GUI 1.74 in 64-bit for Intel Macs, Tcl/Tk 8.6.6 X11 libraries and Texinfo 6.7. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
+<p>
+Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a> to be installed since it is no longer part of OS X. Always re-install XQuartz when upgrading your macOS to a new major version. Also please do not install beta versions of XQuartz (even if offered).
+<p>
+This release supports Intel Macs, but it is also known to work using Rosetta2 on M1-based Macs. Native Apple silicon binary is expected for R 4.1.0 if support for Fortran sabilizes, for experimental builds and updates see <a href=https://mac.R-project.org>mac.R-project.org</a>.
+<p>
+<b>Important:</b> this release uses Xcode 12.4 and GNU Fortran 8.2. If you wish to compile R packages from sources, you will need to download GNU Fortran 8.2 - see the <a href=tools/>tools</a> directory.
+<br>&nbsp;
+</td></tr>
+<tr valign=top>
+<td width="30%"><a href="NEWS">NEWS</a> (for Mac GUI)</td>
+<td width="70%">News features and changes in the R.app Mac GUI
+<br><br></td>
+</tr>
+<tr valign=top>
+<td width="30%"><a href="Mac-GUI-1.74.tar.gz">Mac-GUI-1.74.tar.gz</a><br>
+  <font size=-2>SHA1-hash:&nbsp;2c791fd1fd2d8f90b0887c1f9541882200a6eab8
+</font></td>
+<td width="70%">Sources for the R.app GUI 1.74 for Mac OS X. This file is only needed if you want to join the development of the GUI, it is not intended for regular users. Read the INSTALL file for further instructions.
+<br><br></td>
+</tr>
+<tr><td colspan=2>
+Note: Previous R versions for El Capitan can be found in the <a href=el-capitan/base/>el-capitan/base</a> directory.
+<br>
+<h2>Binaries for legacy OS X systems:</h2></td></tr>
+<tr valign=top>
+  <td width="30%">
+    <a href="R-3.6.3.nn.pkg">R-3.6.3.nn.pkg</a>&nbsp;(signed)<br>
+    <font size=-2>SHA1-hash:&nbsp;c462c9b1f9b45d778f05b8d9aa25a9123b3557c4
+    </font><br><font size=-1>(ca. 77MB)</font>
+  </td>
+  <td width="70%">
+    <b>R 3.6.3</b> binary for OS X 10.11 (El Capitan) and higher, signed package. Contains R 3.6.3 framework, R.app GUI 1.70 in 64-bit for Intel Macs, Tcl/Tk 8.6.6 X11 libraries and Texinfo 5.2. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
+  </td>
+</tr>
+<tr valign=top>
+<td width="30%"><a href="R-3.3.3.pkg">R-3.3.3.pkg</a><br>
+<font size=-2>MD5-hash:&nbsp;893ba010f303e666e19f86e4800f1fbf
+<br>SHA1-hash:&nbsp;5ae71b000b15805f95f38c08c45972d51ce3d027
+</font><br><font size=-1>(ca. 71MB)</font></td>
+<td width="70%">
+<b>R 3.3.3</b> binary for Mac OS X 10.9 (Mavericks) and higher, signed package. Contains R 3.3.3 framework, R.app GUI 1.69 in 64-bit for Intel Macs, Tcl/Tk 8.6.0 X11 libraries and Texinfo 5.2. The latter two components are optional and can be ommitted when choosing "custom install", it is only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
+<p>
+Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a> to be installed since it is no longer part of OS X. Always re-install XQuartz when upgrading your OS X to a new major version.
+<p>&nbsp;
+</td></tr>
+<tr valign=top>
+    <td width="30%"><a href="R-3.2.1-snowleopard.pkg">R-3.2.1-snowleopard.pkg</a><br>
+<font size=-2>MD5-hash:&nbsp;58fe9d01314d9cb75ff80ccfb914fd65
+<br>SHA1-hash:&nbsp;be6e91db12bac22a324f0cb51c7efa9063ece0d0
+</font><br><font size=-1>(ca. 68MB)</font></td>
+<td width="70%">
+<b>R 3.2.1</b> legacy binary for Mac OS X 10.6 (Snow Leopard) - 10.8 (Mountain Lion), signed package. Contains R 3.2.1 framework, R.app GUI 1.66 in 64-bit for Intel Macs.
+<br>This package contains the R framework, 64-bit GUI (R.app), Tcl/Tk 8.6.0 X11 libraries and Texinfop 5.2. GNU Fortran is <b>NOT</b> included (needed if you want to compile packages from sources that contain FORTRAN code) please see <a href=tools>the tools directory</a></b>.<br>NOTE: the binary support for OS X before Mavericks is being phased out, we do not expect further releases!
+<p>&nbsp;
+</td></tr>
+</table>
+
+The new R.app Cocoa GUI has been written by Simon Urbanek and Stefano Iacus with contributions from many developers and translators world-wide, see "About R" in the GUI.
+
+<h2>Subdirectories:</h2>
+
+<table border="0" width="90%">
+  <tr>
+     <td width="30%"><a href="tools">tools</a></td>
+     <td width="70%">Additional tools necessary for building R for Mac OS X:<br>Universal GNU Fortran compiler for Mac OS X (see <a href=http://mac.R-project.org/tools/ target=_top>R for Mac tools page</a> for details).
+  </tr>
+  <tr>
+    <td width="30%"><a href="base/">base</a></td>
+    <td width="70%">Binaries of R builds for macOS 10.13 or higher (High Sierra)</td>
+  </tr>
+  <tr>
+    <td width="30%"><a href="contrib/">contrib</a></td>
+    <td width="70%">Binaries of package builds for macOS 10.13 or higher (High Sierra)</td>
+  </tr>
+  <tr>
+    <td width="30%"><a href="el-capitan/">el-capitan</a></td>
+    <td width="70%">Binaries of package builds for OS X 10.11 or higher (El Capitan build)</td>
+  </tr>
+  <tr>
+    <td width="30%"><a href="mavericks/">mavericks</a></td>
+    <td width="70%">Binaries of package builds for Mac OS X 10.9 or higher (Mavericks build)</td>
+  </tr>
+<!-- 
+  <tr>
+    <td width="30%"><a href="leopard/">leopard</a></td>
+    <td width="70%">Legacy binaries of universal (32-bit and 64-bit) package builds for Mac OS X 10.5 or higher (Leopard build)</td>
+  </tr>
+  <tr>
+    <td width="30%"><a href="universal/">universal</a></td>
+    <td width="70%">Legacy binaries of universal (32-bit) package builds for Mac OS X 10.4 (Tiger build)</td>
+  </tr>
+  <tr>
+    <td width="30%"><a href="powerpc/">powerpc</a></td>
+    <td width="70%">Binaries of PowerPC builds (since R 2.3.0 all builds are universal, even those in this directory)</td>
+  </tr>
+  <tr>
+    <td width="30%"><a href="i686/">i686</a></td>
+    <td width="70%">Binaries of Intel builds (since R 2.3.0 all builds are universal, even those in this directory)</td>
+  </tr>
+-->
+  <tr>
+    <td width="30%"><a href="old/">old</a></td>
+    <td width="70%">Previously released R versions for Mac OS X</td>
+  </tr>
+</table>
+
+<!--
+<p>Please send contributions to Stefano M. Iacus, not to CRAN.</p>
+-->
+
+<p>You may also want to read the <a href="../../doc/FAQ/R-FAQ.html">R FAQ</a> and <a href="RMacOSX-FAQ.html" >R for Mac OS X FAQ</a>. For discussion of Mac-related topics and reporting Mac-specific bugs, please use the <a href="https://stat.ethz.ch/mailman/listinfo/r-sig-mac">R-SIG-Mac</a> mailing list.
+<p>
+Information, tools and most recent <b>daily builds of the R GUI, R-patched and R-devel</b> can be found at <a href="http://mac.R-project.org/" target=_top>http://mac.R-project.org/</a>. Please visit that page especially during beta stages to help us test the Mac OS X binaries before final release!<br>
+<!-- Moreover, it is also a repository of experimental package builds, so you can often use <tt>install.packages("rpart",,"http://mac.R-project.org/")</tt> in R-devel to test binary installs. -->
+<!-- <p>For more technical documentation and tips please consider visiting the <a href="http://wiki.urbanek.info/">R for Mac Wiki</a>. -->
+<p>
+Package maintainers should visit <a href="http://cran.r-project.org/src/contrib/checkSummary.html">CRAN check summary</a> page to see whether their package is compatible with the current build of R for Mac OS X.
+<p>
+Binary libraries for dependencies not present here are available from <a href=http://mac.R-project.org/libs/  target=_top>http://mac.R-project.org/libs</a> and corresponding sources at <a href=http://mac.R-project.org/src/ target=_top>http://mac.R-project.org/src</a>.
+<hr>
+<p>Last modified: 2021/02/15, by Simon Urbanek</p>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../../R.css">
+<title>R for Mac OS X - Development Tools and Libraries</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h1>R for Mac OS X</h1>
+<h2>Development Tools and Libraries</h2>
+
+CRAN R 4.0.0 builds and higher no longer use any custom compilers and thus this directory is no longer relevant. We now use Apple Xcode 10.1 and GNU Fortran 8.2 from <a href="https://github.com/fxcoudert/gfortran-for-macOS/releases">https://github.com/fxcoudert/gfortran-for-macOS/releases</a>.
+For more details on compiling R, please see also
+<a href=https://mac.R-project.org/tools/>https://mac.R-project.org/tools/</a>
+<p>&nbsp;
+  
+<hr>
+
+<h2>Previous tools</h2>
+
+The following is provided as support of older versions of R. If you use R 4.0.0 or higher, please disregard and read the top section.
+
+<p>R 3.5.0-3.6.3 El Capitan binaries and higer were using more recent Clang compiler and GNU Fortran 6.1 to provide OpenMP parallelization support and C++17 standard features. If you want to compile R packages from sources, please download GNU Fortran binary from the official <a href=https://gcc.gnu.org/wiki/GFortranBinaries>GNU Fortran Binaries</a> page - in particular OS X 10.11 gfortran 6.1. Alternatively, we are providing a copy here as well as Clang binaries for OS X 10.11 and higher - see below for the download links.
+
+<h2>Files:</h2>
+<table border="0" width="90%">
+<tr valign=top>
+  <td width="30%">
+    <a href="clang-8.0.0.pkg">clang-8.0.0.pkg</a> (OS X 10.11+, signed, 64-bit)<br>
+    <font size=-2>MD5-hash:&nbsp;664582b0722cb59802cb762b2ad7548b</font><br><font size=-1>(ca. 482Mb)</font>
+  </td>
+  <td width="70%">
+    Clang 8.0.0 for OS X 10.11 and higher, release build for x86_64, signed package, installs into <tt>/usr/local/clang8</tt>. To be used with El Capitan builds of R 3.7.0 and higher. It is an installer version of the official LLVM released binaries only modified to use the path above.
+  </td>
+</tr>
+<tr valign=top>
+  <td width="30%">
+    <a href="clang-7.0.0.pkg">clang-7.0.0.pkg</a> (OS X 10.11+, signed, 64-bit)<br>
+    <font size=-2>MD5-hash:&nbsp;cef3fd2a5c165d00f9941f64ea4024f7</font><br><font size=-1>(ca. 463Mb)</font>
+  </td>
+  <td width="70%">
+    Clang 7.0.0 for OS X 10.11 and higher, release build for x86_64, signed package, installs into <tt>/usr/local/clang7</tt>. To be used with El Capitan builds of R 3.6.x. It is an installer version of the official LLVM released binaries only modified to use the path above.
+  </td>
+</tr>
+<tr valign=top>
+  <td width="30%">
+    <a href="clang-6.0.0.pkg">clang-6.0.0.pkg</a> (OS X 10.11+, signed, 64-bit)<br>
+    <font size=-2>MD5-hash:&nbsp;c29700c4e7b2914073ef7e741eb105bc</font><br><font size=-1>(ca. 418Mb)</font>
+  </td>
+  <td width="70%">
+    Clang 6.0.0 for OS X 10.11 and higher, static build for x86_64, signed package, installs into <tt>/usr/local/clang6</tt>. To be used with El Capitan builds of R 3.5.x.
+  </td>
+</tr>
+<tr valign=top>
+  <td width="30%">
+    <a href="gfortran-6.1.pkg">gfortran-6.1.pkg</a> (OS X 10.11+, signed, 64-bit)<br>
+    <font size=-2>MD5-hash:&nbsp;201026216e8b373d9cd2efc0cc474bb8</font><br><font size=-1>(ca. 73Mb)</font>
+  </td>
+  <td width="70%">
+    GNU Fortran 6.1 for OS X 10.11 and higher - a copy from <a href=https://gcc.gnu.org/wiki/GFortranBinaries>GFortranBinaries pages<a> for x86_64, signed package, installs into <tt>/usr/local/gfortran</tt> (identical content, re-packaged to a flat Installer package and signed). To be used with El Capitan builds of R.
+	<br>&nbsp;
+  </td>
+</tr>
+<tr><td><hr></td><td><i>The following binaries are obsolete and only provided for historical reasons</i></td></tr>
+<tr valign=top>
+  <td width="30%">
+    <a href="gfortran-4.2.3.pkg">gfortran-4.2.3.pkg</a> (OS X 10.5+, signed, 64-bit driver)<br>
+    <font size=-2>MD5-hash:&nbsp;8783f803038abe6487a362ad5b8995ea</font><br><font size=-1>(ca. 27MB)</font><br>
+    <a href="gfortran-4.2.3.dmg">gfortran-4.2.3.dmg</a> (OS X 10.4, 32-bit driver)<br>
+    <font size=-2>MD5-hash:&nbsp;9551fc46f55537dd1db581154daf27ef</font><br><font size=-1>(ca. 27MB)</font>
+  </td>
+    <td width="70%">
+Universal GNU Fortran 4.2.3 for Mac OS X 10.4 and higher. It is necessary in order to build R packages from sources that contain Fortran code.
+<p>Unlike many other builds, this is a fully universal build of GNU Fortran that uses Apple's driver and supports all target architectures (i386, ppc, x86_64 and ppc64). As such it fully supports compilation into fat files like <tt>gfortran -arch i386 -arch ppc -arch x86_64 -arch ppc64 t.f -o t</tt>
+on both Intel Macs and PowerPC Macs (32- and 64-bit). Dependent libraries are fat as well, avoiding problems known from other Fortran builds (such as those from HPC). It installs in <tt>/usr/local</tt> and comes with an uninstall-script.
+<br>&nbsp;
+</td>
+</tr>
+<tr valign=top>
+  <td width="30%">
+    <a href="tcltk-8.5.5-x11.pkg">tcltk-8.5.5-x11.pkg</a> (OS X 10.5+, signed)<br>
+    <font size=-2>MD5-hash:&nbsp;e7c406d91762ffdc4539b23c5b5a3ab4</font><br><font size=-1>(ca. 9MB)</font><br>
+    <a href="tcltk-8.5.5-x11.dmg">tcltk-8.5.5-x11.dmg</a> (OS X 10.4)<br>
+    <font size=-2>MD5-hash:&nbsp;c32dda1b9f2c2776a02cec4e03befc76</font><br><font size=-1>(ca. 9MB)</font><br>
+  </td>
+  <td width="70%">Universal build of Tcl/Tk 8.5.5 for X11 (32-bit and 64-bit). This library is necessary in order to use the <tt>tcltk</tt> R package (<b>for R 2.8.0 - 2.15.3 only!</b>). It installs in <tt>/usr/local</tt>. Requires Mac OS X 10.4 (Tiger) or higher for 32-bit R and Mac OS X 10.5 (Leopard) or higher for 64-bit R.
+<p>
+<b>NOTE: R 3.0.0 and higher comes bundled with Tck/Tk 8.6.0 so you do not need this package</b>
+  </td>
+</tr>
+<!--
+<tr valign=top>
+<td width="30%"><a href="devpack4-darwin8-bin4.tar.gz">devpack4-darwin8-bin4.tar.gz</a><br>
+<font size=-2>MD5-hash:&nbsp;fe51ca3fd04ee03b1c8bfb24f2af3bfb</font><br><font size=-1>(ca. 9MB)</fint></td>
+<td width="70%">Development binary package for Mac OS X 10.4 or higher. It contains optional libraries that are necessary to enable capabilities in R as present in the CRAN binary. (Needed <i>only</i> if you want to compile R yourself!)<br>
+Contents:<br>
+<ul>
+<li>libpng 1.2.32</li>
+<li>libjpeg 6b</li>
+<li>readline 5.2-12</li>
+<li>pixman 0.12.0</li>
+<li>freetype 2.3.7 (without and Quartz code and thus fork-safe)</li>
+<li>fontconfig 2.6.0 (configured like Apple's build but with cache and config inside R)</li>
+<li>cairo 1.8.0 (without Quartz code and thus fork-safe)</li>
+</ul>
+All libraries are built statically (except for readline which includes both a static and a dynamic library) for all four architectures (i386, x86_64, ppc and ppc64). All binaries are built with -fPIC such that they can be used in dynamically loaded code (such as R packages). The devpack is not necessary at runtime (except for readline if the dynamic version is used), it is only needed for compilation.
+<p>
+Fontconfig is configured in such way that its cache and configuration are under <tt>Resources/fontconfig</tt> in the R framework. The corresponding files are included in the above devpack. This allows stand-alone operation of R since the fontconfig supplied with Apple's X11 is too old and has bugs.
+</td></tr>
+-->
+</table>
+<p>
+For other (optional) 3rd party libraries for development see <a href=http://mac.R-project.org/libs/>http://mac.R-project.org/libs/</a>. The <i>devpack</i> has been superseded by those libraries. For R you may want to download and install <i>libpng, libjpeg, readline, freetype, fontconfig, pixman</i> and <i>cairo</i>.
+<p>
+Source code for all 3rd party libraries can be found at <a href=http://mac.R-project.org/src/>http://mac.R-project.org/src/</a>
+<p>
+The dependency libraries used by the CRAN macOS build system are now managed by build <a href=https://github.com/s-u/recipes target=_new>recipes</a>. Package authors wishing to add static dependendies can create a pull request to add a dependency.
+<p>
+<h2>Subdirectories:</h2>
+
+<table border="0" width="90%">
+  <tr>
+     <td width="30%"><a href="old">old</a></td>
+     <td width="70%">Previous versions of tools as supplied with legacy R versions.</td>
+  </tr>
+</table>
+
+<p>You may also want to read the <a href="../../../doc/FAQ/R-FAQ.html">R FAQ</a> and <a href="../RMacOSX-FAQ.html" >R for Mac OS X FAQ</a>. For discussion of Mac-related topics and reporting Mac-specific bugs, please use the <a href="https://stat.ethz.ch/mailman/listinfo/r-sig-mac">R-SIG-Mac</a> mailing list.
+<p>
+Information, tools and most recent daily builds of the R GUI, R-patched and R-devel can be found at <a href="http://mac.R-project.org/">http://mac.R-project.org/</a>. Please visit that page especially during beta stages to help us test the Mac OS X binaries before final release! The page also contains links to experimental builds as such 64-bit R for OS X.<br>
+<hr>
+<p>Link to corresponding sources: <a href=http://mac.R-project.org/src/>http://mac.R-project.org/src/</a>
+<hr>
+<p>Last modified: 2020/04/24, by Simon Urbanek</p>
+</body>
+</html>
