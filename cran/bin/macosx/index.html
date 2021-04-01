@@ -17,22 +17,22 @@ Although we take precautions when assembling binaries, please use the normal pre
 
 <p>Package binaries for R versions older than 3.2.0 are only available from the <a href=https://cran-archive.r-project.org/bin/macosx/>CRAN archive</a> so users of such versions should adjust the CRAN mirror setting (<tt>https://cran-archive.r-project.org</tt>) accordingly.
 
-<h2>R 4.0.4 "Lost Library Book" released on 2021/02/15</h2>
+<h2>R 4.0.5 "Lost Library Book" released on 2021/03/31</h2>
 
 <p>
 Please check the SHA1 checksum of the downloaded image to ensure that it has not been tampered with or corrupted during the mirroring process. For example type<br>
-<tt>openssl sha1 R-4.0.4.pkg</tt><br>
-in the <i>Terminal</i> application to print the SHA1 checksum for the R-4.0.4.pkg image. On Mac OS X 10.7 and later you can also validate the signature using <br><tt>pkgutil --check-signature R-4.0.4.pkg</tt>
+<tt>openssl sha1 R-4.0.5.pkg</tt><br>
+in the <i>Terminal</i> application to print the SHA1 checksum for the R-4.0.5.pkg image. On Mac OS X 10.7 and later you can also validate the signature using <br><tt>pkgutil --check-signature R-4.0.5.pkg</tt>
 
 <h2>Latest release:</h2>
 <table border="0" width="90%">
 <tr valign=top>
-<td width="30%"><a href="R-4.0.4.pkg">R-4.0.4.pkg</a>&nbsp;(notarized&nbsp;and&nbsp;signed)<br>
-<font size=-2>SHA1-hash:&nbsp;0b2b3bc846f6ebc72a8bc0b53e6e85d600d95deb
+<td width="30%"><a href="R-4.0.5.pkg">R-4.0.5.pkg</a>&nbsp;(notarized&nbsp;and&nbsp;signed)<br>
+<font size=-2>SHA1-hash:&nbsp;2f683b3c10f1a9aad927236636abef02285b6132
 </font><br><font size=-1>(ca. 85MB)</font>
 </td>
 <td width="70%">
-<b>R 4.0.4</b> binary for macOS 10.13 (High Sierra) and higher, signed and notarized package. Contains R 4.0.4 framework, R.app GUI 1.74 in 64-bit for Intel Macs, Tcl/Tk 8.6.6 X11 libraries and Texinfo 6.7. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
+<b>R 4.0.5</b> binary for macOS 10.13 (High Sierra) and higher, signed and notarized package. Contains R 4.0.5 framework, R.app GUI 1.74 in 64-bit for Intel Macs, Tcl/Tk 8.6.6 X11 libraries and Texinfo 6.7. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
 <p>
 Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a> to be installed since it is no longer part of OS X. Always re-install XQuartz when upgrading your macOS to a new major version. Also please do not install beta versions of XQuartz (even if offered).
 <p>
@@ -129,6 +129,6 @@ Package maintainers should visit <a href="http://cran.r-project.org/src/contrib/
 <p>
 Binary libraries for dependencies not present here are available from <a href=http://mac.R-project.org/libs/  target=_top>http://mac.R-project.org/libs</a> and corresponding sources at <a href=http://mac.R-project.org/src/ target=_top>http://mac.R-project.org/src</a>.
 <hr>
-<p>Last modified: 2021/02/15, by Simon Urbanek</p>
+<p>Last modified: 2021/03/31, by Simon Urbanek</p>
 </body>
 </html>
