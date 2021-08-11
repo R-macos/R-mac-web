@@ -16,23 +16,23 @@
 
 <p>Package binaries for R versions older than 3.2.0 are only available from the <a href=https://cran-archive.r-project.org/bin/macosx/>CRAN archive</a> so users of such versions should adjust the CRAN mirror setting (<tt>https://cran-archive.r-project.org</tt>) accordingly.
 
-<h2>R 4.1.0 "Camp Pontanezen" released on 2021/05/19</h2>
+<h2>R 4.1.1 "Kick Things" released on 2021/08/10</h2>
 
 <p>
 Please check the SHA1 checksum of the downloaded image to ensure that it has not been tampered with or corrupted during the mirroring process. For example type<br>
-<tt>openssl sha1 R-4.1.0.pkg</tt><br>
-in the <i>Terminal</i> application to print the SHA1 checksum for the R-4.1.0.pkg image. On Mac OS X 10.7 and later you can also validate the signature using <br><tt>pkgutil --check-signature R-4.1.0.pkg</tt>
+<tt>openssl sha1 R-4.1.1.pkg</tt><br>
+in the <i>Terminal</i> application to print the SHA1 checksum for the R-4.1.1.pkg image. On Mac OS X 10.7 and later you can also validate the signature using <br><tt>pkgutil --check-signature R-4.1.1.pkg</tt>
 
 <h2>Latest release:</h2>
 <table border="0" width="90%">
 <tr valign=top>
-<td width="30%"><a href="base/R-4.1.0.pkg">R-4.1.0.pkg</a>&nbsp;(notarized&nbsp;and&nbsp;signed)<br>
-<font size=-2>SHA1-hash:&nbsp;df4d6fc17bbf6b7a27d4e015c0084d4bb6f7b428
-</font><br><font size=-1>(ca. 87MB)</font>
+<td width="30%"><a href="base/R-4.1.1.pkg">R-4.1.1.pkg</a>&nbsp;(notarized&nbsp;and&nbsp;signed)<br>
+<font size=-2>SHA1-hash:&nbsp;8ca71cad9baf3efeb8a35d389db536322cb0b748
+</font><br><font size=-1>(ca. 86MB)</font>
 </td>
 <td width="70%">
-  <b>R 4.1.0</b> binary for macOS 10.13 (<b>High Sierra</b>) and higher, <b>Intel 64-bit</b> build, signed and notarized package.<br>
-  Contains R 4.1.0 framework, R.app GUI 1.76 in 64-bit for Intel Macs, Tcl/Tk 8.6.6 X11 libraries and Texinfo 6.7. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
+  <b>R 4.1.1</b> binary for macOS 10.13 (<b>High Sierra</b>) and higher, <b>Intel 64-bit</b> build, signed and notarized package.<br>
+  Contains R 4.1.1 framework, R.app GUI 1.77 in 64-bit for Intel Macs, Tcl/Tk 8.6.6 X11 libraries and Texinfo 6.7. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
 <p>
 Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a> to be installed since it is no longer part of OS X. Always re-install XQuartz when upgrading your macOS to a new major version.
 <p>
@@ -42,21 +42,14 @@ This release supports Intel Macs, but it is also known to work using Rosetta2 on
 <br>&nbsp;
 </td></tr>
 <tr valign=top>
-<td width="30%"><a href="big-sur-arm64/base/R-4.1.0-arm64.pkg">R-4.1.0-arm64.pkg</a>&nbsp;(notarized&nbsp;and&nbsp;signed)<br>
-<font size=-2>SHA1-hash:&nbsp;7354c1b249cab9bafea6ae67c73563303a05fa17
-</font><br><font size=-1>(ca. 88MB)</font>
+<td width="30%"><a href="big-sur-arm64/base/R-4.1.1-arm64.pkg">R-4.1.1-arm64.pkg</a>&nbsp;(notarized&nbsp;and&nbsp;signed)<br>
+<font size=-2>SHA1-hash:&nbsp;8c15b2fc0dae4f824762a8b19fd4b2ed19315289
+</font><br><font size=-1>(ca. 87MB)</font>
 </td>
 <td width="70%">
-  <b>R 4.1.0</b> binary for macOS 11 (<b>Big Sur</b>) and higher, <b>Apple silicon arm64</b> build, signed and notarized package.<br>
-  Contains R 4.1.0 framework, R.app GUI 1.76 for Apple silicon Macs (M1 and higher), Tcl/Tk 8.6.11 X11 libraries and Texinfo 6.7.<br>
+  <b>R 4.1.1</b> binary for macOS 11 (<b>Big Sur</b>) and higher, <b>Apple silicon arm64</b> build, signed and notarized package.<br>
+  Contains R 4.1.1 framework, R.app GUI 1.77 for Apple silicon Macs (M1 and higher), Tcl/Tk 8.6.11 X11 libraries and Texinfo 6.7.<br>
   <b>Important: this version does NOT work on older Intel-based Macs.</b><br>
-  The above installer package will be misidentified by Apple Installer
-  as Intel architecture although it contains no Intel code. This means
-  you may be asked to install Rosetta 2 even though it is not
-  required. This issue has been fixed in the packaging for future R
-  versions, so if you don't want to install Rosetta 2 please use
-  R-4.1-branch big-sur arm64 installer from
-  <a href=https://mac.R-project.org>mac.R-project.org</a>.
 <p>
 Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a>. Always re-install XQuartz when upgrading your macOS to a new major version.
 <p>
@@ -72,7 +65,7 @@ This release uses Xcode 12.4 and experimental GNU Fortran 11 arm64 fork. If you 
 <td width="30%"><a href="Mac-GUI-1.76.tar.gz">Mac-GUI-1.76.tar.gz</a><br>
   <font size=-2>SHA1-hash:&nbsp;304980f3dab7a111534daead997b8df594c60131
 </font></td>
-<td width="70%">Sources for the R.app GUI 1.76 for Mac OS X. This file is only needed if you want to join the development of the GUI (see also <a href="https://www.github.com/R-macos/Mac-GUI" target=_new>Mac-GUI repository</a>), it is not intended for regular users. Read the INSTALL file for further instructions.
+<td width="70%">Sources for the R.app GUI 1.76 for macOS. This file is only needed if you want to join the development of the GUI (see also <a href="https://www.github.com/R-macos/Mac-GUI" target=_new>Mac-GUI repository</a>), it is not intended for regular users. Read the INSTALL file for further instructions.
 <br><br></td>
 </tr>
 <tr><td colspan=2>
@@ -149,7 +142,7 @@ The new R.app Cocoa GUI has been written by Simon Urbanek and Stefano Iacus with
 
 <p>You may also want to read the <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html">R FAQ</a> and <a href="RMacOSX-FAQ.html" >R for Mac OS X FAQ</a>. For discussion of Mac-related topics and reporting Mac-specific bugs, please use the <a href="https://stat.ethz.ch/mailman/listinfo/r-sig-mac">R-SIG-Mac</a> mailing list.
 <p>
-Information, tools and most recent <b>daily builds of the R GUI, R-patched and R-devel</b> can be found at <a href="http://mac.R-project.org/" target=_top>http://mac.R-project.org/</a>. Please visit that page especially during beta stages to help us test the Mac OS X binaries before final release!<br>
+Information, tools and most recent <b>daily builds of the R GUI, R-patched and R-devel</b> can be found at <a href="http://mac.R-project.org/" target=_top>http://mac.R-project.org/</a>. Please visit that page especially during beta stages to help us test the macOS binaries before final release!<br>
 <p>
 Package maintainers should visit <a href="http://cran.r-project.org/src/contrib/checkSummary.html">CRAN check summary</a> page to see whether their package is compatible with the current build of R for macOS.
 <p>

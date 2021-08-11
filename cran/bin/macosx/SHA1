@@ -33,4 +33,6 @@ SHA1(R-4.0.4.pkg)= 0b2b3bc846f6ebc72a8bc0b53e6e85d600d95deb
 SHA1(R-4.0.5.pkg)= 2f683b3c10f1a9aad927236636abef02285b6132
 SHA1(R-latest.pkg)= df4d6fc17bbf6b7a27d4e015c0084d4bb6f7b428
 SHA1(base/R-4.1.0.pkg)= df4d6fc17bbf6b7a27d4e015c0084d4bb6f7b428
+SHA1(base/R-4.1.1.pkg)= 8ca71cad9baf3efeb8a35d389db536322cb0b748
 SHA1(big-sur-arm64/base/R-4.1.0-arm64.pkg)= 7354c1b249cab9bafea6ae67c73563303a05fa17
+SHA1(big-sur-arm64/base/R-4.1.1-arm64.pkg)= 8c15b2fc0dae4f824762a8b19fd4b2ed19315289
