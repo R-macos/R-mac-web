@@ -53,7 +53,7 @@ Next: <a href="#Introduction" accesskey="n" rel="next">Introduction</a>, Previou
 </div>
 <span id="R-for-macOS-FAQ"></span><h1 class="top">R for macOS FAQ</h1>
 <h2>Frequently Asked Questions on R for macOS</h2>
-<h2>Version 4.1.1 2021-08-10, R.app 1.77</h2>
+<h2>Version 4.1.2 2021-11-01, R.app 1.77</h2>
 <address>Stefano M. Iacus</address>
 <address>Simon Urbanek</address>
 <address>Rob J. Goedman</address>
@@ -238,6 +238,8 @@ Miscellaneous questions
 <tr><td align="left" valign="top">&bull; <a href="#How-can-I-interrupt-lengthy-operations-or-output_003f">How can I interrupt lengthy operations or output?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
 <tr><td align="left" valign="top">&bull; <a href="#I-see-spurious-error-messages-when-starting-R_0021">I see spurious error messages when starting R!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f">Which BLAS is used and how can it be changed?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
 <tr><td align="left" valign="top">&bull; <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021">I don't see a thing when installing packages!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
@@ -1394,15 +1396,17 @@ Previous: <a href="#Acknowledgments" accesskey="p" rel="prev">Acknowledgments</a
 </td></tr>
 <tr><td align="left" valign="top">&bull; <a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="4">I see spurious error messages when starting R!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="5">I don't see a thing when installing packages!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+<tr><td align="left" valign="top">&bull; <a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" accesskey="5">Which BLAS is used and how can it be changed?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="6">Why are there faint lines in image plots?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+<tr><td align="left" valign="top">&bull; <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="6">I don't see a thing when installing packages!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="7">Why doesn't R GUI support keyboard shortcut XYZ ?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+<tr><td align="left" valign="top">&bull; <a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="7">Why are there faint lines in image plots?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="8">What is the difference between the CRAN build and a vanilla build?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+<tr><td align="left" valign="top">&bull; <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="8">Why doesn't R GUI support keyboard shortcut XYZ ?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" accesskey="9">Why is R.home() not versioned?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+<tr><td align="left" valign="top">&bull; <a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="9">What is the difference between the CRAN build and a vanilla build?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f">Why is R.home() not versioned?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
 <tr><td align="left" valign="top">&bull; <a href="#R_002eapp-GUI-crashes-on-startup_0021">R.app GUI crashes on startup!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
 </td></tr>
@@ -1458,7 +1462,7 @@ allow interruption (if appropriate).
 <hr>
 <span id="I-see-spurious-error-messages-when-starting-R_0021"></span><div class="header">
 <p>
-Next: <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="n" rel="next">I don't see a thing when installing packages!</a>, Previous: <a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" accesskey="p" rel="prev">How can I interrupt lengthy operations or output?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
+Next: <a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" accesskey="n" rel="next">Which BLAS is used and how can it be changed?</a>, Previous: <a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" accesskey="p" rel="prev">How can I interrupt lengthy operations or output?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
 <span id="I-see-spurious-error-messages-when-starting-R_0021-1"></span><h3 class="section">10.4 I see spurious error messages when starting R!</h3>
 
@@ -1482,19 +1486,52 @@ include those hacks that are incompatible with your new Mac).
 </pre></div>
 <p>in the Terminal. Note, however, that this will disable <em>all</em> error output from external programs including package installation or the <code>system</code> command.
 </p>
+<hr>
+<span id="Which-BLAS-is-used-and-how-can-it-be-changed_003f"></span><div class="header">
+<p>
+Next: <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="n" rel="next">I don't see a thing when installing packages!</a>, Previous: <a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="p" rel="prev">I see spurious error messages when starting R!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
+</div>
+<span id="Which-BLAS-is-used-and-how-can-it-be-changed_003f-1"></span><h3 class="section">10.5 Which BLAS is used and how can it be changed?</h3>
 
+<p>The BLAS library used by <acronym>R</acronym> depends on the way <acronym>R</acronym> was compiled (see
+&lsquo;R Installation and Administration&rsquo; manual for details). Current <acronym>R</acronym>
+binaries supplied from <acronym>CRAN</acronym> provide both vecLib-based BLAS and
+reference BLAS shipped with <acronym>R</acronym>. vecLib is a part of Apple&rsquo;s Accelerate
+framework which provides an optimized BLAS implementation for Mac
+hardware. Although fast, it is not under our control and may possibly
+deliver inaccurate results.
+</p>
+<p>The <acronym>CRAN</acronym> binary uses <code>--enable-BLAS-shlib</code> option and two Rblas
+shared libraries are supplied: <samp>libRblas.vecLib.dylib</samp> which uses
+vecLib BLAS and <samp>libRblas.0.dylib</samp> which uses reference BLAS from
+<acronym>R</acronym>. A symbolic link <samp>libRblas.dylib</samp> determines which one is
+used. Currently the default is to use the <acronym>R</acronym> BLAS: this is recommended
+for precision.
+</p>
+<p>In order to change which BLAS is used, change the <samp>libRblas.dylib</samp>
+symlink correspondingly &ndash; for example in Terminal:
+</p><div class="example">
+<pre class="example">cd /Library/Frameworks/R.framework/Resources/lib
 
+# for vecLib use
+ln -sf libRblas.vecLib.dylib libRblas.dylib
 
+# for R reference BLAS use
+ln -sf libRblas.0.dylib libRblas.dylib
+</pre></div>
 
-
-
-
+<p>This feature is only present in the <acronym>R</acronym> <acronym>CRAN</acronym> binary. Ordinarily
+compiled <acronym>R</acronym> from sources will only have one of the above BLAS
+libraries, corresponding to the configuration options used.
+</p>
+<p>The BLAS library used is displayed in <code>sessionInfo()</code>.
+</p>
 <hr>
 <span id="I-don_0027t-see-a-thing-when-installing-packages_0021"></span><div class="header">
 <p>
-Next: <a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="n" rel="next">Why are there faint lines in image plots?</a>, Previous: <a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="p" rel="prev">I see spurious error messages when starting R!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
+Next: <a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="n" rel="next">Why are there faint lines in image plots?</a>, Previous: <a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" accesskey="p" rel="prev">Which BLAS is used and how can it be changed?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
-<span id="I-don_0027t-see-a-thing-when-installing-packages_0021-1"></span><h3 class="section">10.5 I don&rsquo;t see a thing when installing packages!</h3>
+<span id="I-don_0027t-see-a-thing-when-installing-packages_0021-1"></span><h3 class="section">10.6 I don&rsquo;t see a thing when installing packages!</h3>
 <p>The output is not produced continuously during the package
 installation. <small>R.APP</small> does its best to display the output as soon as
 possible, but for example the documentation script does not print
@@ -1510,7 +1547,7 @@ error console instead of the screen. You may want to check the
 <p>
 Next: <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="n" rel="next">Why doesn't R GUI support keyboard shortcut XYZ ?</a>, Previous: <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="p" rel="prev">I don't see a thing when installing packages!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
-<span id="Why-are-there-faint-lines-in-image-plots_003f-1"></span><h3 class="section">10.6 Why are there faint lines in image plots?</h3>
+<span id="Why-are-there-faint-lines-in-image-plots_003f-1"></span><h3 class="section">10.7 Why are there faint lines in image plots?</h3>
 
 <p>When plots based on the <code>image()</code> function are exported to PDF,
 Preview shows very faint grid lines at the edges of the rectangles that
@@ -1533,7 +1570,7 @@ without border.
 <p>
 Next: <a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="n" rel="next">What is the difference between the CRAN build and a vanilla build?</a>, Previous: <a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="p" rel="prev">Why are there faint lines in image plots?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
-<span id="Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f-1"></span><h3 class="section">10.7 Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</h3>
+<span id="Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f-1"></span><h3 class="section">10.8 Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</h3>
 
 <p>The <small>R.APP</small> GUI uses Apple frameworks for text editing and thus the
 behavior of text views (console, editor, etc.) is consistent with other
@@ -1541,7 +1578,7 @@ applications and allows a very flexible customization. For example if
 you are not satisfied with the default Emacs-like key bindings that
 macOS provides, Apple allows you to extend them arbitrarily. For more
 details see Apple&rsquo;s documentation on
-<a href="http://developer.apple.com/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/chapter_9_section_2.html">Key Bindings</a>. There are also many 3rd-party pages on key bindings
+<a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html">Key Bindings</a>. There are also many 3rd-party pages on key bindings
 customization, search for <code>StandardKeyBinding.dict</code>.
 </p>
 <hr>
@@ -1549,7 +1586,7 @@ customization, search for <code>StandardKeyBinding.dict</code>.
 <p>
 Next: <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" accesskey="n" rel="next">Why is R.home() not versioned?</a>, Previous: <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="p" rel="prev">Why doesn't R GUI support keyboard shortcut XYZ ?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
-<span id="What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f-1"></span><h3 class="section">10.8 What is the difference between the CRAN build and a vanilla build?</h3>
+<span id="What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f-1"></span><h3 class="section">10.9 What is the difference between the CRAN build and a vanilla build?</h3>
 
 <p>The <acronym>CRAN</acronym> build of R is slightly different from a vanilla build of R,
 i.e., a simple <code>./configure &amp;&amp; make &amp;&amp; make install</code>. The default
@@ -1570,7 +1607,7 @@ and packages are available in
 <p>
 Next: <a href="#R_002eapp-GUI-crashes-on-startup_0021" accesskey="n" rel="next">R.app GUI crashes on startup!</a>, Previous: <a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="p" rel="prev">What is the difference between the CRAN build and a vanilla build?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
-<span id="Why-is-R_002ehome_0028_0029-in-the-R-framework-not-versioned_003f"></span><h3 class="section">10.9 Why is R.home() in the R framework not versioned?</h3>
+<span id="Why-is-R_002ehome_0028_0029-in-the-R-framework-not-versioned_003f"></span><h3 class="section">10.10 Why is R.home() in the R framework not versioned?</h3>
 
 <p>In the command line version of R, <code>R.home()</code> always points to the
 <code>Resources</code> directory symbolic link inside the R framework which
@@ -1578,7 +1615,7 @@ points to <code>Versions/Current/Resource</code> which is turn points to the
 actual home &ndash; a versioned directory such as for example
 <code>Versions/4.1/Resources</code>. This is how framework versioning works
 in macOS and is defined by Apple (see
-<a href="http://developer.apple.com/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/FrameworkAnatomy.html">Framework Anatomy</a>).
+<a href="https://developer.apple.com/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/FrameworkAnatomy.html">Framework Anatomy</a>).
 </p>
 
 <p>Although it is possible to set <code>R_HOME</code> directly to the versioned
@@ -1597,7 +1634,7 @@ happens to get copied and the R version changes, it will stop working.
 <p>
 Next: <a href="#Why-is-the-GUI-not-saving-my-history_003f" accesskey="n" rel="next">Why is the GUI not saving my history?</a>, Previous: <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" accesskey="p" rel="prev">Why is R.home() not versioned?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
-<span id="R_002eapp-GUI-crashes-on-startup_0021-1"></span><h3 class="section">10.10 R.app GUI crashes on startup!</h3>
+<span id="R_002eapp-GUI-crashes-on-startup_0021-1"></span><h3 class="section">10.11 R.app GUI crashes on startup!</h3>
 
 <p>If your <small>R.APP</small> GUI crashes on startup, there are two common causes for
 this: a saved workspace or a corrupted history file.  (Another is a
@@ -1637,7 +1674,7 @@ above).
 <p>
 Next: <a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f" accesskey="n" rel="next">I get ``command not found'' in the GUI yet it works in the Terminal -- why?</a>, Previous: <a href="#R_002eapp-GUI-crashes-on-startup_0021" accesskey="p" rel="prev">R.app GUI crashes on startup!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
-<span id="Why-is-the-GUI-not-saving-my-history_003f-1"></span><h3 class="section">10.11 Why is the GUI not saving my history?</h3>
+<span id="Why-is-the-GUI-not-saving-my-history_003f-1"></span><h3 class="section">10.12 Why is the GUI not saving my history?</h3>
 
 <p><small>R.APP</small> will by default save the history in a <code>.Rapp.history</code> file
 whereas command line <acronym>R</acronym> will use <code>.Rhistory</code>.  So the saved
@@ -1653,7 +1690,7 @@ save the history of the <small>R.APP</small> session: this means that
 <p>
 Next: <a href="#I-see-no-text-in-a-Quartz-plot_0021" accesskey="n" rel="next">I see no text in a Quartz plot!</a>, Previous: <a href="#Why-is-the-GUI-not-saving-my-history_003f" accesskey="p" rel="prev">Why is the GUI not saving my history?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
-<span id="I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f-1"></span><h3 class="section">10.12 I get &ldquo;command not found&rdquo; in the GUI yet it works in the Terminal &ndash; why?</h3>
+<span id="I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f-1"></span><h3 class="section">10.13 I get &ldquo;command not found&rdquo; in the GUI yet it works in the Terminal &ndash; why?</h3>
 
 <p>When executing system commands (for example directly via <code>system</code> or indirectly via functions that call other programs such as <code>install.packages</code>) the locations in which the shell is looking for programs is governed by the <code>PATH</code> environment variable. That variable may be set differently for R started from an interactive shell and for R started in the GUI. You can use <code>Sys.getenv(&quot;PATH&quot;)</code> to verify the current setting.
 </p>
@@ -1672,7 +1709,7 @@ selectively modify the existing <code>PATH</code> variable via
 <p>
 Next: <a href="#I-cannot-attach-debugger-to-R" accesskey="n" rel="next">I cannot attach debugger to R</a>, Previous: <a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f" accesskey="p" rel="prev">I get ``command not found'' in the GUI yet it works in the Terminal -- why?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
-<span id="I-see-no-text-in-a-Quartz-plot_0021-1"></span><h3 class="section">10.13 I see no text in a Quartz plot!</h3>
+<span id="I-see-no-text-in-a-Quartz-plot_0021-1"></span><h3 class="section">10.14 I see no text in a Quartz plot!</h3>
 
 <p>Typically this means that you have corrupted fonts in your system. Open
 the <code>Font Book</code> application (in <code>Applications</code>) and check the
@@ -1689,7 +1726,7 @@ appear as it should), remove such fonts.
 <p>
 Previous: <a href="#I-see-no-text-in-a-Quartz-plot_0021" accesskey="p" rel="prev">I see no text in a Quartz plot!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
-<span id="I-cannot-attach-debugger-to-R-1"></span><h3 class="section">10.14 I cannot attach debugger to R</h3>
+<span id="I-cannot-attach-debugger-to-R-1"></span><h3 class="section">10.15 I cannot attach debugger to R</h3>
 
 <p>R processes installed using Apple installer cannot be attached to by
 debuggers. This is a limitation introduced by Apple as a security
