@@ -36,4 +36,4 @@ MD5(base/R-4.1.1.pkg)= 0e9684e8fc9c8a5eda675aef99c6a6ee
 MD5(base/R-4.1.2.pkg)= 488a4ad47f7639c5737b9418a28a6b9c
 MD5(big-sur-arm64/base/R-4.1.0-arm64.pkg)= e8cf7cb40a735af9e54dac92346637c3
 MD5(big-sur-arm64/base/R-4.1.1-arm64.pkg)= f7a249c9a4b5f32efbfd44b821a6a846
-MD5(big-sur-arm64/base/R-4.1.2-arm64.pkg)= 2e91137c6a880756cc26afea4c5a458f
+MD5(big-sur-arm64/base/R-4.1.2-arm64.pkg)= 387e9f4c03045f4756bee057d03ed404
