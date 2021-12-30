@@ -8,16 +8,17 @@
 
 install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
                          os=R.version$os, arch=R.version$arch, os.arch="auto",
-			 dependencies=TRUE) {
+			 dependencies=TRUE, action=c("install", "list")) {
     up <- function(...) paste(..., sep='/')
+    action <- match.arg(action)
 
     if (os.arch == "auto") {
         rindex <- up(url, "REPOS")
         cat("Downloading", rindex, "...\n")
         rl <- readLines(u <- url(rindex))
         close(u)
-        rl <- simplify2array(strsplit(rl[grep("/", rl)], "/"))
-        rl <- data.frame(os=rl[1,], arch=rl[2,])
+        rla <- simplify2array(strsplit(rl[grep("/", rl)], "/"))
+        rl <- data.frame(os=rla[1,], arch=rla[2,])
 
         os.name <- function(os) gsub("[0-9].*", "", os)
         os.ver <- function(os) as.numeric(sub("\\..*", "", gsub("[^0-9]*", "", os)))
@@ -27,7 +28,8 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
 
         rl <- rl[rl$os.name == os.name(os) && rl$os.ver <= os.ver(os),]
         if (nrow(rl) < 1)
-            stop("There is no repository that supports ", os.name(os), " version ", os.ver(os), " or higher.\nAvailable binaries only support: ", rl[1,])
+            stop("There is no repository that supports ", os.name(os), " version ", os.ver(os), " or higher.\nAvailable binaries only support: ",
+	         paste(rla[1,], collapse=", "))
 
         if (!any(rl$arch == arch))
             stop("Architecture ", arch, " is not supported on os ", os,", only available architectures: ", rl$arch)
@@ -66,11 +68,11 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
     need <- deps(pkgs, db)
     urls <- up(url, os.arch, db[need, "Binary"])
 
-    for (u in urls) {
+    if (action == "install") for (u in urls) {
         cat("Downloading + installing ", u, "...\n")
         if (system(paste("curl", "-L", shQuote(u), "|", "tar fxj - -C /")) != 0)
             stop("Failed to install from ", u)
-    }
+    } else urls
 }
 
 cat("\n Usage: install.libs(names)\n\n Example: install.libs('cairo')\n\n names can be a vector.\n See args(install.libs) for defaults.\n\n")
