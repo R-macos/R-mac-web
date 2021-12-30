@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Binaries and static libraries for macOS built using the recipes system, used by CRAN builds of R.">
+  <meta property="og:image" content="https://www.r-project.org/Rlogo.png">  
+  <title>Binaries of libraries and tools for macOS</title>
+  <link rel=stylesheet href='../main.css' type='text/css'>
+</head>
+
+<body bgcolor="white">
+  <h1>Binaries of libraries and tools for macOS</h1>
+
+  This is the root for repositories hosting binaries and static
+  libraries for macOS which are used to build R packages on CRAN based
+  on the
+  <a href="https://github.com/R-macos/recipes" target="_new">recipes</a>
+  build system. The binaries are self-contained and can be used on their own.
+
+  <h2>Quick Install</h2>
+
+  To install any of the contained binaries, use the following R script:
+
+  <pre>source("https://mac.R-project.org/bin/install.R")</pre>
+
+  <p>It doesn't run anything, it only defines one R function
+  <tt>install.lib</tt> which can download
+  and install the corresponding binaries. For example, to install the
+  <tt>openssl</tt> library, use:</p>
+
+  <pre>install.lib("openssl")</pre>
+
+  <p>The default arguments will use this repository and will
+  automatically determine the suitable binary for your system (if
+  available). We are currently supporting Intel Macs with macOS 10.13
+  (High Sierra) or higher and Apple Silicon (M1) Macs with macOS 11
+  (Big Sur) and higher.</p>
+
+  <p>NOTE: if you don't have write-permission in the installation location,
+  you may need to make it writable or run <tt>sudo R</tt>.</p>
+
+  <h2>Details</h2>
+
+  <p>The following repostiories are currently provided:</p>
+
+  <table width=60%>
+    <tr align=left><th>Name</th><th>Installation Location</th><th>Target</th></tr>
+    <tr><td><a href="darwin17/x86_64">darwin17/x86_64</a></td><td><tt>/usr/local</tt></td><td>macOS 10.13, Intel (x86_64)</td></tr>
+    <tr><td><a href="darwin21/arm64">darwin21/arm64</a></td><td><tt>/opt/R/arm64</tt></td><td>macOS 11, Apple M1 (arm64)</tr>
+  </table>
+
+  <p>All binaries are built automatically using the 
+    <a href="https://github.com/R-macos/recipes" target="_new">recipes</a>
+    build system.</p>
+
+  <p>Note that tools (such as subversion or emacs) can be downloaded
+  individualy and don't require their build dependnecies in order to
+  be used, so you can use, for example:</p>
+
+  <pre>install.libs("subversion", dep=FALSE)</pre>
+    
+  <p>The dependecies are only required for libraries to link
+  against them.</p>
+</body>
+</html>
