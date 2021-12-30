@@ -48,7 +48,7 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
 
         ## any missing?
         mis <- ! pkgs %in% rownames(db)
-        if (any(mis)) stop("Following binaries have no download candidates: ", paste(pkg[mis], ", "))
+        if (any(mis)) stop("Following binaries have no download candidates: ", paste(pkgs[mis], ", "))
 
         dep <- function(pkgs) {
             nd <- unique(c(pkgs, unlist(strsplit(db[pkgs, "BuiltWith"],", *"))))
