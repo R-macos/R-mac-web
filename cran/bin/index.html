@@ -25,13 +25,13 @@
   <pre>source("https://mac.R-project.org/bin/install.R")</pre>
 
   <p>It doesn't run anything, it only defines one R function
-  <tt>install.lib</tt> which can download
+  <tt>install.libs</tt> which can download
   and install the corresponding binaries
   (<a href="https://github.com/R-macos/R-mac-web/blob/master/cran/bin/install.R"
       target="_new">view the script</a>). For example, to install the
   <tt>openssl</tt> library, use:</p>
 
-  <pre>install.lib("openssl")</pre>
+  <pre>install.libs("openssl")</pre>
 
   <p>The default arguments will use this repository and will
   automatically determine the suitable binary for your system (if
@@ -64,5 +64,32 @@
     
   <p>The dependecies are only required for libraries to link
   against them.</p>
+
+  <h2>Options</h2>
+
+  <p>The <tt>install.libs</tt> function has following arguments:</p>
+  <ul>
+    <li><tt>pkgs</tt> - character vector, names of binaries to install</li>
+    <li><tt>url</tt> - URL of the repostiory root</li>
+    <li><tt>os</tt>, <tt>arch</tt> - name and version of the OS and
+      the architecture to determine suitable repository.
+      This is only used if <tt>os.arch="auto"</tt>.</li>
+    <li><tt>os.arch</tt> - either name of the repository such as
+      <tt>darwin20/arm64</tt> or <tt>auto</tt> if the most suitable
+      repostiroy based on the above arguments <tt>os</tt>
+      and <tt>arch</tT> is to be detected from the list of published
+      repostiories at the <tt>url</tt> root.</li>
+    <li><tt>dependencies</tt> - logical, if <tt>TRUE</tt> then
+      build dependencies are also installed, otherwise only the listed
+      packages are installed.</li>
+    <li><tt>action</tt> - string, one of:
+      <ul>
+	<li><tt>"install"</tt> downloads and installs the
+	  packages</li>
+	<li><tt>"list"</tt> only returns the list of URLs to
+	  download</li>
+      </ul>
+    </li>
+  </ul>
 </body>
 </html>
