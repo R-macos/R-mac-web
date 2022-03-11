@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<!-- Created by GNU Texinfo 6.7, http://www.gnu.org/software/texinfo/ -->
+<!-- Created by GNU Texinfo 6.8, https://www.gnu.org/software/texinfo/ -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>R for macOS FAQ</title>
@@ -10,15 +10,19 @@
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
 <meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <link href="#Top" rel="start" title="Top">
 <link href="dir.html#Top" rel="up" title="(dir)">
+<link href="#Introduction" rel="next" title="Introduction">
+<link href="dir.html#Top" rel="prev" title="(dir)">
 <style type="text/css">
 <!--
+a.copiable-anchor {visibility: hidden; text-decoration: none; line-height: 0em}
 a.summary-letter {text-decoration: none}
 blockquote.indentedblock {margin-right: 0em}
 div.display {margin-left: 3.2em}
 div.example {margin-left: 3.2em}
-div.lisp {margin-left: 3.2em}
 kbd {font-style: oblique}
 pre.display {font-family: inherit}
 pre.format {font-family: inherit}
@@ -27,6 +31,7 @@ pre.menu-preformatted {font-family: serif}
 span.nolinebreak {white-space: nowrap}
 span.roman {font-family: initial; font-weight: normal}
 span.sansserif {font-family: sans-serif; font-weight: normal}
+span:hover a.copiable-anchor {visibility: visible}
 ul.no-bullet {list-style: none}
 -->
 </style>
@@ -47,228 +52,38 @@ ul.no-bullet {list-style: none}
 
 
 
-<span id="Top"></span><div class="header">
+<div class="top" id="Top">
+<div class="header">
 <p>
 Next: <a href="#Introduction" accesskey="n" rel="next">Introduction</a>, Previous: <a href="dir.html#Top" accesskey="p" rel="prev">(dir)</a>, Up: <a href="dir.html#Top" accesskey="u" rel="up">(dir)</a> &nbsp; </p>
 </div>
 <span id="R-for-macOS-FAQ"></span><h1 class="top">R for macOS FAQ</h1>
 <h2>Frequently Asked Questions on R for macOS</h2>
-<h2>Version 4.1.2 2021-11-01, R.app 1.77</h2>
+<h2>Version 4.1.3 2022-03-10, R.app 1.77</h2>
 <address>Stefano M. Iacus</address>
 <address>Simon Urbanek</address>
 <address>Rob J. Goedman</address>
 <address>Brian Ripley</address>
 <p><p><hr><p>
 
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#Introduction" accesskey="1">Introduction</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#R_002eapp" accesskey="2">R.app</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#How-to-install-packages" accesskey="3">How to install packages</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#R-and-external-applications" accesskey="4">R and external applications</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Quartz-device" accesskey="5">Quartz device</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Tcl_002fTk-issues" accesskey="6">Tcl/Tk issues</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Internationalization-of-the-R_002eapp" accesskey="7">Internationalization of the R.app</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Additional-resources" accesskey="8">Additional resources</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Acknowledgments" accesskey="9">Acknowledgments</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Miscellaneous-questions">Miscellaneous questions</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
 
-</pre></th></tr><tr><th colspan="3" align="left" valign="top"><pre class="menu-comment"> &mdash; The Detailed Node Listing &mdash;
-
-Introduction
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#How-many-versions-of-R-for-macOS_003f">How many versions of R for macOS?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#What-machines-does-R-for-macOS-run-on_003f">What machines does R for macOS run on?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#How-can-R-for-macOS-be-obtained-and-installed_003f">How can R for macOS be obtained and installed?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-R.app
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#How-to-get-R_002eapp">How to get R.app</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#How-to-install-the-R_002eapp">How to install the R.app</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#The-R-Console">The R Console</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#General-Features">General Features</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#The-Menus">The Menus</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Preferences">Preferences</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#R_002eapp-Bugs">R.app Bugs</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-The R Console
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#The-Input-and-the-Output">The Input and the Output</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Copy-and-Paste">Copy and Paste</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#The-current-and-startup-working-directories">The current and startup working directories</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Resizing-the-R-Console">Resizing the R Console</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#R-Console-text-colors">R Console text colors</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-General Features
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Editor">Editor</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-undo-and-line-numbers">Editor undo and line numbers</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-text-completion">Editor text completion</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-function-list">Editor function list</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-syntax-coloring">Editor syntax coloring</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-_0028internal-and-external_0029">Editor (internal and external)</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-help">Editor help</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Drag-_0026-drop">Drag &amp; drop</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Help-system">Help system</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#History">History</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Authentication-and-_002elibPaths">Authentication and .libPaths</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-The Menus
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Application-Menu">Application Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#File-Menu">File Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Edit-Menu">Edit Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Misc-Menu">Misc Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Workspace-Menu">Workspace Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Packages-Menu">Packages Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#The-Help-Menu">The Help Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-Preferences
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Startup">Startup</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-Startup
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Editor-Preferences">Editor Preferences</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Syntax-Colors">Syntax Colors</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Console-Colors">Console Colors</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Quartz-window">Quartz window</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-How to install packages
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Which-kind-of-packages-can-I-install-using-the-GUI_003f">Which kind of packages can I install using the GUI?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Installation-of-packages">Installation of packages</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Installation-of-source-packages">Installation of source packages</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Where-are-the-packages-I_0027ve-installed_003f">Where are the packages I've installed?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-R and external applications
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#AppleScript-support">AppleScript support</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#External-editors">External editors</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Finder-actions">Finder actions</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-Quartz device
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Interactive-mode">Interactive mode</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Saving-the-image">Saving the image</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Copying-the-image-into-the-clipboard">Copying the image into the clipboard</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-Additional resources
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Apple-Developer-Connection">Apple Developer Connection</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#The-R-for-macOS-Developer-page">The R for macOS Developer page</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-Miscellaneous questions
-
-</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#How-can-I-have-a-per-session-_002eRprofile_003f">How can I have a per session .Rprofile?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f">What happens if I drag a file on the R icon?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#How-can-I-interrupt-lengthy-operations-or-output_003f">How can I interrupt lengthy operations or output?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-see-spurious-error-messages-when-starting-R_0021">I see spurious error messages when starting R!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f">Which BLAS is used and how can it be changed?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021">I don't see a thing when installing packages!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-are-there-faint-lines-in-image-plots_003f">Why are there faint lines in image plots?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f">Why doesn't R GUI support keyboard shortcut XYZ ?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f">What is the difference between the CRAN build and a vanilla build?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f">Why is R.home() not versioned?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#R_002eapp-GUI-crashes-on-startup_0021">R.app GUI crashes on startup!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-is-the-GUI-not-saving-my-history_003f">Why is the GUI not saving my history?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f">I get ``command not found'' in the GUI yet it works in the Terminal -- why?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-see-no-text-in-a-Quartz-plot_0021">I see no text in a Quartz plot!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-cannot-attach-debugger-to-R">I cannot attach debugger to R</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
-
-</pre></th></tr></table>
-
+<ul class="section-toc">
+<li><a href="#Introduction" accesskey="1">Introduction</a></li>
+<li><a href="#R_002eapp" accesskey="2">R.app</a></li>
+<li><a href="#How-to-install-packages" accesskey="3">How to install packages</a></li>
+<li><a href="#R-and-external-applications" accesskey="4">R and external applications</a></li>
+<li><a href="#Quartz-device" accesskey="5">Quartz device</a></li>
+<li><a href="#Tcl_002fTk-issues" accesskey="6">Tcl/Tk issues</a></li>
+<li><a href="#Internationalization-of-the-R_002eapp" accesskey="7">Internationalization of the R.app</a></li>
+<li><a href="#Additional-resources" accesskey="8">Additional resources</a></li>
+<li><a href="#Acknowledgments" accesskey="9">Acknowledgments</a></li>
+<li><a href="#Miscellaneous-questions">Miscellaneous questions</a></li>
+</ul>
 <hr>
-<span id="Introduction"></span><div class="header">
+<div class="chapter" id="Introduction">
+<div class="header">
 <p>
-Next: <a href="#R_002eapp" accesskey="n" rel="next">R.app</a>, Previous: <a href="#Top" accesskey="p" rel="prev">Top</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; </p>
+Next: <a href="#R_002eapp" accesskey="n" rel="next">R.app</a>, Previous: <a href="#Top" accesskey="p" rel="prev">R for macOS FAQ</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
 </div>
 <span id="Introduction-1"></span><h2 class="chapter">1 Introduction</h2>
 
@@ -297,17 +112,15 @@ doesn&rsquo;t fit any of the above or was not answered in one of the specific
 sections. <em>Always read this FAQ before asking for help on
 R-SIG-Mac!</em>
 </p>
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#How-many-versions-of-R-for-macOS_003f" accesskey="1">How many versions of R for macOS?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#What-machines-does-R-for-macOS-run-on_003f" accesskey="2">What machines does R for macOS run on?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#How-can-R-for-macOS-be-obtained-and-installed_003f" accesskey="3">How can R for macOS be obtained and installed?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="section-toc">
+<li><a href="#How-many-versions-of-R-for-macOS_003f" accesskey="1">How many versions of R for macOS?</a></li>
+<li><a href="#What-machines-does-R-for-macOS-run-on_003f" accesskey="2">What machines does R for macOS run on?</a></li>
+<li><a href="#How-can-R-for-macOS-be-obtained-and-installed_003f" accesskey="3">How can R for macOS be obtained and installed?</a></li>
+</ul>
 <hr>
-<span id="How-many-versions-of-R-for-macOS_003f"></span><div class="header">
+<div class="section" id="How-many-versions-of-R-for-macOS_003f">
+<div class="header">
 <p>
 Next: <a href="#What-machines-does-R-for-macOS-run-on_003f" accesskey="n" rel="next">What machines does R for macOS run on?</a>, Previous: <a href="#Introduction" accesskey="p" rel="prev">Introduction</a>, Up: <a href="#Introduction" accesskey="u" rel="up">Introduction</a> &nbsp; </p>
 </div>
@@ -320,7 +133,9 @@ preferred by Macintosh users.
 </p>
 
 <hr>
-<span id="What-machines-does-R-for-macOS-run-on_003f"></span><div class="header">
+</div>
+<div class="section" id="What-machines-does-R-for-macOS-run-on_003f">
+<div class="header">
 <p>
 Next: <a href="#How-can-R-for-macOS-be-obtained-and-installed_003f" accesskey="n" rel="next">How can R for macOS be obtained and installed?</a>, Previous: <a href="#How-many-versions-of-R-for-macOS_003f" accesskey="p" rel="prev">How many versions of R for macOS?</a>, Up: <a href="#Introduction" accesskey="u" rel="up">Introduction</a> &nbsp; </p>
 </div>
@@ -333,7 +148,9 @@ as &lsquo;M1&rsquo; and &lsquo;Apple Silicon&rsquo;), although the Intel-based d
 works well under &lsquo;Rosetta&rsquo; emulation.
 </p>
 <hr>
-<span id="How-can-R-for-macOS-be-obtained-and-installed_003f"></span><div class="header">
+</div>
+<div class="section" id="How-can-R-for-macOS-be-obtained-and-installed_003f">
+<div class="header">
 <p>
 Previous: <a href="#What-machines-does-R-for-macOS-run-on_003f" accesskey="p" rel="prev">What machines does R for macOS run on?</a>, Up: <a href="#Introduction" accesskey="u" rel="up">Introduction</a> &nbsp; </p>
 </div>
@@ -357,27 +174,14 @@ sources, are in the &lsquo;R Installation and Administration Manual&rsquo;.
 </p>
 
 <hr>
-<span id="R_002eapp"></span><div class="header">
+</div>
+</div>
+<div class="chapter" id="R_002eapp">
+<div class="header">
 <p>
-Next: <a href="#How-to-install-packages" accesskey="n" rel="next">How to install packages</a>, Previous: <a href="#Introduction" accesskey="p" rel="prev">Introduction</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; </p>
+Next: <a href="#How-to-install-packages" accesskey="n" rel="next">How to install packages</a>, Previous: <a href="#Introduction" accesskey="p" rel="prev">Introduction</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
 </div>
 <span id="R_002eapp-1"></span><h2 class="chapter">2 R.app</h2>
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#How-to-get-R_002eapp" accesskey="1">How to get R.app</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#How-to-install-the-R_002eapp" accesskey="2">How to install the R.app</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#The-R-Console" accesskey="3">The R Console</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#General-Features" accesskey="4">General Features</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#The-Menus" accesskey="5">The Menus</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Preferences" accesskey="6">Preferences</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#R_002eapp-Bugs" accesskey="7">R.app Bugs</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
 <p><small>R.APP</small> is the name of the GUI for macOS that was introduced in R
 2.0.0. It appears as an icon labeled <em>R</em>, but to avoid confusion
@@ -389,8 +193,18 @@ application</em>.
 which links to embedded <acronym>R</acronym> installed as a framework.
 </p>
 
+<ul class="section-toc">
+<li><a href="#How-to-get-R_002eapp" accesskey="1">How to get R.app</a></li>
+<li><a href="#How-to-install-the-R_002eapp" accesskey="2">How to install the R.app</a></li>
+<li><a href="#The-R-Console" accesskey="3">The R Console</a></li>
+<li><a href="#General-Features" accesskey="4">General Features</a></li>
+<li><a href="#The-Menus" accesskey="5">The Menus</a></li>
+<li><a href="#Preferences" accesskey="6">Preferences</a></li>
+<li><a href="#R_002eapp-Bugs" accesskey="7">R.app Bugs</a></li>
+</ul>
 <hr>
-<span id="How-to-get-R_002eapp"></span><div class="header">
+<div class="section" id="How-to-get-R_002eapp">
+<div class="header">
 <p>
 Next: <a href="#How-to-install-the-R_002eapp" accesskey="n" rel="next">How to install the R.app</a>, Previous: <a href="#R_002eapp" accesskey="p" rel="prev">R.app</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
 </div>
@@ -406,7 +220,9 @@ pages on <acronym>CRAN</acronym> for detail how to obtain such snapshots (curren
 <a href="http://mac.R-project.org/">http://mac.R-project.org/</a>).
 </p>
 <hr>
-<span id="How-to-install-the-R_002eapp"></span><div class="header">
+</div>
+<div class="section" id="How-to-install-the-R_002eapp">
+<div class="header">
 <p>
 Next: <a href="#The-R-Console" accesskey="n" rel="next">The R Console</a>, Previous: <a href="#How-to-get-R_002eapp" accesskey="p" rel="prev">How to get R.app</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
 </div>
@@ -420,29 +236,27 @@ double-click the package icon.
 <p>Please, carefully read the note on the usage of tcltk and Fortran on the <samp>bin/macosx</samp> directory of a <acronym>CRAN</acronym> site.
 </p>
 <hr>
-<span id="The-R-Console"></span><div class="header">
+</div>
+<div class="section" id="The-R-Console">
+<div class="header">
 <p>
 Next: <a href="#General-Features" accesskey="n" rel="next">General Features</a>, Previous: <a href="#How-to-install-the-R_002eapp" accesskey="p" rel="prev">How to install the R.app</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
 </div>
 <span id="The-R-Console-1"></span><h3 class="section">2.3 The R Console</h3>
 <p>In this section you&rsquo;ll find general information on the <small>R.APP</small>. For specific <acronym>R</acronym> tasks that
 can be done via the <small>R.APP</small> using menus you should read below (see <a href="#The-Menus">The Menus</a>). 
-</p><table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#The-Input-and-the-Output" accesskey="1">The Input and the Output</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Copy-and-Paste" accesskey="2">Copy and Paste</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#The-current-and-startup-working-directories" accesskey="3">The current and startup working directories</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Resizing-the-R-Console" accesskey="4">Resizing the R Console</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#R-Console-text-colors" accesskey="5">R Console text colors</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
+</p>
 
-
+<ul class="section-toc">
+<li><a href="#The-Input-and-the-Output" accesskey="1">The Input and the Output</a></li>
+<li><a href="#Copy-and-Paste" accesskey="2">Copy and Paste</a></li>
+<li><a href="#The-current-and-startup-working-directories" accesskey="3">The current and startup working directories</a></li>
+<li><a href="#Resizing-the-R-Console" accesskey="4">Resizing the R Console</a></li>
+<li><a href="#R-Console-text-colors" accesskey="5">R Console text colors</a></li>
+</ul>
 <hr>
-<span id="The-Input-and-the-Output"></span><div class="header">
+<div class="subsection" id="The-Input-and-the-Output">
+<div class="header">
 <p>
 Next: <a href="#Copy-and-Paste" accesskey="n" rel="next">Copy and Paste</a>, Previous: <a href="#The-R-Console" accesskey="p" rel="prev">The R Console</a>, Up: <a href="#The-R-Console" accesskey="u" rel="up">The R Console</a> &nbsp; </p>
 </div>
@@ -450,7 +264,9 @@ Next: <a href="#Copy-and-Paste" accesskey="n" rel="next">Copy and Paste</a>, Pre
 <p>The current design of the R Console is to have a single frame for input (user) and output (R).
 </p>
 <hr>
-<span id="Copy-and-Paste"></span><div class="header">
+</div>
+<div class="subsection" id="Copy-and-Paste">
+<div class="header">
 <p>
 Next: <a href="#The-current-and-startup-working-directories" accesskey="n" rel="next">The current and startup working directories</a>, Previous: <a href="#The-Input-and-the-Output" accesskey="p" rel="prev">The Input and the Output</a>, Up: <a href="#The-R-Console" accesskey="u" rel="up">The R Console</a> &nbsp; </p>
 </div>
@@ -460,7 +276,9 @@ Next: <a href="#The-current-and-startup-working-directories" accesskey="n" rel="
 <p>If you want high resolution graphic exports, you can save the PDF format using the <em>File/Save as</em> menu item (see <a href="#Quartz-device">Quartz device</a>). Or you can use supported formats in R through <code>pdf()</code>, <code>jpeg()</code> etc. (type <code>?capabilities</code> to get more details).
 </p>
 <hr>
-<span id="The-current-and-startup-working-directories"></span><div class="header">
+</div>
+<div class="subsection" id="The-current-and-startup-working-directories">
+<div class="header">
 <p>
 Next: <a href="#Resizing-the-R-Console" accesskey="n" rel="next">Resizing the R Console</a>, Previous: <a href="#Copy-and-Paste" accesskey="p" rel="prev">Copy and Paste</a>, Up: <a href="#The-R-Console" accesskey="u" rel="up">The R Console</a> &nbsp; </p>
 </div>
@@ -474,7 +292,9 @@ the Preferences (or any other method mentioned above) to change the startup dire
 </p>
  
 <hr>
-<span id="Resizing-the-R-Console"></span><div class="header">
+</div>
+<div class="subsection" id="Resizing-the-R-Console">
+<div class="header">
 <p>
 Next: <a href="#R-Console-text-colors" accesskey="n" rel="next">R Console text colors</a>, Previous: <a href="#The-current-and-startup-working-directories" accesskey="p" rel="prev">The current and startup working directories</a>, Up: <a href="#The-R-Console" accesskey="u" rel="up">The R Console</a> &nbsp; </p>
 </div>
@@ -483,7 +303,9 @@ Next: <a href="#R-Console-text-colors" accesskey="n" rel="next">R Console text c
 output will fit the window size.
 </p>
 <hr>
-<span id="R-Console-text-colors"></span><div class="header">
+</div>
+<div class="subsection" id="R-Console-text-colors">
+<div class="header">
 <p>
 Previous: <a href="#Resizing-the-R-Console" accesskey="p" rel="prev">Resizing the R Console</a>, Up: <a href="#The-R-Console" accesskey="u" rel="up">The R Console</a> &nbsp; </p>
 </div>
@@ -491,38 +313,31 @@ Previous: <a href="#Resizing-the-R-Console" accesskey="p" rel="prev">Resizing th
 <p>Use the Preferences window to set the R Console text colors (see <a href="#Preferences">Preferences</a>).
 </p>
 <hr>
-<span id="General-Features"></span><div class="header">
+</div>
+</div>
+<div class="section" id="General-Features">
+<div class="header">
 <p>
 Next: <a href="#The-Menus" accesskey="n" rel="next">The Menus</a>, Previous: <a href="#The-R-Console" accesskey="p" rel="prev">The R Console</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
 </div>
 <span id="General-Features-1"></span><h3 class="section">2.4 General Features</h3>
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#Editor" accesskey="1">Editor</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-undo-and-line-numbers" accesskey="2">Editor undo and line numbers</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-text-completion" accesskey="3">Editor text completion</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-function-list" accesskey="4">Editor function list</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-syntax-coloring" accesskey="5">Editor syntax coloring</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-_0028internal-and-external_0029" accesskey="6">Editor (internal and external)</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Editor-help" accesskey="7">Editor help</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Drag-_0026-drop" accesskey="8">Drag &amp; drop</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Help-system" accesskey="9">Help system</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#History">History</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Authentication-and-_002elibPaths">Authentication and .libPaths</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="section-toc">
+<li><a href="#Editor" accesskey="1">Editor</a></li>
+<li><a href="#Editor-undo-and-line-numbers" accesskey="2">Editor undo and line numbers</a></li>
+<li><a href="#Editor-text-completion" accesskey="3">Editor text completion</a></li>
+<li><a href="#Editor-function-list" accesskey="4">Editor function list</a></li>
+<li><a href="#Editor-syntax-coloring" accesskey="5">Editor  syntax coloring</a></li>
+<li><a href="#Editor-_0028internal-and-external_0029" accesskey="6">Editor (internal and external)</a></li>
+<li><a href="#Editor-help" accesskey="7">Editor help</a></li>
+<li><a href="#Drag-_0026-drop" accesskey="8">Drag &amp; drop</a></li>
+<li><a href="#Help-system" accesskey="9">Help system</a></li>
+<li><a href="#History">History</a></li>
+<li><a href="#Authentication-and-_002elibPaths">Authentication and .libPaths</a></li>
+</ul>
 <hr>
-<span id="Editor"></span><div class="header">
+<div class="subsection" id="Editor">
+<div class="header">
 <p>
 Next: <a href="#Editor-undo-and-line-numbers" accesskey="n" rel="next">Editor undo and line numbers</a>, Previous: <a href="#General-Features" accesskey="p" rel="prev">General Features</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
@@ -530,7 +345,9 @@ Next: <a href="#Editor-undo-and-line-numbers" accesskey="n" rel="next">Editor un
 <p><small>R.APP</small> provides an integrated editor for editing of R code. It sports a number of features designed to help developing code inside R. The probably most often used function is the ability to execute code directly from the editor by pressing <kbd><span class="key">Command</span>-<span class="key">Return</span></kbd>. Other features include syntax highlighting, brace-matching, code completion and function indexing.
 </p>
 <hr>
-<span id="Editor-undo-and-line-numbers"></span><div class="header">
+</div>
+<div class="subsection" id="Editor-undo-and-line-numbers">
+<div class="header">
 <p>
 Next: <a href="#Editor-text-completion" accesskey="n" rel="next">Editor text completion</a>, Previous: <a href="#Editor" accesskey="p" rel="prev">Editor</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
@@ -542,7 +359,9 @@ associated Preference Pane allows enabling/disabling of the line numbers, as wel
 number gutter width (to fit larger line numbers) and text margin width.
 </p>
 <hr>
-<span id="Editor-text-completion"></span><div class="header">
+</div>
+<div class="subsection" id="Editor-text-completion">
+<div class="header">
 <p>
 Next: <a href="#Editor-function-list" accesskey="n" rel="next">Editor function list</a>, Previous: <a href="#Editor-undo-and-line-numbers" accesskey="p" rel="prev">Editor undo and line numbers</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
@@ -550,15 +369,19 @@ Next: <a href="#Editor-function-list" accesskey="n" rel="next">Editor function l
 <p>Completion of typed input (both file names and R code) in the editor is available through the Edit menu &rsquo;Complete&rsquo; or by typing <kbd><span class="key">Control</span>-<span class="key">.</span></kbd> (same as is Xcode). It uses the same facilities as the console window (for compatibility the console responds to both <tt class="key">Tab</tt> and <kbd><span class="key">Control</span>-<span class="key">.</span></kbd>).
 </p>
 <hr>
-<span id="Editor-function-list"></span><div class="header">
+</div>
+<div class="subsection" id="Editor-function-list">
+<div class="header">
 <p>
-Next: <a href="#Editor-syntax-coloring" accesskey="n" rel="next">Editor syntax coloring</a>, Previous: <a href="#Editor-text-completion" accesskey="p" rel="prev">Editor text completion</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
+Next: <a href="#Editor-syntax-coloring" accesskey="n" rel="next">Editor  syntax coloring</a>, Previous: <a href="#Editor-text-completion" accesskey="p" rel="prev">Editor text completion</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
 <span id="Editor-function-list-1"></span><h4 class="subsection">2.4.4 Editor function list</h4>
 <p>The editor maintains a popup list of functions defined in the edited document. The list is available in the toolbar and is updated as you type. Selecting a function from that list causes the cursor to jump to the beginning of the function.
 </p>
 <hr>
-<span id="Editor-syntax-coloring"></span><div class="header">
+</div>
+<div class="subsection" id="Editor-syntax-coloring">
+<div class="header">
 <p>
 Next: <a href="#Editor-_0028internal-and-external_0029" accesskey="n" rel="next">Editor (internal and external)</a>, Previous: <a href="#Editor-function-list" accesskey="p" rel="prev">Editor function list</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
@@ -566,9 +389,11 @@ Next: <a href="#Editor-_0028internal-and-external_0029" accesskey="n" rel="next"
 <p>The editor supports syntax-highlighting for R code. It is possible to change the syntax highlighting colors using the Syntax Color Preference Pane (see below). Starting with <small>R.APP</small> version 1.17 lazy syntax highlighting is used, which means that changes influencing the entire file (such as typing a single or double quote) no longer apply to the entire file, but only a few lines. This temporary state is usually recovered by closing the quote, but in some rare instances it may persist until a change is made to the first line of the offending quote. However, lazy highlighting brings huge speedup when editing large files.
 </p>
 <hr>
-<span id="Editor-_0028internal-and-external_0029"></span><div class="header">
+</div>
+<div class="subsection" id="Editor-_0028internal-and-external_0029">
+<div class="header">
 <p>
-Next: <a href="#Editor-help" accesskey="n" rel="next">Editor help</a>, Previous: <a href="#Editor-syntax-coloring" accesskey="p" rel="prev">Editor syntax coloring</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
+Next: <a href="#Editor-help" accesskey="n" rel="next">Editor help</a>, Previous: <a href="#Editor-syntax-coloring" accesskey="p" rel="prev">Editor  syntax coloring</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
 <span id="Editor-_0028internal-and-external_0029-1"></span><h4 class="subsection">2.4.6 Editor (internal and external)</h4>
 <p>By default, the editor used is incorporated into <small>R.APP</small>, the macOS GUI for R. It is a
@@ -583,7 +408,9 @@ AppleScript it is easy to implement <kbd>Command-E</kbd> and <kbd>Command-Return
 </p>
 
 <hr>
-<span id="Editor-help"></span><div class="header">
+</div>
+<div class="subsection" id="Editor-help">
+<div class="header">
 <p>
 Next: <a href="#Drag-_0026-drop" accesskey="n" rel="next">Drag &amp; drop</a>, Previous: <a href="#Editor-_0028internal-and-external_0029" accesskey="p" rel="prev">Editor (internal and external)</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
@@ -591,7 +418,9 @@ Next: <a href="#Drag-_0026-drop" accesskey="n" rel="next">Drag &amp; drop</a>, P
 <p>The editor contains a light-weight help system in form of a search filed placed inside the toolbar. It is possible to use either an exact or approximate search.
 </p>		
 <hr>
-<span id="Drag-_0026-drop"></span><div class="header">
+</div>
+<div class="subsection" id="Drag-_0026-drop">
+<div class="header">
 <p>
 Next: <a href="#Help-system" accesskey="n" rel="next">Help system</a>, Previous: <a href="#Editor-help" accesskey="p" rel="prev">Editor help</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
@@ -617,7 +446,9 @@ opened in editor. If <small>R.APP</small> is running, the file is opened in the
 editor.
 </p> 
 <hr>
-<span id="Help-system"></span><div class="header">
+</div>
+<div class="subsection" id="Help-system">
+<div class="header">
 <p>
 Next: <a href="#History" accesskey="n" rel="next">History</a>, Previous: <a href="#Drag-_0026-drop" accesskey="p" rel="prev">Drag &amp; drop</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
@@ -629,7 +460,9 @@ found, a pop-up window allows to exit the help search or expand the
 search to a fuzzy/approximate search.
 </p>		
 <hr>
-<span id="History"></span><div class="header">
+</div>
+<div class="subsection" id="History">
+<div class="header">
 <p>
 Next: <a href="#Authentication-and-_002elibPaths" accesskey="n" rel="next">Authentication and .libPaths</a>, Previous: <a href="#Help-system" accesskey="p" rel="prev">Help system</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
@@ -654,7 +487,9 @@ optional to select removal of duplicate entries and strip comments.
 hence <code>history()</code> are not currently supported in <small>R.APP</small>.
 </p>
 <hr>
-<span id="Authentication-and-_002elibPaths"></span><div class="header">
+</div>
+<div class="subsection" id="Authentication-and-_002elibPaths">
+<div class="header">
 <p>
 Previous: <a href="#History" accesskey="p" rel="prev">History</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
 </div>
@@ -683,30 +518,27 @@ system-wide directories, for non-admin users the personal library
 directory will be used.
 </p>
 <hr>
-<span id="The-Menus"></span><div class="header">
+</div>
+</div>
+<div class="section" id="The-Menus">
+<div class="header">
 <p>
 Next: <a href="#Preferences" accesskey="n" rel="next">Preferences</a>, Previous: <a href="#General-Features" accesskey="p" rel="prev">General Features</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
 </div>
 <span id="The-Menus-1"></span><h3 class="section">2.5 The Menus</h3>
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#Application-Menu" accesskey="1">Application Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#File-Menu" accesskey="2">File Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Edit-Menu" accesskey="3">Edit Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Misc-Menu" accesskey="4">Misc Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Workspace-Menu" accesskey="5">Workspace Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Packages-Menu" accesskey="6">Packages Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#The-Help-Menu" accesskey="7">The Help Menu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="section-toc">
+<li><a href="#Application-Menu" accesskey="1">Application Menu</a></li>
+<li><a href="#File-Menu" accesskey="2">File Menu</a></li>
+<li><a href="#Edit-Menu" accesskey="3">Misc Menu</a></li>
+<li><a href="#Misc-Menu" accesskey="4">Misc Menu</a></li>
+<li><a href="#Workspace-Menu" accesskey="5">Workspace Menu</a></li>
+<li><a href="#Packages-Menu" accesskey="6">Packages Menu</a></li>
+<li><a href="#The-Help-Menu" accesskey="7">The Help Menu</a></li>
+</ul>
 <hr>
-<span id="Application-Menu"></span><div class="header">
+<div class="subsection" id="Application-Menu">
+<div class="header">
 <p>
 Next: <a href="#File-Menu" accesskey="n" rel="next">File Menu</a>, Previous: <a href="#The-Menus" accesskey="p" rel="prev">The Menus</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
 </div>
@@ -721,9 +553,11 @@ for macOS is available (you need an Internet connection), 3. you can
 access the Preferences (see <a href="#Preferences">Preferences</a>).
 </p>
 <hr>
-<span id="File-Menu"></span><div class="header">
+</div>
+<div class="subsection" id="File-Menu">
+<div class="header">
 <p>
-Next: <a href="#Edit-Menu" accesskey="n" rel="next">Edit Menu</a>, Previous: <a href="#Application-Menu" accesskey="p" rel="prev">Application Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
+Next: <a href="#Edit-Menu" accesskey="n" rel="next">Misc Menu</a>, Previous: <a href="#Application-Menu" accesskey="p" rel="prev">Application Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
 </div>
 <span id="File-Menu-1"></span><h4 class="subsection">2.5.2 File Menu</h4>
 <p>This menu provides standard functionalities. 
@@ -731,7 +565,9 @@ The <em>open</em> command is associated to the action  <em>Source <acronym>R</ac
 in <acronym>R</acronym>. This is a interface to the <acronym>R</acronym> source command <code>source</code>.
 </p>
 <hr>
-<span id="Edit-Menu"></span><div class="header">
+</div>
+<div class="subsection" id="Edit-Menu">
+<div class="header">
 <p>
 Next: <a href="#Misc-Menu" accesskey="n" rel="next">Misc Menu</a>, Previous: <a href="#File-Menu" accesskey="p" rel="prev">File Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
 </div>
@@ -741,9 +577,11 @@ is <em>Edit Object</em> which is an interface to the <acronym>R</acronym> <code>
 function.
 </p>
 <hr>
-<span id="Misc-Menu"></span><div class="header">
+</div>
+<div class="subsection" id="Misc-Menu">
+<div class="header">
 <p>
-Next: <a href="#Workspace-Menu" accesskey="n" rel="next">Workspace Menu</a>, Previous: <a href="#Edit-Menu" accesskey="p" rel="prev">Edit Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
+Next: <a href="#Workspace-Menu" accesskey="n" rel="next">Workspace Menu</a>, Previous: <a href="#Edit-Menu" accesskey="p" rel="prev">Misc Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
 </div>
 <span id="Misc-Menu-2"></span><h4 class="subsection">2.5.4 Misc Menu</h4>
 <p>With this menu you can load and save the history of commands typed in the <acronym>R</acronym> Console or view what&rsquo;s currently inside.
@@ -751,7 +589,9 @@ You can also change the current working directory, let <acronym>R</acronym> show
 startup directory. From release 1.9.0 of <acronym>R</acronym> the current working directory is also shown on the main window bar.
 </p>
 <hr>
-<span id="Workspace-Menu"></span><div class="header">
+</div>
+<div class="subsection" id="Workspace-Menu">
+<div class="header">
 <p>
 Next: <a href="#Packages-Menu" accesskey="n" rel="next">Packages Menu</a>, Previous: <a href="#Misc-Menu" accesskey="p" rel="prev">Misc Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
 </div>
@@ -767,7 +607,9 @@ summary description of the objects in your workspace. Recursive objects
 (like lists, data.frame etc) can be expanded (one level only though).
 </p>
 <hr>
-<span id="Packages-Menu"></span><div class="header">
+</div>
+<div class="subsection" id="Packages-Menu">
+<div class="header">
 <p>
 Next: <a href="#The-Help-Menu" accesskey="n" rel="next">The Help Menu</a>, Previous: <a href="#Workspace-Menu" accesskey="p" rel="prev">Workspace Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
 </div>
@@ -825,7 +667,9 @@ additional tools.
 <p>For more information on this topic see also <a href="#How-to-install-packages">How to install packages</a>.
 </p>
 <hr>
-<span id="The-Help-Menu"></span><div class="header">
+</div>
+<div class="subsection" id="The-Help-Menu">
+<div class="header">
 <p>
 Previous: <a href="#Packages-Menu" accesskey="p" rel="prev">Packages Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
 </div>
@@ -834,7 +678,10 @@ Previous: <a href="#Packages-Menu" accesskey="p" rel="prev">Packages Menu</a>, U
 There are also interfaces to the R <em>help</em> and <em>help.search</em> functions as well as the <em>example</em> function. 
 </p>
 <hr>
-<span id="Preferences"></span><div class="header">
+</div>
+</div>
+<div class="section" id="Preferences">
+<div class="header">
 <p>
 Next: <a href="#R_002eapp-Bugs" accesskey="n" rel="next">R.app Bugs</a>, Previous: <a href="#The-Menus" accesskey="p" rel="prev">The Menus</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
 </div>
@@ -842,13 +689,13 @@ Next: <a href="#R_002eapp-Bugs" accesskey="n" rel="next">R.app Bugs</a>, Previou
 <p>You can set several aspects of the <acronym>R</acronym> GUI via preferences. You can access the Preferences window via the Application menu when the
 <acronym>R</acronym> Console is open.
 </p>
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#Startup" accesskey="1">Startup</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="section-toc">
+<li><a href="#Startup" accesskey="1">Startup</a></li>
+</ul>
 <hr>
-<span id="Startup"></span><div class="header">
+<div class="subsection" id="Startup">
+<div class="header">
 <p>
 Previous: <a href="#Preferences" accesskey="p" rel="prev">Preferences</a>, Up: <a href="#Preferences" accesskey="u" rel="up">Preferences</a> &nbsp; </p>
 </div>
@@ -875,19 +722,16 @@ entries, to cleanup history entries (this is very useful to remove blank
 lines when submitting multiple lines using Command-Return) and the strip
 comments before the entry is added to the history.
 </p>
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#Editor-Preferences" accesskey="1">Editor Preferences</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Syntax-Colors" accesskey="2">Syntax Colors</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Console-Colors" accesskey="3">Console Colors</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Quartz-window" accesskey="4">Quartz window</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="section-toc">
+<li><a href="#Editor-Preferences" accesskey="1">Editor Preferences</a></li>
+<li><a href="#Syntax-Colors" accesskey="2">Syntax Colors</a></li>
+<li><a href="#Console-Colors" accesskey="3">Console Colors</a></li>
+<li><a href="#Quartz-window" accesskey="4">Quartz window</a></li>
+</ul>
 <hr>
-<span id="Editor-Preferences"></span><div class="header">
+<div class="subsubsection" id="Editor-Preferences">
+<div class="header">
 <p>
 Next: <a href="#Syntax-Colors" accesskey="n" rel="next">Syntax Colors</a>, Previous: <a href="#Startup" accesskey="p" rel="prev">Startup</a>, Up: <a href="#Startup" accesskey="u" rel="up">Startup</a> &nbsp; </p>
 </div>
@@ -906,7 +750,9 @@ activated through a shell script (e.g. see or smultron, both give better
 control on how to start the editor).
 </p>					
 <hr>
-<span id="Syntax-Colors"></span><div class="header">
+</div>
+<div class="subsubsection" id="Syntax-Colors">
+<div class="header">
 <p>
 Next: <a href="#Console-Colors" accesskey="n" rel="next">Console Colors</a>, Previous: <a href="#Editor-Preferences" accesskey="p" rel="prev">Editor Preferences</a>, Up: <a href="#Startup" accesskey="u" rel="up">Startup</a> &nbsp; </p>
 </div>
@@ -914,7 +760,9 @@ Next: <a href="#Console-Colors" accesskey="n" rel="next">Console Colors</a>, Pre
 <p>Enables to select the syntax colors.
 </p>
 <hr>
-<span id="Console-Colors"></span><div class="header">
+</div>
+<div class="subsubsection" id="Console-Colors">
+<div class="header">
 <p>
 Next: <a href="#Quartz-window" accesskey="n" rel="next">Quartz window</a>, Previous: <a href="#Syntax-Colors" accesskey="p" rel="prev">Syntax Colors</a>, Up: <a href="#Startup" accesskey="u" rel="up">Startup</a> &nbsp; </p>
 </div>
@@ -922,7 +770,9 @@ Next: <a href="#Quartz-window" accesskey="n" rel="next">Quartz window</a>, Previ
 <p>Enables to select the input/output colors in R Console.
 </p>
 <hr>
-<span id="Quartz-window"></span><div class="header">
+</div>
+<div class="subsubsection" id="Quartz-window">
+<div class="header">
 <p>
 Previous: <a href="#Console-Colors" accesskey="p" rel="prev">Console Colors</a>, Up: <a href="#Startup" accesskey="u" rel="up">Startup</a> &nbsp; </p>
 </div>
@@ -931,7 +781,11 @@ Previous: <a href="#Console-Colors" accesskey="p" rel="prev">Console Colors</a>,
 </p>
 
 <hr>
-<span id="R_002eapp-Bugs"></span><div class="header">
+</div>
+</div>
+</div>
+<div class="section" id="R_002eapp-Bugs">
+<div class="header">
 <p>
 Previous: <a href="#Preferences" accesskey="p" rel="prev">Preferences</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
 </div>
@@ -955,9 +809,12 @@ console at the time of the crash (if you see that menu) to generate a
 crash report).
 </p>
 <hr>
-<span id="How-to-install-packages"></span><div class="header">
+</div>
+</div>
+<div class="chapter" id="How-to-install-packages">
+<div class="header">
 <p>
-Next: <a href="#R-and-external-applications" accesskey="n" rel="next">R and external applications</a>, Previous: <a href="#R_002eapp" accesskey="p" rel="prev">R.app</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; </p>
+Next: <a href="#R-and-external-applications" accesskey="n" rel="next">R and external applications</a>, Previous: <a href="#R_002eapp" accesskey="p" rel="prev">R.app</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
 </div>
 <span id="How-to-install-packages-1"></span><h2 class="chapter">3 How to install packages</h2>
 <p>You have several options for installing new packages on your system. We
@@ -965,19 +822,16 @@ discuss here only the GUI interface to the standard <acronym>R</acronym> functio
 <code>install.packages()</code>. For the <acronym>R</acronym> functions see the standard <acronym>R</acronym>
 documentation.
 </p>
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#Which-kind-of-packages-can-I-install-using-the-GUI_003f" accesskey="1">Which kind of packages can I install using the GUI?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Installation-of-packages" accesskey="2">Installation of packages</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Installation-of-source-packages" accesskey="3">Installation of source packages</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Where-are-the-packages-I_0027ve-installed_003f" accesskey="4">Where are the packages I've installed?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="section-toc">
+<li><a href="#Which-kind-of-packages-can-I-install-using-the-GUI_003f" accesskey="1">Which kind of packages can I install using the GUI</a></li>
+<li><a href="#Installation-of-packages" accesskey="2">Installation of packages</a></li>
+<li><a href="#Installation-of-source-packages" accesskey="3">Installation of source packages</a></li>
+<li><a href="#Where-are-the-packages-I_0027ve-installed_003f" accesskey="4">Where are the packages I&rsquo;ve installed?</a></li>
+</ul>
 <hr>
-<span id="Which-kind-of-packages-can-I-install-using-the-GUI_003f"></span><div class="header">
+<div class="section" id="Which-kind-of-packages-can-I-install-using-the-GUI_003f">
+<div class="header">
 <p>
 Next: <a href="#Installation-of-packages" accesskey="n" rel="next">Installation of packages</a>, Previous: <a href="#How-to-install-packages" accesskey="p" rel="prev">How to install packages</a>, Up: <a href="#How-to-install-packages" accesskey="u" rel="up">How to install packages</a> &nbsp; </p>
 </div>
@@ -991,9 +845,11 @@ commands (see <code>install.packages</code>) to install packages from a
 specific location other than the above mentioned ones.
 </p>
 <hr>
-<span id="Installation-of-packages"></span><div class="header">
+</div>
+<div class="section" id="Installation-of-packages">
+<div class="header">
 <p>
-Next: <a href="#Installation-of-source-packages" accesskey="n" rel="next">Installation of source packages</a>, Previous: <a href="#Which-kind-of-packages-can-I-install-using-the-GUI_003f" accesskey="p" rel="prev">Which kind of packages can I install using the GUI?</a>, Up: <a href="#How-to-install-packages" accesskey="u" rel="up">How to install packages</a> &nbsp; </p>
+Next: <a href="#Installation-of-source-packages" accesskey="n" rel="next">Installation of source packages</a>, Previous: <a href="#Which-kind-of-packages-can-I-install-using-the-GUI_003f" accesskey="p" rel="prev">Which kind of packages can I install using the GUI</a>, Up: <a href="#How-to-install-packages" accesskey="u" rel="up">How to install packages</a> &nbsp; </p>
 </div>
 <span id="Installation-of-packages-1"></span><h3 class="section">3.2 Installation of packages</h3>
 <p><acronym>R</acronym> for macOS recognizes packages in two forms: <em>binary</em> packages and <em>source</em> packages.
@@ -1038,9 +894,11 @@ in the top left list and press the <em>Install</em> button (which is now enabled
 <p>Packages can also be installed from other repositories by selecting <em>Other Repository</em> source. Enter the repository URL in the adjacent field. Note that currently the Package Installer assumes that custom repositories maintain proper hierarchy for both source and binary packages the same way <acronym>CRAN</acronym> does when using <em>Other Repository</em>. If your custom repository is flat, select <em>Other Directory URL</em> in the installation type list.
 </p>
 <hr>
-<span id="Installation-of-source-packages"></span><div class="header">
+</div>
+<div class="section" id="Installation-of-source-packages">
+<div class="header">
 <p>
-Next: <a href="#Where-are-the-packages-I_0027ve-installed_003f" accesskey="n" rel="next">Where are the packages I've installed?</a>, Previous: <a href="#Installation-of-packages" accesskey="p" rel="prev">Installation of packages</a>, Up: <a href="#How-to-install-packages" accesskey="u" rel="up">How to install packages</a> &nbsp; </p>
+Next: <a href="#Where-are-the-packages-I_0027ve-installed_003f" accesskey="n" rel="next">Where are the packages I&rsquo;ve installed?</a>, Previous: <a href="#Installation-of-packages" accesskey="p" rel="prev">Installation of packages</a>, Up: <a href="#How-to-install-packages" accesskey="u" rel="up">How to install packages</a> &nbsp; </p>
 </div>
 <span id="Installation-of-source-packages-1"></span><h3 class="section">3.3 Installation of source packages</h3>
 
@@ -1072,7 +930,9 @@ override settings in file <samp>~/.R/Makevars</samp>: see the section
 Administration Manual&rsquo;.
 </p>
 <hr>
-<span id="Where-are-the-packages-I_0027ve-installed_003f"></span><div class="header">
+</div>
+<div class="section" id="Where-are-the-packages-I_0027ve-installed_003f">
+<div class="header">
 <p>
 Previous: <a href="#Installation-of-source-packages" accesskey="p" rel="prev">Installation of source packages</a>, Up: <a href="#How-to-install-packages" accesskey="u" rel="up">How to install packages</a> &nbsp; </p>
 </div>
@@ -1102,23 +962,24 @@ current defaults by issuing
 </pre></div>
 
 <hr>
-<span id="R-and-external-applications"></span><div class="header">
+</div>
+</div>
+<div class="chapter" id="R-and-external-applications">
+<div class="header">
 <p>
-Next: <a href="#Quartz-device" accesskey="n" rel="next">Quartz device</a>, Previous: <a href="#How-to-install-packages" accesskey="p" rel="prev">How to install packages</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; </p>
+Next: <a href="#Quartz-device" accesskey="n" rel="next">Quartz device</a>, Previous: <a href="#How-to-install-packages" accesskey="p" rel="prev">How to install packages</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
 </div>
 <span id="R-and-external-applications-1"></span><h2 class="chapter">4 R and external applications</h2>
 
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#AppleScript-support" accesskey="1">AppleScript support</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#External-editors" accesskey="2">External editors</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Finder-actions" accesskey="3">Finder actions</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="section-toc">
+<li><a href="#AppleScript-support" accesskey="1">AppleScript support</a></li>
+<li><a href="#External-editors" accesskey="2">External editors</a></li>
+<li><a href="#Finder-actions" accesskey="3">Finder actions</a></li>
+</ul>
 <hr>
-<span id="AppleScript-support"></span><div class="header">
+<div class="section" id="AppleScript-support">
+<div class="header">
 <p>
 Next: <a href="#External-editors" accesskey="n" rel="next">External editors</a>, Previous: <a href="#R-and-external-applications" accesskey="p" rel="prev">R and external applications</a>, Up: <a href="#R-and-external-applications" accesskey="u" rel="up">R and external applications</a> &nbsp; </p>
 </div>
@@ -1178,7 +1039,9 @@ end try
 
 
 <hr>
-<span id="External-editors"></span><div class="header">
+</div>
+<div class="section" id="External-editors">
+<div class="header">
 <p>
 Next: <a href="#Finder-actions" accesskey="n" rel="next">Finder actions</a>, Previous: <a href="#AppleScript-support" accesskey="p" rel="prev">AppleScript support</a>, Up: <a href="#R-and-external-applications" accesskey="u" rel="up">R and external applications</a> &nbsp; </p>
 </div>
@@ -1190,7 +1053,9 @@ Alpha X (see <a href="http://www.kelehers.org/alpha/">http://www.kelehers.org/al
 </p>
 
 <hr>
-<span id="Finder-actions"></span><div class="header">
+</div>
+<div class="section" id="Finder-actions">
+<div class="header">
 <p>
 Previous: <a href="#External-editors" accesskey="p" rel="prev">External editors</a>, Up: <a href="#R-and-external-applications" accesskey="u" rel="up">R and external applications</a> &nbsp; </p>
 </div>
@@ -1210,9 +1075,12 @@ thing</em>.
 <p>If <acronym>R</acronym> is not yet running this action causes <acronym>R</acronym> to startup.
 </p>
 <hr>
-<span id="Quartz-device"></span><div class="header">
+</div>
+</div>
+<div class="chapter" id="Quartz-device">
+<div class="header">
 <p>
-Next: <a href="#Tcl_002fTk-issues" accesskey="n" rel="next">Tcl/Tk issues</a>, Previous: <a href="#R-and-external-applications" accesskey="p" rel="prev">R and external applications</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; </p>
+Next: <a href="#Tcl_002fTk-issues" accesskey="n" rel="next">Tcl/Tk issues</a>, Previous: <a href="#R-and-external-applications" accesskey="p" rel="prev">R and external applications</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
 </div>
 <span id="Quartz-device-1"></span><h2 class="chapter">5 Quartz device</h2>
 
@@ -1225,17 +1093,15 @@ running at the Mac console.  Where supported it is the default graphics
 device.
 </p>
  
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#Interactive-mode" accesskey="1">Interactive mode</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Saving-the-image" accesskey="2">Saving the image</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Copying-the-image-into-the-clipboard" accesskey="3">Copying the image into the clipboard</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="section-toc">
+<li><a href="#Interactive-mode" accesskey="1">Interactive mode</a></li>
+<li><a href="#Saving-the-image" accesskey="2">Saving the image</a></li>
+<li><a href="#Copying-the-image-into-the-clipboard" accesskey="3">Copying the image into the clipboard</a></li>
+</ul>
 <hr>
-<span id="Interactive-mode"></span><div class="header">
+<div class="section" id="Interactive-mode">
+<div class="header">
 <p>
 Next: <a href="#Saving-the-image" accesskey="n" rel="next">Saving the image</a>, Previous: <a href="#Quartz-device" accesskey="p" rel="prev">Quartz device</a>, Up: <a href="#Quartz-device" accesskey="u" rel="up">Quartz device</a> &nbsp; </p>
 </div>
@@ -1246,7 +1112,9 @@ Next: <a href="#Saving-the-image" accesskey="n" rel="next">Saving the image</a>,
 sequence you should right/control-click or hit the <tt class="key">ESC</tt> key.
 </p>
 <hr>
-<span id="Saving-the-image"></span><div class="header">
+</div>
+<div class="section" id="Saving-the-image">
+<div class="header">
 <p>
 Next: <a href="#Copying-the-image-into-the-clipboard" accesskey="n" rel="next">Copying the image into the clipboard</a>, Previous: <a href="#Interactive-mode" accesskey="p" rel="prev">Interactive mode</a>, Up: <a href="#Quartz-device" accesskey="u" rel="up">Quartz device</a> &nbsp; </p>
 </div>
@@ -1259,7 +1127,9 @@ macOS as graphics is PDF-based (so are almost all applications
 available). For other solutions, see (see <a href="#Copying-the-image-into-the-clipboard">Copying the image into the clipboard</a>) and the <code>quartz.save</code> function.
 </p>
 <hr>
-<span id="Copying-the-image-into-the-clipboard"></span><div class="header">
+</div>
+<div class="section" id="Copying-the-image-into-the-clipboard">
+<div class="header">
 <p>
 Previous: <a href="#Saving-the-image" accesskey="p" rel="prev">Saving the image</a>, Up: <a href="#Quartz-device" accesskey="u" rel="up">Quartz device</a> &nbsp; </p>
 </div>
@@ -1275,9 +1145,12 @@ version which is of higher quality as it supports vector graphics.
 
 
 <hr>
-<span id="Tcl_002fTk-issues"></span><div class="header">
+</div>
+</div>
+<div class="chapter" id="Tcl_002fTk-issues">
+<div class="header">
 <p>
-Next: <a href="#Internationalization-of-the-R_002eapp" accesskey="n" rel="next">Internationalization of the R.app</a>, Previous: <a href="#Quartz-device" accesskey="p" rel="prev">Quartz device</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; </p>
+Next: <a href="#Internationalization-of-the-R_002eapp" accesskey="n" rel="next">Internationalization of the R.app</a>, Previous: <a href="#Quartz-device" accesskey="p" rel="prev">Quartz device</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
 </div>
 <span id="Tcl_002fTk-issues-1"></span><h2 class="chapter">6 Tcl/Tk issues</h2>
 
@@ -1295,9 +1168,11 @@ would probably want to build R using the Aqua version of Tcl/Tk (see the
 builds do not work when used in the <small>R.APP</small> GUI.
 </p>
 <hr>
-<span id="Internationalization-of-the-R_002eapp"></span><div class="header">
+</div>
+<div class="chapter" id="Internationalization-of-the-R_002eapp">
+<div class="header">
 <p>
-Next: <a href="#Additional-resources" accesskey="n" rel="next">Additional resources</a>, Previous: <a href="#Tcl_002fTk-issues" accesskey="p" rel="prev">Tcl/Tk issues</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; </p>
+Next: <a href="#Additional-resources" accesskey="n" rel="next">Additional resources</a>, Previous: <a href="#Tcl_002fTk-issues" accesskey="p" rel="prev">Tcl/Tk issues</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
 </div>
 <span id="Internationalization-of-the-R_002eapp-1"></span><h2 class="chapter">7 Internationalization of the R.app</h2>
 <p><acronym>R</acronym> and the <small>R.APP</small> GUI support for internationalization. Among other
@@ -1333,22 +1208,23 @@ please read the developer documentation at
 <a href="http://developer.r-project.org/Translations30.html">http://developer.r-project.org/Translations30.html</a>.
 </p>
 <hr>
-<span id="Additional-resources"></span><div class="header">
+</div>
+<div class="chapter" id="Additional-resources">
+<div class="header">
 <p>
-Next: <a href="#Acknowledgments" accesskey="n" rel="next">Acknowledgments</a>, Previous: <a href="#Internationalization-of-the-R_002eapp" accesskey="p" rel="prev">Internationalization of the R.app</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; </p>
+Next: <a href="#Acknowledgments" accesskey="n" rel="next">Acknowledgments</a>, Previous: <a href="#Internationalization-of-the-R_002eapp" accesskey="p" rel="prev">Internationalization of the R.app</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
 </div>
 <span id="Additional-resources-1"></span><h2 class="chapter">8 Additional resources</h2>
 <p>Here are few references that can be of interest for macOS and/or developers.
 </p>
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#Apple-Developer-Connection" accesskey="1">Apple Developer Connection</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#The-R-for-macOS-Developer-page" accesskey="2">The R for macOS Developer page</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="section-toc">
+<li><a href="#Apple-Developer-Connection" accesskey="1">Apple Developer Connection</a></li>
+<li><a href="#The-R-for-macOS-Developer-page" accesskey="2">The R for macOS Developer page</a></li>
+</ul>
 <hr>
-<span id="Apple-Developer-Connection"></span><div class="header">
+<div class="section" id="Apple-Developer-Connection">
+<div class="header">
 <p>
 Next: <a href="#The-R-for-macOS-Developer-page" accesskey="n" rel="next">The R for macOS Developer page</a>, Previous: <a href="#Additional-resources" accesskey="p" rel="prev">Additional resources</a>, Up: <a href="#Additional-resources" accesskey="u" rel="up">Additional resources</a> &nbsp; </p>
 </div>
@@ -1362,7 +1238,9 @@ subscribe for free to ADC and get the latest up-to-date tools from Apple
 distributed through the App Store.
 </p>
 <hr>
-<span id="The-R-for-macOS-Developer-page"></span><div class="header">
+</div>
+<div class="section" id="The-R-for-macOS-Developer-page">
+<div class="header">
 <p>
 Previous: <a href="#Apple-Developer-Connection" accesskey="p" rel="prev">Apple Developer Connection</a>, Up: <a href="#Additional-resources" accesskey="u" rel="up">Additional resources</a> &nbsp; </p>
 </div>
@@ -1372,9 +1250,12 @@ Previous: <a href="#Apple-Developer-Connection" accesskey="p" rel="prev">Apple D
 It contains latest nightly builds of <acronym>R</acronym> and <small>R.APP</small> as well as information on tools necessary to build R.
 </p>
 <hr>
-<span id="Acknowledgments"></span><div class="header">
+</div>
+</div>
+<div class="chapter" id="Acknowledgments">
+<div class="header">
 <p>
-Next: <a href="#Miscellaneous-questions" accesskey="n" rel="next">Miscellaneous questions</a>, Previous: <a href="#Additional-resources" accesskey="p" rel="prev">Additional resources</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; </p>
+Next: <a href="#Miscellaneous-questions" accesskey="n" rel="next">Miscellaneous questions</a>, Previous: <a href="#Additional-resources" accesskey="p" rel="prev">Additional resources</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
 </div>
 <span id="Acknowledgments-1"></span><h2 class="chapter">9 Acknowledgments</h2>
 
@@ -1382,46 +1263,34 @@ Next: <a href="#Miscellaneous-questions" accesskey="n" rel="next">Miscellaneous 
 random order. Last but not least Apple for amazing OS and GUI.
 </p>
 <hr>
-<span id="Miscellaneous-questions"></span><div class="header">
+</div>
+<div class="chapter" id="Miscellaneous-questions">
+<div class="header">
 <p>
-Previous: <a href="#Acknowledgments" accesskey="p" rel="prev">Acknowledgments</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; </p>
+Previous: <a href="#Acknowledgments" accesskey="p" rel="prev">Acknowledgments</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
 </div>
 <span id="Miscellaneous-questions-1"></span><h2 class="chapter">10 Miscellaneous questions</h2>
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#How-can-I-have-a-per-session-_002eRprofile_003f" accesskey="1">How can I have a per session .Rprofile?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f" accesskey="2">What happens if I drag a file on the R icon?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" accesskey="3">How can I interrupt lengthy operations or output?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="4">I see spurious error messages when starting R!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" accesskey="5">Which BLAS is used and how can it be changed?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="6">I don't see a thing when installing packages!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="7">Why are there faint lines in image plots?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="8">Why doesn't R GUI support keyboard shortcut XYZ ?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="9">What is the difference between the CRAN build and a vanilla build?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f">Why is R.home() not versioned?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#R_002eapp-GUI-crashes-on-startup_0021">R.app GUI crashes on startup!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Why-is-the-GUI-not-saving-my-history_003f">Why is the GUI not saving my history?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f">I get ``command not found'' in the GUI yet it works in the Terminal -- why?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-see-no-text-in-a-Quartz-plot_0021">I see no text in a Quartz plot!</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#I-cannot-attach-debugger-to-R">I cannot attach debugger to R</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="section-toc">
+<li><a href="#How-can-I-have-a-per-session-_002eRprofile_003f" accesskey="1">How can I have a per session .Rprofile?</a></li>
+<li><a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f" accesskey="2">What happens if I drag a file on the R icon?</a></li>
+<li><a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" accesskey="3">How can I interrupt lengthy operations or output?</a></li>
+<li><a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="4">I see spurious error messages when starting R!</a></li>
+<li><a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" accesskey="5">Which BLAS is used and how can it be changed?</a></li>
+<li><a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="6">I don&rsquo;t see a thing when installing packages!</a></li>
+<li><a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="7">Why are there faint lines in image plots?</a></li>
+<li><a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="8">Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</a></li>
+<li><a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="9">What is the difference between the CRAN build and a vanilla build?</a></li>
+<li><a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f">Why is R.home() in the R framework not versioned?</a></li>
+<li><a href="#R_002eapp-GUI-crashes-on-startup_0021">R.app GUI crashes on startup!</a></li>
+<li><a href="#Why-is-the-GUI-not-saving-my-history_003f">Why is the GUI not saving my history?</a></li>
+<li><a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f">I get &ldquo;command not found&rdquo; in the GUI yet it works in the Terminal &ndash; why?</a></li>
+<li><a href="#I-see-no-text-in-a-Quartz-plot_0021">I see no text in a Quartz plot!</a></li>
+<li><a href="#I-cannot-attach-debugger-to-R">I cannot attach debugger to R</a></li>
+</ul>
 <hr>
-<span id="How-can-I-have-a-per-session-_002eRprofile_003f"></span><div class="header">
+<div class="section" id="How-can-I-have-a-per-session-_002eRprofile_003f">
+<div class="header">
 <p>
 Next: <a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f" accesskey="n" rel="next">What happens if I drag a file on the R icon?</a>, Previous: <a href="#Miscellaneous-questions" accesskey="p" rel="prev">Miscellaneous questions</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
@@ -1430,7 +1299,9 @@ Next: <a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f" accesskey="n" 
 session directory and change accordingly the startup working directory using the Preferences (see <a href="#The-current-and-startup-working-directories">The current and startup working directories</a>).
 </p>
 <hr>
-<span id="What-happens-if-I-drag-a-file-on-the-R-icon_003f"></span><div class="header">
+</div>
+<div class="section" id="What-happens-if-I-drag-a-file-on-the-R-icon_003f">
+<div class="header">
 <p>
 Next: <a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" accesskey="n" rel="next">How can I interrupt lengthy operations or output?</a>, Previous: <a href="#How-can-I-have-a-per-session-_002eRprofile_003f" accesskey="p" rel="prev">How can I have a per session .Rprofile?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
@@ -1439,7 +1310,9 @@ Next: <a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" accesskey
 yet running it will be launched.
 </p>
 <hr>
-<span id="How-can-I-interrupt-lengthy-operations-or-output_003f"></span><div class="header">
+</div>
+<div class="section" id="How-can-I-interrupt-lengthy-operations-or-output_003f">
+<div class="header">
 <p>
 Next: <a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="n" rel="next">I see spurious error messages when starting R!</a>, Previous: <a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f" accesskey="p" rel="prev">What happens if I drag a file on the R icon?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
@@ -1460,7 +1333,9 @@ that case it may be worth alerting the maintainer of the package to
 allow interruption (if appropriate).
 </p>
 <hr>
-<span id="I-see-spurious-error-messages-when-starting-R_0021"></span><div class="header">
+</div>
+<div class="section" id="I-see-spurious-error-messages-when-starting-R_0021">
+<div class="header">
 <p>
 Next: <a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" accesskey="n" rel="next">Which BLAS is used and how can it be changed?</a>, Previous: <a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" accesskey="p" rel="prev">How can I interrupt lengthy operations or output?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
@@ -1487,9 +1362,11 @@ include those hacks that are incompatible with your new Mac).
 <p>in the Terminal. Note, however, that this will disable <em>all</em> error output from external programs including package installation or the <code>system</code> command.
 </p>
 <hr>
-<span id="Which-BLAS-is-used-and-how-can-it-be-changed_003f"></span><div class="header">
+</div>
+<div class="section" id="Which-BLAS-is-used-and-how-can-it-be-changed_003f">
+<div class="header">
 <p>
-Next: <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="n" rel="next">I don't see a thing when installing packages!</a>, Previous: <a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="p" rel="prev">I see spurious error messages when starting R!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
+Next: <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="n" rel="next">I don&rsquo;t see a thing when installing packages!</a>, Previous: <a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="p" rel="prev">I see spurious error messages when starting R!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
 <span id="Which-BLAS-is-used-and-how-can-it-be-changed_003f-1"></span><h3 class="section">10.5 Which BLAS is used and how can it be changed?</h3>
 
@@ -1527,7 +1404,9 @@ libraries, corresponding to the configuration options used.
 <p>The BLAS library used is displayed in <code>sessionInfo()</code>.
 </p>
 <hr>
-<span id="I-don_0027t-see-a-thing-when-installing-packages_0021"></span><div class="header">
+</div>
+<div class="section" id="I-don_0027t-see-a-thing-when-installing-packages_0021">
+<div class="header">
 <p>
 Next: <a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="n" rel="next">Why are there faint lines in image plots?</a>, Previous: <a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" accesskey="p" rel="prev">Which BLAS is used and how can it be changed?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
@@ -1543,9 +1422,11 @@ error console instead of the screen. You may want to check the
 </p>
 
 <hr>
-<span id="Why-are-there-faint-lines-in-image-plots_003f"></span><div class="header">
+</div>
+<div class="section" id="Why-are-there-faint-lines-in-image-plots_003f">
+<div class="header">
 <p>
-Next: <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="n" rel="next">Why doesn't R GUI support keyboard shortcut XYZ ?</a>, Previous: <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="p" rel="prev">I don't see a thing when installing packages!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
+Next: <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="n" rel="next">Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</a>, Previous: <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="p" rel="prev">I don&rsquo;t see a thing when installing packages!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
 <span id="Why-are-there-faint-lines-in-image-plots_003f-1"></span><h3 class="section">10.7 Why are there faint lines in image plots?</h3>
 
@@ -1566,7 +1447,9 @@ does not.
 without border.
 </p>
 <hr>
-<span id="Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f"></span><div class="header">
+</div>
+<div class="section" id="Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f">
+<div class="header">
 <p>
 Next: <a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="n" rel="next">What is the difference between the CRAN build and a vanilla build?</a>, Previous: <a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="p" rel="prev">Why are there faint lines in image plots?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
@@ -1582,9 +1465,11 @@ details see Apple&rsquo;s documentation on
 customization, search for <code>StandardKeyBinding.dict</code>.
 </p>
 <hr>
-<span id="What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f"></span><div class="header">
+</div>
+<div class="section" id="What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f">
+<div class="header">
 <p>
-Next: <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" accesskey="n" rel="next">Why is R.home() not versioned?</a>, Previous: <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="p" rel="prev">Why doesn't R GUI support keyboard shortcut XYZ ?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
+Next: <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" accesskey="n" rel="next">Why is R.home() in the R framework not versioned?</a>, Previous: <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="p" rel="prev">Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
 <span id="What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f-1"></span><h3 class="section">10.9 What is the difference between the CRAN build and a vanilla build?</h3>
 
@@ -1603,7 +1488,9 @@ and packages are available in
 <a href="https://mac.R-project.org/libs-4">https://mac.R-project.org/libs-4</a>
 </p>
 <hr>
-<span id="Why-is-R_002ehome_0028_0029-not-versioned_003f"></span><div class="header">
+</div>
+<div class="section" id="Why-is-R_002ehome_0028_0029-not-versioned_003f">
+<div class="header">
 <p>
 Next: <a href="#R_002eapp-GUI-crashes-on-startup_0021" accesskey="n" rel="next">R.app GUI crashes on startup!</a>, Previous: <a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="p" rel="prev">What is the difference between the CRAN build and a vanilla build?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
@@ -1630,9 +1517,11 @@ not work with incorrect setting.  Finally, if such an R start script
 happens to get copied and the R version changes, it will stop working.
 </p>
 <hr>
-<span id="R_002eapp-GUI-crashes-on-startup_0021"></span><div class="header">
+</div>
+<div class="section" id="R_002eapp-GUI-crashes-on-startup_0021">
+<div class="header">
 <p>
-Next: <a href="#Why-is-the-GUI-not-saving-my-history_003f" accesskey="n" rel="next">Why is the GUI not saving my history?</a>, Previous: <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" accesskey="p" rel="prev">Why is R.home() not versioned?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
+Next: <a href="#Why-is-the-GUI-not-saving-my-history_003f" accesskey="n" rel="next">Why is the GUI not saving my history?</a>, Previous: <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" accesskey="p" rel="prev">Why is R.home() in the R framework not versioned?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
 <span id="R_002eapp-GUI-crashes-on-startup_0021-1"></span><h3 class="section">10.11 R.app GUI crashes on startup!</h3>
 
@@ -1670,9 +1559,11 @@ console) and send us the resulting crash report (see see <a href="#R_002eapp-Bug
 above).
 </p>
 <hr>
-<span id="Why-is-the-GUI-not-saving-my-history_003f"></span><div class="header">
+</div>
+<div class="section" id="Why-is-the-GUI-not-saving-my-history_003f">
+<div class="header">
 <p>
-Next: <a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f" accesskey="n" rel="next">I get ``command not found'' in the GUI yet it works in the Terminal -- why?</a>, Previous: <a href="#R_002eapp-GUI-crashes-on-startup_0021" accesskey="p" rel="prev">R.app GUI crashes on startup!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
+Next: <a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f" accesskey="n" rel="next">I get &ldquo;command not found&rdquo; in the GUI yet it works in the Terminal &ndash; why?</a>, Previous: <a href="#R_002eapp-GUI-crashes-on-startup_0021" accesskey="p" rel="prev">R.app GUI crashes on startup!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
 <span id="Why-is-the-GUI-not-saving-my-history_003f-1"></span><h3 class="section">10.12 Why is the GUI not saving my history?</h3>
 
@@ -1686,7 +1577,9 @@ save the history of the <small>R.APP</small> session: this means that
 <code>history()</code> will show an empty window.
 </p>
 <hr>
-<span id="I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f"></span><div class="header">
+</div>
+<div class="section" id="I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f">
+<div class="header">
 <p>
 Next: <a href="#I-see-no-text-in-a-Quartz-plot_0021" accesskey="n" rel="next">I see no text in a Quartz plot!</a>, Previous: <a href="#Why-is-the-GUI-not-saving-my-history_003f" accesskey="p" rel="prev">Why is the GUI not saving my history?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
@@ -1705,9 +1598,11 @@ selectively modify the existing <code>PATH</code> variable via
 <code>Sys.getenv</code> and <code>Sys.setenv</code>.
 </p>
 <hr>
-<span id="I-see-no-text-in-a-Quartz-plot_0021"></span><div class="header">
+</div>
+<div class="section" id="I-see-no-text-in-a-Quartz-plot_0021">
+<div class="header">
 <p>
-Next: <a href="#I-cannot-attach-debugger-to-R" accesskey="n" rel="next">I cannot attach debugger to R</a>, Previous: <a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f" accesskey="p" rel="prev">I get ``command not found'' in the GUI yet it works in the Terminal -- why?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
+Next: <a href="#I-cannot-attach-debugger-to-R" accesskey="n" rel="next">I cannot attach debugger to R</a>, Previous: <a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f" accesskey="p" rel="prev">I get &ldquo;command not found&rdquo; in the GUI yet it works in the Terminal &ndash; why?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
 <span id="I-see-no-text-in-a-Quartz-plot_0021-1"></span><h3 class="section">10.14 I see no text in a Quartz plot!</h3>
 
@@ -1722,7 +1617,9 @@ appear as it should), remove such fonts.
 
 
 <hr>
-<span id="I-cannot-attach-debugger-to-R"></span><div class="header">
+</div>
+<div class="section" id="I-cannot-attach-debugger-to-R">
+<div class="header">
 <p>
 Previous: <a href="#I-see-no-text-in-a-Quartz-plot_0021" accesskey="p" rel="prev">I see no text in a Quartz plot!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
 </div>
@@ -1750,7 +1647,9 @@ tar fxz R-4.1-branch.tar.gz -C /
 
 <p>If you are not the administrator, you may have to use <code>sudo tar ...</code>.
 </p>
-<hr>
+</div>
+</div>
+</div>
 
 
 
