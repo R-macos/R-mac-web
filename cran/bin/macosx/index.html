@@ -43,17 +43,17 @@ This release supports Intel Macs, but it is also known to work using Rosetta2 on
 </td></tr>
 <tr valign=top>
 <td width="30%"><a href="big-sur-arm64/base/R-4.1.3-arm64.pkg">R-4.1.3-arm64.pkg</a>&nbsp;(notarized&nbsp;and&nbsp;signed)<br>
-<font size=-2>SHA1-hash:&nbsp;dad405d4f58349403c4976ba50e944502070b209
-</font><br><font size=-1>(ca. 83MB) for M1 Macs only!</font>
+<font size=-2>SHA1-hash:&nbsp;4e702650f8967bc388ae31d897a4ae888dd6e89b
+</font><br><font size=-1>(ca. 86MB) for M1 Macs only!</font>
 </td>
 <td width="70%">
   <b>R 4.1.3</b> binary for macOS 11 (<b>Big Sur</b>) and higher, <b>Apple silicon arm64</b> build, signed and notarized package.<br>
-  Contains R 4.1.3 framework, R.app GUI 1.77 for Apple silicon Macs (M1 and higher), Tcl/Tk 8.6.11 X11 libraries and Texinfo 6.7.<br>
+  Contains R 4.1.3 framework, R.app GUI 1.77 for Apple silicon Macs (M1 and higher), Tcl/Tk 8.6.12 X11 libraries and Texinfo 6.8.<br>
   <b>Important: this version does NOT work on older Intel-based Macs.</b><br>
 <p>
 Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a>. Always re-install XQuartz when upgrading your macOS to a new major version.
 <p>
-This release uses Xcode 12.4 and experimental GNU Fortran 11 arm64 fork. If you wish to compile R packages from sources, you may need to download GNU Fortran for arm64 from <a href=https://mac.R-project.org/libs-arm64/>https://mac.R-project.org/libs-arm64</a>. Any external libraries and tools are expected to live in <tt>/opt/R/arm64</tt> to not conflict with Intel-based software and this build will not use <tt>/usr/local</tt> to avoid such conflicts.
+This release uses Xcode 13.1 and experimental GNU Fortran 11 arm64 fork. If you wish to compile R packages from sources, you may need to download GNU Fortran for arm64 from <a href=https://mac.R-project.org/libs-arm64/>https://mac.R-project.org/libs-arm64</a>. Any external libraries and tools are expected to live in <tt>/opt/R/arm64</tt> to not conflict with Intel-based software and this build will not use <tt>/usr/local</tt> to avoid such conflicts.
 <br>&nbsp;
 </td></tr>
 <tr valign=top>
@@ -146,8 +146,8 @@ Information, tools and most recent <b>daily builds of the R GUI, R-patched and R
 <p>
 Package maintainers should visit <a href="http://cran.r-project.org/src/contrib/checkSummary.html">CRAN check summary</a> page to see whether their package is compatible with the current build of R for macOS.
 <p>
-Binary libraries for dependencies not present here are available from <a href=http://mac.R-project.org/libs/  target=_top>http://mac.R-project.org/libs</a> and corresponding sources at <a href=http://mac.R-project.org/src/ target=_top>http://mac.R-project.org/src</a>.
+Binary libraries for dependencies not present here are available from <a href=http://mac.R-project.org/bin/  target=_top>http://mac.R-project.org/bin</a> and corresponding sources at <a href=http://mac.R-project.org/src/ target=_top>http://mac.R-project.org/src</a>.
 <hr>
-<p>Last modified: 2022/03/10, by Simon Urbanek</p>
+<p>Last modified: 2022/03/17, by Simon Urbanek</p>
 </body>
 </html>
