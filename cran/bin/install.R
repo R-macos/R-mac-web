@@ -4,10 +4,12 @@
 # Installs static binaries of libraries used by CRAN to build packages.
 # See https://github.com/R-macos/recipes
 #
-# (C)2021 R Core Team, License: MIT, Author: Simon Urbanek
+# (C)2021-22 R Core Team, License: MIT, Author: Simon Urbanek
 
 install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
-                         os=R.version$os, arch=R.version$arch, os.arch="auto",
+                         os=tolower(paste0(system("uname -s", intern=TRUE),
+			   gsub("\\..*", "", system("uname -r", intern=TRUE)))),
+			 arch=system("uname -m", intern=TRUE), os.arch="auto",
 			 dependencies=TRUE, action=c("install", "list")) {
     up <- function(...) paste(..., sep='/')
     action <- match.arg(action)
@@ -26,7 +28,7 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
         rl$os.name <- os.name(rl$os)
         rl$os.ver <- os.ver(rl$os)
 
-        rl <- rl[rl$os.name == os.name(os) && rl$os.ver <= os.ver(os),]
+        rl <- rl[rl$os.name == os.name(os) & rl$os.ver <= os.ver(os),]
         if (nrow(rl) < 1)
             stop("There is no repository that supports ", os.name(os), " version ", os.ver(os), " or higher.\nAvailable binaries only support: ",
 	         paste(rla[1,], collapse=", "))
@@ -53,7 +55,7 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
         if (any(mis)) stop("Following binaries have no download candidates: ", paste(pkgs[mis], ", "))
 
         dep <- function(pkgs) {
-            nd <- unique(c(pkgs, unlist(strsplit(db[pkgs, "BuiltWith"],", *"))))
+            nd <- na.omit(unique(c(pkgs, unlist(strsplit(db[pkgs, "BuiltWith"],"[, ]+")))))
             if (length(unique(pkgs)) < length(nd)) dep(nd) else nd
         }
         if (dependencies) dep(pkgs) else pkgs
@@ -70,7 +72,7 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
 
     if (action == "install") for (u in urls) {
         cat("Downloading + installing ", u, "...\n")
-        if (system(paste("curl", "-L", shQuote(u), "|", "tar fxj - -C /")) != 0)
+        if (system(paste("curl", "-sSL", shQuote(u), "|", "tar fxj - -C /")) < 0)
             stop("Failed to install from ", u)
     } else urls
 }
