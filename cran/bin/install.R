@@ -65,9 +65,16 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
     cat("Downloading index ", pindex, "...\n")
     db <- read.dcf(u <- url(pindex))
     close(u)
-    rownames(db) <- paste(db[,"Package"], db[,"Version"], sep='-')
+    rownames(db) <- if ("Bundle" %in% colnames(db))
+       ifelse(is.na(db[,"Bundle"]),
+              paste(db[,"Package"], db[,"Version"], sep='-'),
+	      db[,"Bundle"]) else
+       paste(db[,"Package"], db[,"Version"], sep='-')
 
     need <- deps(pkgs, db)
+    ## remove bundles as they have no binary
+    if ("Bundle" %in% colnames(db) && any(rem <- need %in% na.omit(db[,"Bundle"])))
+       need <- need[!rem]
     urls <- up(url, os.arch, db[need, "Binary"])
 
     if (action == "install") for (u in urls) {
