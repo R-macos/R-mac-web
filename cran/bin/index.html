@@ -56,6 +56,9 @@
     <a href="https://github.com/R-macos/recipes" target="_new">recipes</a>
     build system.</p>
 
+  <p>You can also use a special value <tt>"all"</tt>
+    which will install (or list) all avaiable binaries.</p>
+
   <p>Note that tools (such as subversion or emacs) can be downloaded
   individualy and don't require their build dependencies in order to
   be used, so you can use, for example:</p>
@@ -63,13 +66,14 @@
   <pre>install.libs("subversion", dep=FALSE)</pre>
     
   <p>The dependecies are only required for libraries to link
-  against them.</p>
+    against them.</p>
 
   <h2>Options</h2>
 
   <p>The <tt>install.libs</tt> function has following arguments:</p>
   <ul>
-    <li><tt>pkgs</tt> - character vector, names of binaries to install</li>
+    <li><tt>pkgs</tt> - character vector, names of binaries to install
+    (or <tt>"all"</tt> to install all)</li>
     <li><tt>url</tt> - URL of the repostiory root</li>
     <li><tt>os</tt>, <tt>arch</tt> - name and version of the OS and
       the architecture to determine suitable repository.
@@ -87,7 +91,7 @@
 	<li><tt>"install"</tt> downloads and installs the
 	  packages</li>
 	<li><tt>"list"</tt> only returns the list of URLs to
-	  download</li>
+	  download (character vector)</li>
       </ul>
     </li>
   </ul>
