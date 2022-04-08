@@ -52,9 +52,12 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
 
         ## any missing?
         mis <- ! pkgs %in% rownames(db)
-        if (any(mis)) stop("Following binaries have no download candidates: ", paste(pkgs[mis], ", "))
+        if (any(mis)) stop("Following binaries have no download candidates: ", paste(pkgs[mis], collapse=", "))
 
         dep <- function(pkgs) {
+            mis <- ! pkgs %in% rownames(db)
+            if (any(mis)) stop("Following binaries have no download candidates: ", paste(pkgs[mis], collapse=", "))
+
             nd <- na.omit(unique(c(pkgs, unlist(strsplit(db[pkgs, "BuiltWith"],"[, ]+")))))
             if (length(unique(pkgs)) < length(nd)) dep(nd) else nd
         }
@@ -71,6 +74,7 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
 	      db[,"Bundle"]) else
        paste(db[,"Package"], db[,"Version"], sep='-')
 
+    if (identical(pkgs, "all")) pkgs <- na.omit(db[,"Package"])
     need <- deps(pkgs, db)
     ## remove bundles as they have no binary
     if ("Bundle" %in% colnames(db) && any(rem <- need %in% na.omit(db[,"Bundle"])))
@@ -84,4 +88,4 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
     } else urls
 }
 
-cat("\n Usage: install.libs(names)\n\n Example: install.libs('cairo')\n\n names can be a vector.\n See args(install.libs) for defaults.\n\n")
+cat("\n Usage: install.libs(names)\n\n Example: install.libs('cairo')\n\n names can be a vector or a special value 'all'.\n See args(install.libs) for defaults.\n\n")
