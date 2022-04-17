@@ -40,7 +40,12 @@
   (Big Sur) and higher.</p>
 
   <p>NOTE: if you don't have write-permission in the installation location,
-  you may need to make it writable or run <tt>sudo R</tt>.</p>
+    you may need to make it writable or run <tt>sudo R</tt>.</p>
+
+  <p>Bundles are also supported, so if you want to install all
+    libraries used by CRAN to build R releases, you can use:
+
+  <pre>install.libs("r-base-dev")</pre>
 
   <h2>Details</h2>
 
@@ -57,7 +62,8 @@
     build system.</p>
 
   <p>You can also use a special value <tt>"all"</tt>
-    which will install (or list) all avaiable binaries.</p>
+    which will install (or list) all avaiable binaries (including
+    tools - this is quite big!).</p>
 
   <p>Note that tools (such as subversion or emacs) can be downloaded
   individualy and don't require their build dependencies in order to
@@ -75,7 +81,7 @@
     <li><tt>pkgs</tt> - character vector, names of binaries to install
     (or <tt>"all"</tt> to install all)</li>
     <li><tt>url</tt> - URL of the repostiory root</li>
-    <li><tt>os</tt>, <tt>arch</tt> - name and version of the OS and
+    <li><tt>os</tt>,<br><tt>arch</tt> - name and version of the OS and
       the architecture to determine suitable repository.
       This is only used if <tt>os.arch="auto"</tt>.</li>
     <li><tt>os.arch</tt> - either name of the repository such as
@@ -95,5 +101,18 @@
       </ul>
     </li>
   </ul>
+  <h2>Receipts</h2>
+  The recipes build system creates receipts for each tar ball which
+  lists all files included in the package. Those lists are installed
+  in the <tt>pkg</tt> subdirectory of the installation location, so on
+  arm64 Mac you would find the list for <tt>openssl</tt>
+  version <tt>1.1.1m</tt> in
+  <tt>/opt/R/arm64/pkg/openssl-1.1.1m-darwin.20-arm64.list</tt>.
+  This can be used to remove individual packages if desired (but be
+  careful to not break dependencies). It also allows you to find the
+  package name for a particular file, e.g. to find the package
+  providing <tt>libcrypto</tt>:
+  <pre>$ grep lib/libcrypto /opt/R/arm64/pkg/*
+/opt/R/arm64/pkg/openssl-1.1.1m-darwin.20-arm64.list:opt/R/arm64/lib/libcrypto.a</pre>
 </body>
 </html>
