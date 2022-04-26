@@ -35,7 +35,7 @@
   <b>R 4.2.0</b> binary for macOS 10.13 (<b>High Sierra</b>) and higher, <b>Intel 64-bit</b> build, signed and notarized package.<br>
   Contains R 4.2.0 framework, R.app GUI 1.78 in 64-bit for Intel Macs, Tcl/Tk 8.6.6 X11 libraries and Texinfo 6.7. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
 <p>
-Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a> to be installed since it is no longer part of OS X. Always re-install XQuartz when upgrading your macOS to a new major version.
+Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a> to be installed (version 2.7.11 or later) since it is no longer part of macOS. Always re-install XQuartz when upgrading your macOS to a new major version.
 <p>
 This release supports Intel Macs, but it is also known to work using Rosetta2 on M1-based Macs. For native Apple silicon arm64 binary see below.
 <p>
@@ -52,7 +52,7 @@ This release supports Intel Macs, but it is also known to work using Rosetta2 on
   Contains R 4.2.0 framework, R.app GUI 1.78 for Apple silicon Macs (M1 and higher), Tcl/Tk 8.6.12 X11 libraries and Texinfo 6.8.<br>
   <b>Important: this version does NOT work on older Intel-based Macs.</b><br>
 <p>
-Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a>. Always re-install XQuartz when upgrading your macOS to a new major version.
+Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a> (version 2.8.1 or later). Always re-install XQuartz when upgrading your macOS to a new major version.
 <p>
 This release uses Xcode 13.1 and experimental GNU Fortran 12 arm64 fork. If you wish to compile R packages which contain Fortran code, you may need to download GNU Fortran for arm64 from <a href=https://mac.R-project.org/tools/>https://mac.R-project.org/tools</a>. Any external libraries and tools are expected to live in <tt>/opt/R/arm64</tt> to not conflict with Intel-based software and this build will not use <tt>/usr/local</tt> to avoid such conflicts (see the <a href=https://mac.R-project.org/tools/>tools page</a> for more details).
 <br>&nbsp;
@@ -149,6 +149,6 @@ Package maintainers should visit <a href="http://cran.r-project.org/src/contrib/
 <p>
 Binary libraries for dependencies not present here are available from <a href=http://mac.R-project.org/bin/  target=_top>http://mac.R-project.org/bin</a> and corresponding sources at <a href=http://mac.R-project.org/src/ target=_top>http://mac.R-project.org/src</a>.
 <hr>
-<p>Last modified: 2022/04/22, by Simon Urbanek</p>
+<p>Last modified: 2022/04/27, by Simon Urbanek</p>
 </body>
 </html>
