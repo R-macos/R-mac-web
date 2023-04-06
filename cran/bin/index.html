@@ -55,6 +55,7 @@
     <tr align=left><th>Name</th><th>Installation Location</th><th>Target</th></tr>
     <tr><td><a href="darwin17/x86_64">darwin17/x86_64</a></td><td><tt>/usr/local</tt></td><td>macOS 10.13, Intel (x86_64)</td></tr>
     <tr><td><a href="darwin20/arm64">darwin20/arm64</a></td><td><tt>/opt/R/arm64</tt></td><td>macOS 11, Apple M1 (arm64)</tr>
+    <tr><td><a href="darwin20/x86_64">darwin20/x86_64</a></td><td><tt>/opt/R/x86_64</tt></td><td>macOS 11, Intel (x86_64)</tr>
   </table>
 
   <p>All binaries are built automatically using the 
@@ -86,9 +87,9 @@
       This is only used if <tt>os.arch="auto"</tt>.</li>
     <li><tt>os.arch</tt> - either name of the repository such as
       <tt>darwin20/arm64</tt> or <tt>auto</tt> if the most suitable
-      repostiroy based on the above arguments <tt>os</tt>
+      repository based on the above arguments <tt>os</tt>
       and <tt>arch</tT> is to be detected from the list of published
-      repostiories at the <tt>url</tt> root.</li>
+      repositories at the <tt>url</tt> root.</li>
     <li><tt>dependencies</tt> - logical, if <tt>TRUE</tt> then
       build dependencies are also installed, otherwise only the listed
       packages are installed.</li>
