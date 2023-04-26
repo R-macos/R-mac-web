@@ -10,7 +10,8 @@
 
 <h1>R for macOS</h1>
 
-<p>This directory contains binaries for a base distribution and packages to run on macOS. Releases for old Mac OS X systems (through Mac OS X 10.5) and PowerPC Macs can be found in the <a href="old">old</a> directory. Package binaries for R versions older than 3.2.0 are only available from the <a href=https://cran-archive.r-project.org/bin/macosx/>CRAN archive</a> so users of such versions should adjust the CRAN mirror setting (<tt>https://cran-archive.r-project.org</tt>) accordingly.
+<p>This directory contains binaries for the base distribution and of R and packages to run on macOS. <!-- Releases for old Mac OS X systems (through Mac OS X 10.5) and PowerPC Macs can be found in the <a href="old">old</a> directory. -->
+R and package binaries for R versions older than 4.0.0 are only available from the <a href=https://cran-archive.r-project.org/bin/macosx/>CRAN archive</a> so users of such versions should adjust the CRAN mirror setting (<tt>https://cran-archive.r-project.org</tt>) accordingly.
 
 <p>Note: Although we take precautions when assembling binaries, please use the normal precautions with downloaded executables.</p>
 
@@ -62,9 +63,22 @@ This release uses Xcode 14.2/14.3 and GNU Fortran 12.2. If you wish to compile R
 <br><br></td>
 </tr>
 <tr><td colspan=2>
-Note: Previous R versions for El Capitan can be found in the <a href=el-capitan/base/>el-capitan/base</a> directory.
+Note: Previous R versions for El Capitan can be found in the CRAN archive in the <a href=https://cran-archive.r-project.org/bin/macosx/el-capitan/base/>el-capitan/base</a> directory.
 <br>
-<h2>Binaries for legacy OS X systems:</h2></td></tr>
+<h2>Binaries for legacy macOS/OS X systems:</h2></td></tr>
+<tr valign=top>
+<td width="30%"><a href="base/R-4.2.3.pkg">R-4.2.3.pkg</a>&nbsp;(notarized&nbsp;and&nbsp;signed)<br>
+<font size=-2>SHA1-hash:&nbsp;82a1871bad7cd90c15117d46134183c4d38f8e14
+</font><br><font size=-1>(ca. 89MB) for Intel Macs</font>
+</td>
+<td width="70%">
+  <b>R 4.2.3</b> binary for macOS 10.13 (High Sierra) and higher, signed and notarized package. Contains R 4.2.3 framework, R.app GUI 1.79 in 64-bit for Intel Macs, Tcl/Tk 8.6.6 X11 libraries and Texinfo 6.7. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
+<p>
+Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a> to be installed (version 2.7.11 or later) since it is no longer part of macOS. Always re-install XQuartz when upgrading your macOS to a new major version.
+<p>
+This release uses Xcode 12.4 and GNU Fortran 8.2. If you wish to compile R packages from sources, you may need to download GNU Fortran 8.2 - see the <a href=tools/>tools</a> directory.
+<br>&nbsp;
+</td></tr>
 <tr valign=top>
   <td width="30%">
     <a href="R-3.6.3.nn.pkg">R-3.6.3.nn.pkg</a>&nbsp;(signed)<br>
@@ -115,7 +129,7 @@ The new R.app Cocoa GUI has been written by Simon Urbanek and Stefano Iacus with
     <td width="30%"><a href="big-sur-x86_64/">big-sur-x86_64</a></td>
     <td width="70%">Binaries for macOS 11 or higher (Big Sur) for Intel-based Macs</td>
   </tr>
-  <tr><td colspan=2><hr><center>(The following contain older binaries)</center></td></tr>
+  <tr><td colspan=2><hr>The following directories contain older binaries. For even older versions, please see the <a href=https://cran-archive.r-project.org/bin/macosx/>CRAN archive</a>.</td></tr>
   <tr>
     <td width="30%"><a href="base/">base</a></td>
     <td width="70%">Binaries of R builds for macOS 10.13 or higher (High Sierra), Intel build</td>
@@ -123,18 +137,6 @@ The new R.app Cocoa GUI has been written by Simon Urbanek and Stefano Iacus with
   <tr>
     <td width="30%"><a href="contrib/">contrib</a></td>
     <td width="70%">Binaries of package builds for macOS 10.13 or higher (High Sierra), Intel build</td>
-  </tr>
-  <tr>
-    <td width="30%"><a href="el-capitan/">el-capitan</a></td>
-    <td width="70%">Binaries of package builds for OS X 10.11 or higher (El Capitan build)</td>
-  </tr>
-  <tr>
-    <td width="30%"><a href="mavericks/">mavericks</a></td>
-    <td width="70%">Binaries of package builds for Mac OS X 10.9 or higher (Mavericks build)</td>
-  </tr>
-  <tr>
-    <td width="30%"><a href="old/">old</a></td>
-    <td width="70%">Previously released R versions for Mac OS X</td>
   </tr>
 </table>
 
@@ -146,6 +148,6 @@ Package maintainers should visit <a href="http://cran.r-project.org/src/contrib/
 <p>
 Binary libraries for dependencies not present here are available from <a href=http://mac.R-project.org/bin/  target=_top>http://mac.R-project.org/bin</a> and corresponding sources at <a href=http://mac.R-project.org/src/ target=_top>http://mac.R-project.org/src</a>.
 <hr>
-<p>Last modified: 2023/04/21, by Simon Urbanek</p>
+<p>Last modified: 2023/04/26, by Simon Urbanek</p>
 </body>
 </html>
