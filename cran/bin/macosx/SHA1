@@ -50,3 +50,6 @@ SHA1(big-sur-arm64/base/R-4.3.0-arm64.pkg)= 8ee0276daa9841993f218ebd2a8a7aa86c00
 SHA1(big-sur-arm64/base/R-4.3.1-arm64.pkg)= 14c018ff54f7f5bb37c1d96b33207343b83e9345
 SHA1(big-sur-x86_64/base/R-4.3.0-x86_64.pkg)= d28e528c8e3ee761aa4b871a8d444a1bfbee9bd3
 SHA1(big-sur-x86_64/base/R-4.3.1-x86_64.pkg)= 1af8f055a601d5de5dfefdb3956ecc8f745c2401
+SHA1(big-sur-arm64/base/R-4.3.2-arm64.pkg)= 763be9944ad00ed405972c73e9960ce4e55399d4
+SHA1(big-sur-x86_64/base/R-4.3.2-x86_64.pkg)= 3d68ea6698add258bd7a4a5950152f4072eee8b2
+SHA1(Mac-GUI-1.80.tar.gz)= 5cdd4e1ef0991cbf74a082ffef7624697eb88fad

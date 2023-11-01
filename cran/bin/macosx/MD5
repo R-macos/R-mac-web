@@ -50,3 +50,6 @@ MD5(big-sur-arm64/base/R-4.3.0-arm64.pkg)= 08fc1196ac4546e56e5ee7fba731364f
 MD5(big-sur-arm64/base/R-4.3.1-arm64.pkg)= 0a75be9a6b2e44303e97942aa234d069
 MD5(big-sur-x86_64/base/R-4.3.0-x86_64.pkg)= 661be01f0bd3edb3036c1a7f68a0479a
 MD5(big-sur-x86_64/base/R-4.3.1-x86_64.pkg)= 18d6e81f96940fa4861350f689e23bc5
+MD5(big-sur-arm64/base/R-4.3.2-arm64.pkg)= 51af13be5f97294b9304d91fd164b31d
+MD5(big-sur-x86_64/base/R-4.3.2-x86_64.pkg)= 6c733cb9435d4f9075f5de28c7f70a98
+MD5(Mac-GUI-1.80.tar.gz)= a6cde214b2ea1eaf17892dbc0f17d51e
