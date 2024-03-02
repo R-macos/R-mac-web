@@ -15,36 +15,36 @@ R and package binaries for R versions older than 4.0.0 are only available from t
 
 <p>Note: Although we take precautions when assembling binaries, please use the normal precautions with downloaded executables.</p>
 
-<h2>R 4.3.2 "Eye Holes" released on 2023/10/31</h2>
+<h2>R 4.3.3 "Angel Food Cake" released on 2024/02/28</h2>
 
 <p>
   Please check the integrity of the downloaded package by checking the signature:
-  <br><tt>pkgutil --check-signature R-4.3.2.pkg</tt><br>
+  <br><tt>pkgutil --check-signature R-4.3.3-arm64.pkg</tt><br>
   in the <i>Terminal</i> application. If Apple tools are not avaiable you can check the SHA1 checksum of the downloaded image:
-  <br><tt>openssl sha1 R-4.3.2.pkg</tt><br>
+  <br><tt>openssl sha1 R-4.3.3-arm64.pkg</tt><br>
 
 <h2>Latest release:</h2>
 <table border="0" width="90%">
 <tr valign=top>
   <td width="30%">
-    For Apple silicon (M1/M2) Macs:<br>
-    <a href="big-sur-arm64/base/R-4.3.2-arm64.pkg">R-4.3.2-arm64.pkg</a><br>
-    <font size=-2>SHA1-hash:&nbsp;763be9944ad00ed405972c73e9960ce4e55399d4
+    For Apple silicon (M1-3) Macs:<br>
+    <a href="big-sur-arm64/base/R-4.3.3-arm64.pkg">R-4.3.3-arm64.pkg</a><br>
+    <font size=-2>SHA1-hash:&nbsp;37dc051e0a241eeef8e8207b2710067767781e6c
     </font><br><font size=-1>(ca. 92MB, notarized and signed)</font>
     <br>&nbsp;<br>
     For older Intel Macs:<br>
-    <a href="big-sur-x86_64/base/R-4.3.2-x86_64.pkg">R-4.3.2-x86_64.pkg</a><br>
-    <font size=-2>SHA1-hash:&nbsp;3d68ea6698add258bd7a4a5950152f4072eee8b2
+    <a href="big-sur-x86_64/base/R-4.3.3-x86_64.pkg">R-4.3.3-x86_64.pkg</a><br>
+    <font size=-2>SHA1-hash:&nbsp;cbff7e4657eb67d3a35f4c74772680aa3c6b8d4b
     </font><br><font size=-1>(ca. 94MB, notarized and signed)</font>
     <br>
 </td>
 <td width="70%">
-  <b>R 4.3.2</b> binary for macOS 11 (<b>Big Sur</b>) and higher, signed and notarized packages.<p>
-  Contains R 4.3.2 framework, R.app GUI 1.80, Tcl/Tk 8.6.12 X11 libraries and Texinfo 6.8. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
+  <b>R 4.3.3</b> binary for macOS 11 (<b>Big Sur</b>) and higher, signed and notarized packages.<p>
+  Contains R 4.3.3 framework, R.app GUI 1.80, Tcl/Tk 8.6.12 X11 libraries and Texinfo 6.8. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
 <br>
 <!--  <b>Important: this version does NOT work on older Intel-based Macs</b> - see below for Intel version.<br>-->
 <p>
-<p>macOS Ventura users: there is a known bug in Ventura preventing installations from some locations without a prompt. If the installation fails, move the downloaded file away from the <i>Downloads</i> folder (e.g., to your home or Desktop)</p>
+<p>macOS Ventura users: there is a known bug in Ventura preventing installations from some locations without a prompt. If the installation fails, move the downloaded file away from the <i>Downloads</i> folder (e.g., to your home or Desktop).</p>
 Note: the use of X11 (including <tt>tcltk</tt>) requires <a href=http://xquartz.macosforge.org>XQuartz</a> (version 2.8.5 or later). Always re-install XQuartz when upgrading your macOS to a new major version.
 <p>
 This release uses Xcode 14.2/14.3 and GNU Fortran 12.2. If you wish to compile R packages which contain Fortran code, you may need to download the corresponding GNU Fortran compiler from <a href=https://mac.R-project.org/tools/>https://mac.R-project.org/tools</a>. Any external libraries and tools are expected to live in <tt>/opt/R/arm64</tt> (Apple silicon) or <tt>/opt/R/x86_64</tt> (Intel).
@@ -143,6 +143,6 @@ Package maintainers should visit <a href="http://cran.r-project.org/src/contrib/
 <p>
 Binary libraries for dependencies not present here are available from <a href=http://mac.R-project.org/bin/  target=_top>http://mac.R-project.org/bin</a> and corresponding sources at <a href=http://mac.R-project.org/src/ target=_top>http://mac.R-project.org/src</a>.
 <hr>
-<p>Last modified: 2023/11/01, by Simon Urbanek</p>
+<p>Last modified: 2024/03/01, by Simon Urbanek</p>
 </body>
 </html>
