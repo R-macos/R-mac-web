@@ -4,19 +4,20 @@
 # Installs static binaries of libraries used by CRAN to build packages.
 # See https://github.com/R-macos/recipes
 #
-# (C)2021-22 R Core Team, License: MIT, Author: Simon Urbanek
+# (C)2021-24 R Core Team, License: MIT, Author: Simon Urbanek
 
 install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
                          os=tolower(paste0(system("uname -s", intern=TRUE),
 			   gsub("\\..*", "", system("uname -r", intern=TRUE)))),
 			 arch=system("uname -m", intern=TRUE), os.arch="auto",
-			 dependencies=TRUE, action=c("install", "list")) {
+			 dependencies=TRUE, action=c("install", "list"),
+			 quiet=FALSE) {
     up <- function(...) paste(..., sep='/')
     action <- match.arg(action)
 
     if (os.arch == "auto") {
         rindex <- up(url, "REPOS")
-        cat("Downloading", rindex, "...\n")
+        if (!quiet) cat("Downloading", rindex, "...\n")
         rl <- readLines(u <- url(rindex))
         close(u)
         rla <- simplify2array(strsplit(rl[grep("/", rl)], "/"))
@@ -42,7 +43,7 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
         os.arch <- file.path(rl$os, rl$arch)
     }
 
-    cat("Using repository ", up(url, os.arch), "...\n")
+    if (!quiet) cat("Using repository ", up(url, os.arch), "...\n")
 
     deps <- function(pkgs, db) {
         ## convert bare (w/o version) names to full names
@@ -65,7 +66,7 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
     }
 
     pindex <- up(url, os.arch, "PACKAGES")
-    cat("Downloading index ", pindex, "...\n")
+    if (!quiet) cat("Downloading index ", pindex, "...\n")
     db <- read.dcf(u <- url(pindex))
     close(u)
     rownames(db) <- if ("Bundle" %in% colnames(db))
@@ -82,10 +83,12 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
     urls <- up(url, os.arch, db[need, "Binary"])
 
     if (action == "install") for (u in urls) {
-        cat("Downloading + installing ", u, "...\n")
+        if (!quiet) cat("Downloading + installing ", u, "...\n")
         if (system(paste("curl", "-sSL", shQuote(u), "|", "tar fxj - -C /")) < 0)
             stop("Failed to install from ", u)
     } else urls
 }
 
+## allow SILENT_INSTALL_R=1 to silence the usage
+if (!nzchar(Sys.getenv("SILENT_INSTALL_R")))
 cat("\n Usage: install.libs(names)\n\n Example: install.libs('cairo')\n\n names can be a vector or a special value 'all'.\n See args(install.libs) for defaults.\n\n")
