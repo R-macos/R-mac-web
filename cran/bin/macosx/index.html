@@ -15,32 +15,32 @@ R and package binaries for R versions older than 4.0.0 are only available from t
 
 <p>Note: Although we take precautions when assembling binaries, please use the normal precautions with downloaded executables.</p>
 
-<h2>R 4.4.1 "Race for Your Life" released on 2024/06/14</h2>
+<h2>R 4.4.2 "Pile of Leaves" released on 2024/10/31</h2>
 
 <p>
   Please check the integrity of the downloaded package by checking the signature:
-  <br><tt>pkgutil --check-signature R-4.4.1-arm64.pkg</tt><br>
+  <br><tt>pkgutil --check-signature R-4.4.2-arm64.pkg</tt><br>
   in the <i>Terminal</i> application. If Apple tools are not avaiable you can check the SHA1 checksum of the downloaded image:
-  <br><tt>openssl sha1 R-4.4.1-arm64.pkg</tt><br>
+  <br><tt>openssl sha1 R-4.4.2-arm64.pkg</tt><br>
 
 <h2>Latest release:</h2>
 <table border="0" width="90%">
 <tr valign=top>
   <td width="30%">
-    For Apple silicon (M1-3) Macs:<br>
-    <a href="big-sur-arm64/base/R-4.4.1-arm64.pkg">R-4.4.1-arm64.pkg</a><br>
-    <font size=-2>SHA1-hash:&nbsp;616560b17092bbdd8b814d9ed92d098e52204830
+    For Apple silicon (M1,2,..) Macs:<br>
+    <a href="big-sur-arm64/base/R-4.4.2-arm64.pkg">R-4.4.2-arm64.pkg</a><br>
+    <font size=-2>SHA1-hash:&nbsp;7832cb5d6cd686fd3cc54c8ab4c93c464540a944
     </font><br><font size=-1>(ca. 94MB, notarized and signed)</font>
     <br>&nbsp;<br>
     For older Intel Macs:<br>
-    <a href="big-sur-x86_64/base/R-4.4.1-x86_64.pkg">R-4.4.1-x86_64.pkg</a><br>
-    <font size=-2>SHA1-hash:&nbsp;e66eb09244121d7db7f8fb41d3c06a7579fc93b5
+    <a href="big-sur-x86_64/base/R-4.4.2-x86_64.pkg">R-4.4.2-x86_64.pkg</a><br>
+    <font size=-2>SHA1-hash:&nbsp;f49ad56ce3a0ac569fd8f9668749bc861b965b5e
     </font><br><font size=-1>(ca. 96MB, notarized and signed)</font>
     <br>
 </td>
 <td width="70%">
-  <b>R 4.4.1</b> binary for macOS 11 (<b>Big Sur</b>) and higher, signed and notarized packages.<p>
-  Contains R 4.4.1 framework, R.app GUI 1.80, Tcl/Tk 8.6.12 X11 libraries and Texinfo 6.8. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
+  <b>R 4.4.2</b> binary for macOS 11 (<b>Big Sur</b>) and higher, signed and notarized packages.<p>
+  Contains R 4.4.2 framework, R.app GUI 1.81, Tcl/Tk 8.6.12 X11 libraries and Texinfo 6.8. The latter two components are optional and can be ommitted when choosing "custom install", they are only needed if you want to use the <tt>tcltk</tt> R package or build package documentation from sources.
 <br>
 <!--  <b>Important: this version does NOT work on older Intel-based Macs</b> - see below for Intel version.<br>-->
 <p>
@@ -56,10 +56,10 @@ This release uses Xcode 14.2/14.3 and GNU Fortran 12.2. If you wish to compile R
 <br><br></td>
 </tr>
 <tr valign=top>
-<td width="30%"><a href="Mac-GUI-1.80.tar.gz">Mac-GUI-1.80.tar.gz</a><br>
-  <font size=-2>SHA1-hash:&nbsp;5cdd4e1ef0991cbf74a082ffef7624697eb88fad
+<td width="30%"><a href="Mac-GUI-1.81.tar.gz">Mac-GUI-1.81.tar.gz</a><br>
+  <font size=-2>SHA1-hash:&nbsp;2980af0d8fa91660c1df44cc200c8914df6451fd
 </font></td>
-<td width="70%">Sources for the R.app GUI 1.80 for macOS. This file is only needed if you want to join the development of the GUI (see also <a href="https://www.github.com/R-macos/Mac-GUI" target=_new>Mac-GUI repository</a>), it is not intended for regular users. Read the INSTALL file for further instructions.
+<td width="70%">Sources for the R.app GUI 1.81 for macOS. This file is only needed if you want to join the development of the GUI (see also <a href="https://www.github.com/R-macos/Mac-GUI" target=_new>Mac-GUI repository</a>), it is not intended for regular users. Read the INSTALL file for further instructions.
 <br><br></td>
 </tr>
 <tr><td colspan=2><h2>Subdirectories:</h2></td></tr>
