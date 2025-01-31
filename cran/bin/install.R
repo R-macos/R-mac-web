@@ -10,7 +10,7 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
                          os=tolower(paste0(system("uname -s", intern=TRUE),
 			   gsub("\\..*", "", system("uname -r", intern=TRUE)))),
 			 arch=system("uname -m", intern=TRUE), os.arch="auto",
-			 dependencies=TRUE, action=c("install", "list"),
+			 dependencies=TRUE, action=c("install", "list", "download"),
 			 quiet=FALSE) {
     up <- function(...) paste(..., sep='/')
     action <- match.arg(action)
@@ -86,6 +86,10 @@ install.libs <- function(pkgs, url="https://mac.R-project.org/bin",
         if (!quiet) cat("Downloading + installing ", u, "...\n")
         if (system(paste("curl", "-sSL", shQuote(u), "|", "tar fxj - -C /")) < 0)
             stop("Failed to install from ", u)
+    } else if (action == "download") for (u in urls) if (!file.exists(basename(u))) {
+        if (!quiet) cat("Downloading ", u, "...\n", sep='')
+        if (system(paste("curl", "-sSLO", shQuote(u))) < 0)
+            stop("Failed to download ", u)
     } else urls
 }
 
