@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- Created by GNU Texinfo 7.1, https://www.gnu.org/software/texinfo/ -->
+<!-- Created by GNU Texinfo 7.3, https://www.gnu.org/software/texinfo/ -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>R for macOS FAQ</title>
@@ -17,14 +17,12 @@
 <link href="#Introduction" rel="next" title="Introduction">
 <link href="dir.html#Top" rel="prev" title="(dir)">
 <style type="text/css">
-<!--
 a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
 div.example {margin-left: 3.2em}
 kbd.kbd {font-style: oblique}
 kbd.key {font-style: normal}
 span:hover a.copiable-link {visibility: visible}
 ul.mark-bullet {list-style-type: disc}
--->
 </style>
 
 
@@ -43,13 +41,11 @@ ul.mark-bullet {list-style-type: disc}
 
 
 <div class="top-level-extent" id="Top">
-<div class="nav-panel">
-<p>
-Next: <a href="#Introduction" accesskey="n" rel="next">Introduction</a>, Previous: <a href="dir.html#Top" accesskey="p" rel="prev">(dir)</a>, Up: <a href="dir.html#Top" accesskey="u" rel="up">(dir)</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Introduction" rel="next">Introduction</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="dir.html#Top" rel="prev">(dir)</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="dir.html#Top" rel="up">(dir)</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h1 class="top" id="R-for-macOS-FAQ"><span>R for macOS FAQ<a class="copiable-link" href="#R-for-macOS-FAQ"> &para;</a></span></h1>
 <h2>Frequently Asked Questions on R for macOS</h2>
-<h2>Version 4.5.3 2026-03-11, R.app 1.82</h2>
+<h2>Version 4.6.0 2026-04-24, R.app 1.83</h2>
 <address>Stefano M. Iacus</address>
 <address>Simon Urbanek</address>
 <address>Rob J. Goedman</address>
@@ -58,23 +54,21 @@ Next: <a href="#Introduction" accesskey="n" rel="next">Introduction</a>, Previou
 
 
 <ul class="mini-toc">
-<li><a href="#Introduction" accesskey="1">Introduction</a></li>
-<li><a href="#R_002eapp" accesskey="2">R.app</a></li>
-<li><a href="#How-to-install-packages" accesskey="3">How to install packages</a></li>
-<li><a href="#R-and-external-applications" accesskey="4">R and external applications</a></li>
-<li><a href="#Quartz-device" accesskey="5">Quartz device</a></li>
-<li><a href="#Tcl_002fTk-issues" accesskey="6">Tcl/Tk issues</a></li>
-<li><a href="#Internationalization-of-the-R_002eapp" accesskey="7">Internationalization of the R.app</a></li>
-<li><a href="#Additional-resources" accesskey="8">Additional resources</a></li>
-<li><a href="#Acknowledgments" accesskey="9">Acknowledgments</a></li>
+<li><a href="#Introduction">Introduction</a></li>
+<li><a href="#R_002eapp">R.app</a></li>
+<li><a href="#How-to-install-packages">How to install packages</a></li>
+<li><a href="#R-and-external-applications">R and external applications</a></li>
+<li><a href="#Quartz-device">Quartz device</a></li>
+<li><a href="#Tcl_002fTk-issues">Tcl/Tk issues</a></li>
+<li><a href="#Internationalization-of-the-R_002eapp">Internationalization of the R.app</a></li>
+<li><a href="#Additional-resources">Additional resources</a></li>
+<li><a href="#Acknowledgments">Acknowledgments</a></li>
 <li><a href="#Miscellaneous-questions">Miscellaneous questions</a></li>
 </ul>
 <hr>
 <div class="chapter-level-extent" id="Introduction">
-<div class="nav-panel">
-<p>
-Next: <a href="#R_002eapp" accesskey="n" rel="next">R.app</a>, Previous: <a href="#Top" accesskey="p" rel="prev">R for macOS FAQ</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#R_002eapp" rel="next">R.app</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Top" rel="prev">R for macOS FAQ</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">R for macOS FAQ</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h2 class="chapter" id="Introduction-1"><span>1 Introduction<a class="copiable-link" href="#Introduction-1"> &para;</a></span></h2>
 
 <p>This document contains a user guide to the <small class="sc">R.APP</small> version of <abbr class="acronym">R</abbr>, and
@@ -104,16 +98,14 @@ R-SIG-Mac!</em>
 </p>
 
 <ul class="mini-toc">
-<li><a href="#How-many-versions-of-R-for-macOS_003f" accesskey="1">How many versions of R for macOS?</a></li>
-<li><a href="#What-machines-does-R-for-macOS-run-on_003f" accesskey="2">What machines does R for macOS run on?</a></li>
-<li><a href="#How-can-R-for-macOS-be-obtained-and-installed_003f" accesskey="3">How can R for macOS be obtained and installed?</a></li>
+<li><a href="#How-many-versions-of-R-for-macOS_003f">How many versions of R for macOS?</a></li>
+<li><a href="#What-machines-does-R-for-macOS-run-on_003f">What machines does R for macOS run on?</a></li>
+<li><a href="#How-can-R-for-macOS-be-obtained-and-installed_003f">How can R for macOS be obtained and installed?</a></li>
 </ul>
 <hr>
 <div class="section-level-extent" id="How-many-versions-of-R-for-macOS_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#What-machines-does-R-for-macOS-run-on_003f" accesskey="n" rel="next">What machines does R for macOS run on?</a>, Previous: <a href="#Introduction" accesskey="p" rel="prev">Introduction</a>, Up: <a href="#Introduction" accesskey="u" rel="up">Introduction</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#What-machines-does-R-for-macOS-run-on_003f" rel="next">What machines does R for macOS run on?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Introduction" rel="prev">Introduction</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Introduction" rel="up">Introduction</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="How-many-versions-of-R-for-macOS_003f-1"><span>1.1 How many versions of R for macOS?<a class="copiable-link" href="#How-many-versions-of-R-for-macOS_003f-1"> &para;</a></span></h3>
 
 <p>There is only one version of R for macOS.  However, <abbr class="acronym">R</abbr> on macOS
@@ -125,10 +117,8 @@ preferred by Macintosh users.
 <hr>
 </div>
 <div class="section-level-extent" id="What-machines-does-R-for-macOS-run-on_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#How-can-R-for-macOS-be-obtained-and-installed_003f" accesskey="n" rel="next">How can R for macOS be obtained and installed?</a>, Previous: <a href="#How-many-versions-of-R-for-macOS_003f" accesskey="p" rel="prev">How many versions of R for macOS?</a>, Up: <a href="#Introduction" accesskey="u" rel="up">Introduction</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#How-can-R-for-macOS-be-obtained-and-installed_003f" rel="next">How can R for macOS be obtained and installed?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#How-many-versions-of-R-for-macOS_003f" rel="prev">How many versions of R for macOS?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Introduction" rel="up">Introduction</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="What-machines-does-R-for-macOS-run-on_003f-1"><span>1.2 What machines does R for macOS run on?<a class="copiable-link" href="#What-machines-does-R-for-macOS-run-on_003f-1"> &para;</a></span></h3>
 
 <p>64-bit Intel-based Macs, that is any machine made since mid 2008.
@@ -140,10 +130,8 @@ works well under &lsquo;Rosetta&rsquo; emulation.
 <hr>
 </div>
 <div class="section-level-extent" id="How-can-R-for-macOS-be-obtained-and-installed_003f">
-<div class="nav-panel">
-<p>
-Previous: <a href="#What-machines-does-R-for-macOS-run-on_003f" accesskey="p" rel="prev">What machines does R for macOS run on?</a>, Up: <a href="#Introduction" accesskey="u" rel="up">Introduction</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#What-machines-does-R-for-macOS-run-on_003f" rel="prev">What machines does R for macOS run on?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Introduction" rel="up">Introduction</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="How-can-R-for-macOS-be-obtained-and-installed_003f-1"><span>1.3 How can R for macOS be obtained and installed?<a class="copiable-link" href="#How-can-R-for-macOS-be-obtained-and-installed_003f-1"> &para;</a></span></h3>
 
 <p><abbr class="acronym">R</abbr> is available on <abbr class="acronym">CRAN</abbr> in the form of an Installer package
@@ -167,10 +155,8 @@ sources, are in the &lsquo;R Installation and Administration Manual&rsquo;.
 </div>
 </div>
 <div class="chapter-level-extent" id="R_002eapp">
-<div class="nav-panel">
-<p>
-Next: <a href="#How-to-install-packages" accesskey="n" rel="next">How to install packages</a>, Previous: <a href="#Introduction" accesskey="p" rel="prev">Introduction</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#How-to-install-packages" rel="next">How to install packages</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Introduction" rel="prev">Introduction</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">R for macOS FAQ</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h2 class="chapter" id="R_002eapp-1"><span>2 R.app<a class="copiable-link" href="#R_002eapp-1"> &para;</a></span></h2>
 
 <p><small class="sc">R.APP</small> is the name of the GUI for macOS that was introduced in R
@@ -184,20 +170,18 @@ which links to embedded <abbr class="acronym">R</abbr> installed as a framework.
 </p>
 
 <ul class="mini-toc">
-<li><a href="#How-to-get-R_002eapp" accesskey="1">How to get R.app</a></li>
-<li><a href="#How-to-install-the-R_002eapp" accesskey="2">How to install the R.app</a></li>
-<li><a href="#The-R-Console" accesskey="3">The R Console</a></li>
-<li><a href="#General-Features" accesskey="4">General Features</a></li>
-<li><a href="#The-Menus" accesskey="5">The Menus</a></li>
-<li><a href="#Preferences" accesskey="6">Preferences</a></li>
-<li><a href="#R_002eapp-Bugs" accesskey="7">R.app Bugs</a></li>
+<li><a href="#How-to-get-R_002eapp">How to get R.app</a></li>
+<li><a href="#How-to-install-the-R_002eapp">How to install the R.app</a></li>
+<li><a href="#The-R-Console">The R Console</a></li>
+<li><a href="#General-Features">General Features</a></li>
+<li><a href="#The-Menus">The Menus</a></li>
+<li><a href="#Preferences">Preferences</a></li>
+<li><a href="#R_002eapp-Bugs">R.app Bugs</a></li>
 </ul>
 <hr>
 <div class="section-level-extent" id="How-to-get-R_002eapp">
-<div class="nav-panel">
-<p>
-Next: <a href="#How-to-install-the-R_002eapp" accesskey="n" rel="next">How to install the R.app</a>, Previous: <a href="#R_002eapp" accesskey="p" rel="prev">R.app</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#How-to-install-the-R_002eapp" rel="next">How to install the R.app</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#R_002eapp" rel="prev">R.app</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#R_002eapp" rel="up">R.app</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="How-to-get-R_002eapp-1"><span>2.1 How to get R.app<a class="copiable-link" href="#How-to-get-R_002eapp-1"> &para;</a></span></h3>
 
 <p><small class="sc">R.APP</small> is part of the binary distribution of R for macOS available
@@ -212,10 +196,8 @@ pages on <abbr class="acronym">CRAN</abbr> for detail how to obtain such snapsho
 <hr>
 </div>
 <div class="section-level-extent" id="How-to-install-the-R_002eapp">
-<div class="nav-panel">
-<p>
-Next: <a href="#The-R-Console" accesskey="n" rel="next">The R Console</a>, Previous: <a href="#How-to-get-R_002eapp" accesskey="p" rel="prev">How to get R.app</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#The-R-Console" rel="next">The R Console</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#How-to-get-R_002eapp" rel="prev">How to get R.app</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#R_002eapp" rel="up">R.app</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="How-to-install-the-R_002eapp-1"><span>2.2 How to install the R.app<a class="copiable-link" href="#How-to-install-the-R_002eapp-1"> &para;</a></span></h3>
 <p><small class="sc">R.APP</small> is installed the same way as the R framework, namely using
 binary package provided on <abbr class="acronym">CRAN</abbr>. The <samp class="file">bin/macosx</samp> directory of a
@@ -228,38 +210,32 @@ double-click the package icon.
 <hr>
 </div>
 <div class="section-level-extent" id="The-R-Console">
-<div class="nav-panel">
-<p>
-Next: <a href="#General-Features" accesskey="n" rel="next">General Features</a>, Previous: <a href="#How-to-install-the-R_002eapp" accesskey="p" rel="prev">How to install the R.app</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#General-Features" rel="next">General Features</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#How-to-install-the-R_002eapp" rel="prev">How to install the R.app</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#R_002eapp" rel="up">R.app</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="The-R-Console-1"><span>2.3 The R Console<a class="copiable-link" href="#The-R-Console-1"> &para;</a></span></h3>
 <p>In this section you&rsquo;ll find general information on the <small class="sc">R.APP</small>. For specific <abbr class="acronym">R</abbr> tasks that
 can be done via the <small class="sc">R.APP</small> using menus you should read below (see <a class="pxref" href="#The-Menus">The Menus</a>). 
 </p>
 
 <ul class="mini-toc">
-<li><a href="#The-Input-and-the-Output" accesskey="1">The Input and the Output</a></li>
-<li><a href="#Copy-and-Paste" accesskey="2">Copy and Paste</a></li>
-<li><a href="#The-current-and-startup-working-directories" accesskey="3">The current and startup working directories</a></li>
-<li><a href="#Resizing-the-R-Console" accesskey="4">Resizing the R Console</a></li>
-<li><a href="#R-Console-text-colors" accesskey="5">R Console text colors</a></li>
+<li><a href="#The-Input-and-the-Output">The Input and the Output</a></li>
+<li><a href="#Copy-and-Paste">Copy and Paste</a></li>
+<li><a href="#The-current-and-startup-working-directories">The current and startup working directories</a></li>
+<li><a href="#Resizing-the-R-Console">Resizing the R Console</a></li>
+<li><a href="#R-Console-text-colors">R Console text colors</a></li>
 </ul>
 <hr>
 <div class="subsection-level-extent" id="The-Input-and-the-Output">
-<div class="nav-panel">
-<p>
-Next: <a href="#Copy-and-Paste" accesskey="n" rel="next">Copy and Paste</a>, Previous: <a href="#The-R-Console" accesskey="p" rel="prev">The R Console</a>, Up: <a href="#The-R-Console" accesskey="u" rel="up">The R Console</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Copy-and-Paste" rel="next">Copy and Paste</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#The-R-Console" rel="prev">The R Console</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-R-Console" rel="up">The R Console</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="The-Input-and-the-Output-1"><span>2.3.1 The Input and the Output<a class="copiable-link" href="#The-Input-and-the-Output-1"> &para;</a></span></h4>
 <p>The current design of the R Console is to have a single frame for input (user) and output (R).
 </p>
 <hr>
 </div>
 <div class="subsection-level-extent" id="Copy-and-Paste">
-<div class="nav-panel">
-<p>
-Next: <a href="#The-current-and-startup-working-directories" accesskey="n" rel="next">The current and startup working directories</a>, Previous: <a href="#The-Input-and-the-Output" accesskey="p" rel="prev">The Input and the Output</a>, Up: <a href="#The-R-Console" accesskey="u" rel="up">The R Console</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#The-current-and-startup-working-directories" rel="next">The current and startup working directories</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#The-Input-and-the-Output" rel="prev">The Input and the Output</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-R-Console" rel="up">The R Console</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Copy-and-Paste-1"><span>2.3.2 Copy and Paste<a class="copiable-link" href="#Copy-and-Paste-1"> &para;</a></span></h4>
 <p>Copy and paste works in R as in any other Macintosh application.
 </p>
@@ -268,10 +244,8 @@ Next: <a href="#The-current-and-startup-working-directories" accesskey="n" rel="
 <hr>
 </div>
 <div class="subsection-level-extent" id="The-current-and-startup-working-directories">
-<div class="nav-panel">
-<p>
-Next: <a href="#Resizing-the-R-Console" accesskey="n" rel="next">Resizing the R Console</a>, Previous: <a href="#Copy-and-Paste" accesskey="p" rel="prev">Copy and Paste</a>, Up: <a href="#The-R-Console" accesskey="u" rel="up">The R Console</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Resizing-the-R-Console" rel="next">Resizing the R Console</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Copy-and-Paste" rel="prev">Copy and Paste</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-R-Console" rel="up">The R Console</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="The-current-and-startup-working-directories-1"><span>2.3.3 The current and startup working directories<a class="copiable-link" href="#The-current-and-startup-working-directories-1"> &para;</a></span></h4>
 <p>If not otherwise specified in the Preferences (see <a class="pxref" href="#Preferences">Preferences</a>), or if the specified path is no longer available, then the default working directory at startup is the user home.
 The working directory can be changed using the <em class="emph">setwd</em> R command or using the <em class="emph">Misc</em> menu item <em class="emph">Change working directory</em>. Finally it is possible to use a specific directory for a single <abbr class="acronym">R</abbr> session by dragging a folder onto the <small class="sc">R.APP</small> icon. If <small class="sc">R.APP</small> is not running, this will cause <small class="sc">R.APP</small> to be started in the directory corresponding to the folder dragged. The same can be achieved on the command line &ndash; for example <code class="code">open -a R .</code> causes <small class="sc">R.APP</small> to be started using the current directory as the startup working directory.
@@ -284,10 +258,8 @@ the Preferences (or any other method mentioned above) to change the startup dire
 <hr>
 </div>
 <div class="subsection-level-extent" id="Resizing-the-R-Console">
-<div class="nav-panel">
-<p>
-Next: <a href="#R-Console-text-colors" accesskey="n" rel="next">R Console text colors</a>, Previous: <a href="#The-current-and-startup-working-directories" accesskey="p" rel="prev">The current and startup working directories</a>, Up: <a href="#The-R-Console" accesskey="u" rel="up">The R Console</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#R-Console-text-colors" rel="next">R Console text colors</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#The-current-and-startup-working-directories" rel="prev">The current and startup working directories</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-R-Console" rel="up">The R Console</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Resizing-the-R-Console-1"><span>2.3.4 Resizing the R Console<a class="copiable-link" href="#Resizing-the-R-Console-1"> &para;</a></span></h4>
 <p>When the R Console Window is resized, the R option <em class="emph">width</em> is set appropriately so that any future
 output will fit the window size.
@@ -295,10 +267,8 @@ output will fit the window size.
 <hr>
 </div>
 <div class="subsection-level-extent" id="R-Console-text-colors">
-<div class="nav-panel">
-<p>
-Previous: <a href="#Resizing-the-R-Console" accesskey="p" rel="prev">Resizing the R Console</a>, Up: <a href="#The-R-Console" accesskey="u" rel="up">The R Console</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Resizing-the-R-Console" rel="prev">Resizing the R Console</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-R-Console" rel="up">The R Console</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="R-Console-text-colors-1"><span>2.3.5 R Console text colors<a class="copiable-link" href="#R-Console-text-colors-1"> &para;</a></span></h4>
 <p>Use the Preferences window to set the R Console text colors (see <a class="pxref" href="#Preferences">Preferences</a>).
 </p>
@@ -306,41 +276,35 @@ Previous: <a href="#Resizing-the-R-Console" accesskey="p" rel="prev">Resizing th
 </div>
 </div>
 <div class="section-level-extent" id="General-Features">
-<div class="nav-panel">
-<p>
-Next: <a href="#The-Menus" accesskey="n" rel="next">The Menus</a>, Previous: <a href="#The-R-Console" accesskey="p" rel="prev">The R Console</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#The-Menus" rel="next">The Menus</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#The-R-Console" rel="prev">The R Console</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#R_002eapp" rel="up">R.app</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="General-Features-1"><span>2.4 General Features<a class="copiable-link" href="#General-Features-1"> &para;</a></span></h3>
 
 <ul class="mini-toc">
-<li><a href="#Editor" accesskey="1">Editor</a></li>
-<li><a href="#Editor-undo-and-line-numbers" accesskey="2">Editor undo and line numbers</a></li>
-<li><a href="#Editor-text-completion" accesskey="3">Editor text completion</a></li>
-<li><a href="#Editor-function-list" accesskey="4">Editor function list</a></li>
-<li><a href="#Editor-syntax-coloring" accesskey="5">Editor  syntax coloring</a></li>
-<li><a href="#Editor-_0028internal-and-external_0029" accesskey="6">Editor (internal and external)</a></li>
-<li><a href="#Editor-help" accesskey="7">Editor help</a></li>
-<li><a href="#Drag-_0026-drop" accesskey="8">Drag &amp; drop</a></li>
-<li><a href="#Help-system" accesskey="9">Help system</a></li>
+<li><a href="#Editor">Editor</a></li>
+<li><a href="#Editor-undo-and-line-numbers">Editor undo and line numbers</a></li>
+<li><a href="#Editor-text-completion">Editor text completion</a></li>
+<li><a href="#Editor-function-list">Editor function list</a></li>
+<li><a href="#Editor-syntax-coloring">Editor  syntax coloring</a></li>
+<li><a href="#Editor-_0028internal-and-external_0029">Editor (internal and external)</a></li>
+<li><a href="#Editor-help">Editor help</a></li>
+<li><a href="#Drag-_0026-drop">Drag &amp; drop</a></li>
+<li><a href="#Help-system">Help system</a></li>
 <li><a href="#History">History</a></li>
 <li><a href="#Authentication-and-_002elibPaths">Authentication and .libPaths</a></li>
 </ul>
 <hr>
 <div class="subsection-level-extent" id="Editor">
-<div class="nav-panel">
-<p>
-Next: <a href="#Editor-undo-and-line-numbers" accesskey="n" rel="next">Editor undo and line numbers</a>, Previous: <a href="#General-Features" accesskey="p" rel="prev">General Features</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Editor-undo-and-line-numbers" rel="next">Editor undo and line numbers</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#General-Features" rel="prev">General Features</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Editor-1"><span>2.4.1 Editor<a class="copiable-link" href="#Editor-1"> &para;</a></span></h4>
 <p><small class="sc">R.APP</small> provides an integrated editor for editing of R code. It sports a number of features designed to help developing code inside R. The probably most often used function is the ability to execute code directly from the editor by pressing <kbd class="kbd"><kbd class="key">Command</kbd>-<kbd class="key">Return</kbd></kbd>. Other features include syntax highlighting, brace-matching, code completion and function indexing.
 </p>
 <hr>
 </div>
 <div class="subsection-level-extent" id="Editor-undo-and-line-numbers">
-<div class="nav-panel">
-<p>
-Next: <a href="#Editor-text-completion" accesskey="n" rel="next">Editor text completion</a>, Previous: <a href="#Editor" accesskey="p" rel="prev">Editor</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Editor-text-completion" rel="next">Editor text completion</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Editor" rel="prev">Editor</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Editor-undo-and-line-numbers-1"><span>2.4.2 Editor undo and line numbers<a class="copiable-link" href="#Editor-undo-and-line-numbers-1"> &para;</a></span></h4>
 <p>The editor supports undo/redo operations on an appropriate level of granularity (used to
 be all or nothing). The editor has an optional facility to show line numbers. These help with
@@ -351,40 +315,32 @@ number gutter width (to fit larger line numbers) and text margin width.
 <hr>
 </div>
 <div class="subsection-level-extent" id="Editor-text-completion">
-<div class="nav-panel">
-<p>
-Next: <a href="#Editor-function-list" accesskey="n" rel="next">Editor function list</a>, Previous: <a href="#Editor-undo-and-line-numbers" accesskey="p" rel="prev">Editor undo and line numbers</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Editor-function-list" rel="next">Editor function list</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Editor-undo-and-line-numbers" rel="prev">Editor undo and line numbers</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Editor-text-completion-1"><span>2.4.3 Editor text completion<a class="copiable-link" href="#Editor-text-completion-1"> &para;</a></span></h4>
 <p>Completion of typed input (both file names and R code) in the editor is available through the Edit menu &rsquo;Complete&rsquo; or by typing <kbd class="kbd"><kbd class="key">Control</kbd>-<kbd class="key">.</kbd></kbd> (same as is Xcode). It uses the same facilities as the console window (for compatibility the console responds to both <kbd class="key">Tab</kbd> and <kbd class="kbd"><kbd class="key">Control</kbd>-<kbd class="key">.</kbd></kbd>).
 </p>
 <hr>
 </div>
 <div class="subsection-level-extent" id="Editor-function-list">
-<div class="nav-panel">
-<p>
-Next: <a href="#Editor-syntax-coloring" accesskey="n" rel="next">Editor  syntax coloring</a>, Previous: <a href="#Editor-text-completion" accesskey="p" rel="prev">Editor text completion</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Editor-syntax-coloring" rel="next">Editor  syntax coloring</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Editor-text-completion" rel="prev">Editor text completion</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Editor-function-list-1"><span>2.4.4 Editor function list<a class="copiable-link" href="#Editor-function-list-1"> &para;</a></span></h4>
 <p>The editor maintains a popup list of functions defined in the edited document. The list is available in the toolbar and is updated as you type. Selecting a function from that list causes the cursor to jump to the beginning of the function.
 </p>
 <hr>
 </div>
 <div class="subsection-level-extent" id="Editor-syntax-coloring">
-<div class="nav-panel">
-<p>
-Next: <a href="#Editor-_0028internal-and-external_0029" accesskey="n" rel="next">Editor (internal and external)</a>, Previous: <a href="#Editor-function-list" accesskey="p" rel="prev">Editor function list</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Editor-_0028internal-and-external_0029" rel="next">Editor (internal and external)</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Editor-function-list" rel="prev">Editor function list</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Editor-syntax-coloring-1"><span>2.4.5 Editor  syntax coloring<a class="copiable-link" href="#Editor-syntax-coloring-1"> &para;</a></span></h4>
 <p>The editor supports syntax-highlighting for R code. It is possible to change the syntax highlighting colors using the Syntax Color Preference Pane (see below). Starting with <small class="sc">R.APP</small> version 1.17 lazy syntax highlighting is used, which means that changes influencing the entire file (such as typing a single or double quote) no longer apply to the entire file, but only a few lines. This temporary state is usually recovered by closing the quote, but in some rare instances it may persist until a change is made to the first line of the offending quote. However, lazy highlighting brings huge speedup when editing large files.
 </p>
 <hr>
 </div>
 <div class="subsection-level-extent" id="Editor-_0028internal-and-external_0029">
-<div class="nav-panel">
-<p>
-Next: <a href="#Editor-help" accesskey="n" rel="next">Editor help</a>, Previous: <a href="#Editor-syntax-coloring" accesskey="p" rel="prev">Editor  syntax coloring</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Editor-help" rel="next">Editor help</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Editor-syntax-coloring" rel="prev">Editor  syntax coloring</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Editor-_0028internal-and-external_0029-1"><span>2.4.6 Editor (internal and external)<a class="copiable-link" href="#Editor-_0028internal-and-external_0029-1"> &para;</a></span></h4>
 <p>By default, the editor used is incorporated into <small class="sc">R.APP</small>, the macOS GUI for R. It is a
 relatively simple multi-document editor that supports the features listed above. Additionally,
@@ -400,20 +356,16 @@ AppleScript it is easy to implement <kbd class="kbd">Command-E</kbd> and <kbd cl
 <hr>
 </div>
 <div class="subsection-level-extent" id="Editor-help">
-<div class="nav-panel">
-<p>
-Next: <a href="#Drag-_0026-drop" accesskey="n" rel="next">Drag &amp; drop</a>, Previous: <a href="#Editor-_0028internal-and-external_0029" accesskey="p" rel="prev">Editor (internal and external)</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Drag-_0026-drop" rel="next">Drag &amp; drop</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Editor-_0028internal-and-external_0029" rel="prev">Editor (internal and external)</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Editor-help-1"><span>2.4.7 Editor help<a class="copiable-link" href="#Editor-help-1"> &para;</a></span></h4>
 <p>The editor contains a light-weight help system in form of a search filed placed inside the toolbar. It is possible to use either an exact or approximate search.
 </p>		
 <hr>
 </div>
 <div class="subsection-level-extent" id="Drag-_0026-drop">
-<div class="nav-panel">
-<p>
-Next: <a href="#Help-system" accesskey="n" rel="next">Help system</a>, Previous: <a href="#Editor-help" accesskey="p" rel="prev">Editor help</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Help-system" rel="next">Help system</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Editor-help" rel="prev">Editor help</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Drag-_0026-drop-1"><span>2.4.8 Drag &amp; drop<a class="copiable-link" href="#Drag-_0026-drop-1"> &para;</a></span></h4>
 
 <p>Drag and drop of a directory on the <small class="sc">R.APP</small> icon while <small class="sc">R.APP</small> is not
@@ -438,10 +390,8 @@ editor.
 <hr>
 </div>
 <div class="subsection-level-extent" id="Help-system">
-<div class="nav-panel">
-<p>
-Next: <a href="#History" accesskey="n" rel="next">History</a>, Previous: <a href="#Drag-_0026-drop" accesskey="p" rel="prev">Drag &amp; drop</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#History" rel="next">History</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Drag-_0026-drop" rel="prev">Drag &amp; drop</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Help-system-1"><span>2.4.9 Help system<a class="copiable-link" href="#Help-system-1"> &para;</a></span></h4>
 
 <p>The Help screen allows a user to go back or forward to previous help
@@ -452,10 +402,8 @@ search to a fuzzy/approximate search.
 <hr>
 </div>
 <div class="subsection-level-extent" id="History">
-<div class="nav-panel">
-<p>
-Next: <a href="#Authentication-and-_002elibPaths" accesskey="n" rel="next">Authentication and .libPaths</a>, Previous: <a href="#Help-system" accesskey="p" rel="prev">Help system</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Authentication-and-_002elibPaths" rel="next">Authentication and .libPaths</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Help-system" rel="prev">Help system</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="History-1"><span>2.4.10 History<a class="copiable-link" href="#History-1"> &para;</a></span></h4>
 
 <p><small class="sc">R.APP</small> uses history files that are (superset) compatible with history
@@ -479,10 +427,8 @@ hence <code class="code">history()</code> are not currently supported in <small 
 <hr>
 </div>
 <div class="subsection-level-extent" id="Authentication-and-_002elibPaths">
-<div class="nav-panel">
-<p>
-Previous: <a href="#History" accesskey="p" rel="prev">History</a>, Up: <a href="#General-Features" accesskey="u" rel="up">General Features</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#History" rel="prev">History</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#General-Features" rel="up">General Features</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Authentication-and-_002elibPaths-1"><span>2.4.11 Authentication and .libPaths<a class="copiable-link" href="#Authentication-and-_002elibPaths-1"> &para;</a></span></h4>
 <p>The official <abbr class="acronym">CRAN</abbr> binaries come pre-packaged in such a way that
 administrator have sufficient privileges to update R and install
@@ -511,27 +457,23 @@ directory will be used.
 </div>
 </div>
 <div class="section-level-extent" id="The-Menus">
-<div class="nav-panel">
-<p>
-Next: <a href="#Preferences" accesskey="n" rel="next">Preferences</a>, Previous: <a href="#General-Features" accesskey="p" rel="prev">General Features</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Preferences" rel="next">Preferences</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#General-Features" rel="prev">General Features</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#R_002eapp" rel="up">R.app</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="The-Menus-1"><span>2.5 The Menus<a class="copiable-link" href="#The-Menus-1"> &para;</a></span></h3>
 
 <ul class="mini-toc">
-<li><a href="#Application-Menu" accesskey="1">Application Menu</a></li>
-<li><a href="#File-Menu" accesskey="2">File Menu</a></li>
-<li><a href="#Edit-Menu" accesskey="3">Misc Menu</a></li>
-<li><a href="#Misc-Menu" accesskey="4">Misc Menu</a></li>
-<li><a href="#Workspace-Menu" accesskey="5">Workspace Menu</a></li>
-<li><a href="#Packages-Menu" accesskey="6">Packages Menu</a></li>
-<li><a href="#The-Help-Menu" accesskey="7">The Help Menu</a></li>
+<li><a href="#Application-Menu">Application Menu</a></li>
+<li><a href="#File-Menu">File Menu</a></li>
+<li><a href="#Edit-Menu">Misc Menu</a></li>
+<li><a href="#Misc-Menu">Misc Menu</a></li>
+<li><a href="#Workspace-Menu">Workspace Menu</a></li>
+<li><a href="#Packages-Menu">Packages Menu</a></li>
+<li><a href="#The-Help-Menu">The Help Menu</a></li>
 </ul>
 <hr>
 <div class="subsection-level-extent" id="Application-Menu">
-<div class="nav-panel">
-<p>
-Next: <a href="#File-Menu" accesskey="n" rel="next">File Menu</a>, Previous: <a href="#The-Menus" accesskey="p" rel="prev">The Menus</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#File-Menu" rel="next">File Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#The-Menus" rel="prev">The Menus</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-Menus" rel="up">The Menus</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Application-Menu-1"><span>2.5.1 Application Menu<a class="copiable-link" href="#Application-Menu-1"> &para;</a></span></h4>
 <p>The Application menu is the first one after the main Apple Menu: it is
 labelled <code class="code">R</code>.
@@ -545,10 +487,8 @@ access the Preferences (see <a class="pxref" href="#Preferences">Preferences</a>
 <hr>
 </div>
 <div class="subsection-level-extent" id="File-Menu">
-<div class="nav-panel">
-<p>
-Next: <a href="#Edit-Menu" accesskey="n" rel="next">Misc Menu</a>, Previous: <a href="#Application-Menu" accesskey="p" rel="prev">Application Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Edit-Menu" rel="next">Misc Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Application-Menu" rel="prev">Application Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-Menus" rel="up">The Menus</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="File-Menu-1"><span>2.5.2 File Menu<a class="copiable-link" href="#File-Menu-1"> &para;</a></span></h4>
 <p>This menu provides standard functionalities. 
 The <em class="emph">open</em> command is associated to the action  <em class="emph">Source <abbr class="acronym">R</abbr> code</em>, which means that you can select a file, which is a script, and it will be executed
@@ -557,10 +497,8 @@ in <abbr class="acronym">R</abbr>. This is a interface to the <abbr class="acron
 <hr>
 </div>
 <div class="subsection-level-extent" id="Edit-Menu">
-<div class="nav-panel">
-<p>
-Next: <a href="#Misc-Menu" accesskey="n" rel="next">Misc Menu</a>, Previous: <a href="#File-Menu" accesskey="p" rel="prev">File Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Misc-Menu" rel="next">Misc Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#File-Menu" rel="prev">File Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-Menus" rel="up">The Menus</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Misc-Menu-1"><span>2.5.3 Misc Menu<a class="copiable-link" href="#Misc-Menu-1"> &para;</a></span></h4>
 <p>Apart for standard functionalities, the only relevant item in this menu
 is <em class="emph">Edit Object</em> which is an interface to the <abbr class="acronym">R</abbr> <code class="command">edit</code>
@@ -569,10 +507,8 @@ function.
 <hr>
 </div>
 <div class="subsection-level-extent" id="Misc-Menu">
-<div class="nav-panel">
-<p>
-Next: <a href="#Workspace-Menu" accesskey="n" rel="next">Workspace Menu</a>, Previous: <a href="#Edit-Menu" accesskey="p" rel="prev">Misc Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Workspace-Menu" rel="next">Workspace Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Edit-Menu" rel="prev">Misc Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-Menus" rel="up">The Menus</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Misc-Menu-2"><span>2.5.4 Misc Menu<a class="copiable-link" href="#Misc-Menu-2"> &para;</a></span></h4>
 <p>With this menu you can load and save the history of commands typed in the <abbr class="acronym">R</abbr> Console or view what&rsquo;s currently inside.
 You can also change the current working directory, let <abbr class="acronym">R</abbr> show you the current working directory or set it back to the
@@ -581,10 +517,8 @@ startup directory. From release 1.9.0 of <abbr class="acronym">R</abbr> the curr
 <hr>
 </div>
 <div class="subsection-level-extent" id="Workspace-Menu">
-<div class="nav-panel">
-<p>
-Next: <a href="#Packages-Menu" accesskey="n" rel="next">Packages Menu</a>, Previous: <a href="#Misc-Menu" accesskey="p" rel="prev">Misc Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Packages-Menu" rel="next">Packages Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Misc-Menu" rel="prev">Misc Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-Menus" rel="up">The Menus</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Workspace-Menu-1"><span>2.5.5 Workspace Menu<a class="copiable-link" href="#Workspace-Menu-1"> &para;</a></span></h4>
 
 <p>Here you find self explanatory menu items for manage your workspace in
@@ -599,10 +533,8 @@ summary description of the objects in your workspace. Recursive objects
 <hr>
 </div>
 <div class="subsection-level-extent" id="Packages-Menu">
-<div class="nav-panel">
-<p>
-Next: <a href="#The-Help-Menu" accesskey="n" rel="next">The Help Menu</a>, Previous: <a href="#Workspace-Menu" accesskey="p" rel="prev">Workspace Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#The-Help-Menu" rel="next">The Help Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Workspace-Menu" rel="prev">Workspace Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-Menus" rel="up">The Menus</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Packages-Menu-1"><span>2.5.6 Packages Menu<a class="copiable-link" href="#Packages-Menu-1"> &para;</a></span></h4>
 
 <p>Using this menu you can have access to the list of packages and
@@ -659,10 +591,8 @@ additional tools.
 <hr>
 </div>
 <div class="subsection-level-extent" id="The-Help-Menu">
-<div class="nav-panel">
-<p>
-Previous: <a href="#Packages-Menu" accesskey="p" rel="prev">Packages Menu</a>, Up: <a href="#The-Menus" accesskey="u" rel="up">The Menus</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Packages-Menu" rel="prev">Packages Menu</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#The-Menus" rel="up">The Menus</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="The-Help-Menu-1"><span>2.5.7 The Help Menu<a class="copiable-link" href="#The-Help-Menu-1"> &para;</a></span></h4>
 <p>Using this menu you can open the on-line manuals (<em class="emph">R Help</em>), read this FAQ and  review the latest changes, bug fixes and new features of R for macOS (<em class="emph">What&rsquo;s new in this version</em>).
 There are also interfaces to the R <em class="emph">help</em> and <em class="emph">help.search</em> functions as well as the <em class="emph">example</em> function. 
@@ -671,24 +601,20 @@ There are also interfaces to the R <em class="emph">help</em> and <em class="emp
 </div>
 </div>
 <div class="section-level-extent" id="Preferences">
-<div class="nav-panel">
-<p>
-Next: <a href="#R_002eapp-Bugs" accesskey="n" rel="next">R.app Bugs</a>, Previous: <a href="#The-Menus" accesskey="p" rel="prev">The Menus</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#R_002eapp-Bugs" rel="next">R.app Bugs</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#The-Menus" rel="prev">The Menus</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#R_002eapp" rel="up">R.app</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Preferences-1"><span>2.6 Preferences<a class="copiable-link" href="#Preferences-1"> &para;</a></span></h3>
 <p>You can set several aspects of the <abbr class="acronym">R</abbr> GUI via preferences. You can access the Preferences window via the Application menu when the
 <abbr class="acronym">R</abbr> Console is open.
 </p>
 
 <ul class="mini-toc">
-<li><a href="#Startup" accesskey="1">Startup</a></li>
+<li><a href="#Startup">Startup</a></li>
 </ul>
 <hr>
 <div class="subsection-level-extent" id="Startup">
-<div class="nav-panel">
-<p>
-Previous: <a href="#Preferences" accesskey="p" rel="prev">Preferences</a>, Up: <a href="#Preferences" accesskey="u" rel="up">Preferences</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Preferences" rel="prev">Preferences</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Preferences" rel="up">Preferences</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsection" id="Startup-1"><span>2.6.1 Startup<a class="copiable-link" href="#Startup-1"> &para;</a></span></h4>
 <p>The Drag &amp; drop section defines drag &amp; drop behaviour during R
 start-up. Options are to open file in an editor or to source
@@ -714,17 +640,15 @@ comments before the entry is added to the history.
 </p>
 
 <ul class="mini-toc">
-<li><a href="#Editor-Preferences" accesskey="1">Editor Preferences</a></li>
-<li><a href="#Syntax-Colors" accesskey="2">Syntax Colors</a></li>
-<li><a href="#Console-Colors" accesskey="3">Console Colors</a></li>
-<li><a href="#Quartz-window" accesskey="4">Quartz window</a></li>
+<li><a href="#Editor-Preferences">Editor Preferences</a></li>
+<li><a href="#Syntax-Colors">Syntax Colors</a></li>
+<li><a href="#Console-Colors">Console Colors</a></li>
+<li><a href="#Quartz-window">Quartz window</a></li>
 </ul>
 <hr>
 <div class="subsubsection-level-extent" id="Editor-Preferences">
-<div class="nav-panel">
-<p>
-Next: <a href="#Syntax-Colors" accesskey="n" rel="next">Syntax Colors</a>, Previous: <a href="#Startup" accesskey="p" rel="prev">Startup</a>, Up: <a href="#Startup" accesskey="u" rel="up">Startup</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Syntax-Colors" rel="next">Syntax Colors</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Startup" rel="prev">Startup</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Startup" rel="up">Startup</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsubsection" id="Editor-Preferences-1"><span>2.6.1.1 Editor Preferences<a class="copiable-link" href="#Editor-Preferences-1"> &para;</a></span></h4>
 <p>If Built-in editor is selected, allows enable/disable of syntax
 coloring, brace highlighting and the showing of line numbers. If
@@ -742,30 +666,24 @@ control on how to start the editor).
 <hr>
 </div>
 <div class="subsubsection-level-extent" id="Syntax-Colors">
-<div class="nav-panel">
-<p>
-Next: <a href="#Console-Colors" accesskey="n" rel="next">Console Colors</a>, Previous: <a href="#Editor-Preferences" accesskey="p" rel="prev">Editor Preferences</a>, Up: <a href="#Startup" accesskey="u" rel="up">Startup</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Console-Colors" rel="next">Console Colors</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Editor-Preferences" rel="prev">Editor Preferences</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Startup" rel="up">Startup</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsubsection" id="Syntax-Colors-1"><span>2.6.1.2 Syntax Colors<a class="copiable-link" href="#Syntax-Colors-1"> &para;</a></span></h4>
 <p>Enables to select the syntax colors.
 </p>
 <hr>
 </div>
 <div class="subsubsection-level-extent" id="Console-Colors">
-<div class="nav-panel">
-<p>
-Next: <a href="#Quartz-window" accesskey="n" rel="next">Quartz window</a>, Previous: <a href="#Syntax-Colors" accesskey="p" rel="prev">Syntax Colors</a>, Up: <a href="#Startup" accesskey="u" rel="up">Startup</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Quartz-window" rel="next">Quartz window</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Syntax-Colors" rel="prev">Syntax Colors</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Startup" rel="up">Startup</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsubsection" id="Console-Colors-1"><span>2.6.1.3 Console Colors<a class="copiable-link" href="#Console-Colors-1"> &para;</a></span></h4>
 <p>Enables to select the input/output colors in R Console.
 </p>
 <hr>
 </div>
 <div class="subsubsection-level-extent" id="Quartz-window">
-<div class="nav-panel">
-<p>
-Previous: <a href="#Console-Colors" accesskey="p" rel="prev">Console Colors</a>, Up: <a href="#Startup" accesskey="u" rel="up">Startup</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Console-Colors" rel="prev">Console Colors</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Startup" rel="up">Startup</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h4 class="subsubsection" id="Quartz-window-1"><span>2.6.1.4 Quartz window<a class="copiable-link" href="#Quartz-window-1"> &para;</a></span></h4>
 <p>Currently the the Quartz preference pane is not being used.
 </p>
@@ -775,10 +693,8 @@ Previous: <a href="#Console-Colors" accesskey="p" rel="prev">Console Colors</a>,
 </div>
 </div>
 <div class="section-level-extent" id="R_002eapp-Bugs">
-<div class="nav-panel">
-<p>
-Previous: <a href="#Preferences" accesskey="p" rel="prev">Preferences</a>, Up: <a href="#R_002eapp" accesskey="u" rel="up">R.app</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Preferences" rel="prev">Preferences</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#R_002eapp" rel="up">R.app</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="R_002eapp-Bugs-1"><span>2.7 R.app Bugs<a class="copiable-link" href="#R_002eapp-Bugs-1"> &para;</a></span></h3>
 <p>On Unix systems a bug report can be generated using the function
 <code class="code">bug.report()</code>.  Alternatively the bug report can be submitted to
@@ -802,10 +718,8 @@ crash report).
 </div>
 </div>
 <div class="chapter-level-extent" id="How-to-install-packages">
-<div class="nav-panel">
-<p>
-Next: <a href="#R-and-external-applications" accesskey="n" rel="next">R and external applications</a>, Previous: <a href="#R_002eapp" accesskey="p" rel="prev">R.app</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#R-and-external-applications" rel="next">R and external applications</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#R_002eapp" rel="prev">R.app</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">R for macOS FAQ</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h2 class="chapter" id="How-to-install-packages-1"><span>3 How to install packages<a class="copiable-link" href="#How-to-install-packages-1"> &para;</a></span></h2>
 <p>You have several options for installing new packages on your system. We
 discuss here only the GUI interface to the standard <abbr class="acronym">R</abbr> functions like
@@ -814,17 +728,15 @@ documentation.
 </p>
 
 <ul class="mini-toc">
-<li><a href="#Which-kind-of-packages-can-I-install-using-the-GUI_003f" accesskey="1">Which kind of packages can I install using the GUI</a></li>
-<li><a href="#Installation-of-packages" accesskey="2">Installation of packages</a></li>
-<li><a href="#Installation-of-source-packages" accesskey="3">Installation of source packages</a></li>
-<li><a href="#Where-are-the-packages-I_0027ve-installed_003f" accesskey="4">Where are the packages I&rsquo;ve installed?</a></li>
+<li><a href="#Which-kind-of-packages-can-I-install-using-the-GUI_003f">Which kind of packages can I install using the GUI</a></li>
+<li><a href="#Installation-of-packages">Installation of packages</a></li>
+<li><a href="#Installation-of-source-packages">Installation of source packages</a></li>
+<li><a href="#Where-are-the-packages-I_0027ve-installed_003f">Where are the packages I&rsquo;ve installed?</a></li>
 </ul>
 <hr>
 <div class="section-level-extent" id="Which-kind-of-packages-can-I-install-using-the-GUI_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#Installation-of-packages" accesskey="n" rel="next">Installation of packages</a>, Previous: <a href="#How-to-install-packages" accesskey="p" rel="prev">How to install packages</a>, Up: <a href="#How-to-install-packages" accesskey="u" rel="up">How to install packages</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Installation-of-packages" rel="next">Installation of packages</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#How-to-install-packages" rel="prev">How to install packages</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#How-to-install-packages" rel="up">How to install packages</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Which-kind-of-packages-can-I-install-using-the-GUI"><span>3.1 Which kind of packages can I install using the GUI<a class="copiable-link" href="#Which-kind-of-packages-can-I-install-using-the-GUI"> &para;</a></span></h3>
 
 <p>GUI provides direct access/download/installation of packages located on
@@ -837,10 +749,8 @@ specific location other than the above mentioned ones.
 <hr>
 </div>
 <div class="section-level-extent" id="Installation-of-packages">
-<div class="nav-panel">
-<p>
-Next: <a href="#Installation-of-source-packages" accesskey="n" rel="next">Installation of source packages</a>, Previous: <a href="#Which-kind-of-packages-can-I-install-using-the-GUI_003f" accesskey="p" rel="prev">Which kind of packages can I install using the GUI</a>, Up: <a href="#How-to-install-packages" accesskey="u" rel="up">How to install packages</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Installation-of-source-packages" rel="next">Installation of source packages</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Which-kind-of-packages-can-I-install-using-the-GUI_003f" rel="prev">Which kind of packages can I install using the GUI</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#How-to-install-packages" rel="up">How to install packages</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Installation-of-packages-1"><span>3.2 Installation of packages<a class="copiable-link" href="#Installation-of-packages-1"> &para;</a></span></h3>
 <p><abbr class="acronym">R</abbr> for macOS recognizes packages in two forms: <em class="emph">binary</em> packages and <em class="emph">source</em> packages.
 </p>
@@ -886,10 +796,8 @@ in the top left list and press the <em class="emph">Install</em> button (which i
 <hr>
 </div>
 <div class="section-level-extent" id="Installation-of-source-packages">
-<div class="nav-panel">
-<p>
-Next: <a href="#Where-are-the-packages-I_0027ve-installed_003f" accesskey="n" rel="next">Where are the packages I&rsquo;ve installed?</a>, Previous: <a href="#Installation-of-packages" accesskey="p" rel="prev">Installation of packages</a>, Up: <a href="#How-to-install-packages" accesskey="u" rel="up">How to install packages</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Where-are-the-packages-I_0027ve-installed_003f" rel="next">Where are the packages I&rsquo;ve installed?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Installation-of-packages" rel="prev">Installation of packages</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#How-to-install-packages" rel="up">How to install packages</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Installation-of-source-packages-1"><span>3.3 Installation of source packages<a class="copiable-link" href="#Installation-of-source-packages-1"> &para;</a></span></h3>
 
 <p>Source packages which do not contain compiled code can (with rare
@@ -922,10 +830,8 @@ Administration Manual&rsquo;.
 <hr>
 </div>
 <div class="section-level-extent" id="Where-are-the-packages-I_0027ve-installed_003f">
-<div class="nav-panel">
-<p>
-Previous: <a href="#Installation-of-source-packages" accesskey="p" rel="prev">Installation of source packages</a>, Up: <a href="#How-to-install-packages" accesskey="u" rel="up">How to install packages</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Installation-of-source-packages" rel="prev">Installation of source packages</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#How-to-install-packages" rel="up">How to install packages</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Where-are-the-packages-I_0027ve-installed_003f-1"><span>3.4 Where are the packages I&rsquo;ve installed?<a class="copiable-link" href="#Where-are-the-packages-I_0027ve-installed_003f-1"> &para;</a></span></h3>
 <p>The main library of packages is the one located inside the R.framework
 (in <code class="code">/Library/Frameworks/R.framework/Resources/library</code>). This
@@ -955,24 +861,20 @@ current defaults by issuing
 </div>
 </div>
 <div class="chapter-level-extent" id="R-and-external-applications">
-<div class="nav-panel">
-<p>
-Next: <a href="#Quartz-device" accesskey="n" rel="next">Quartz device</a>, Previous: <a href="#How-to-install-packages" accesskey="p" rel="prev">How to install packages</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Quartz-device" rel="next">Quartz device</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#How-to-install-packages" rel="prev">How to install packages</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">R for macOS FAQ</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h2 class="chapter" id="R-and-external-applications-1"><span>4 R and external applications<a class="copiable-link" href="#R-and-external-applications-1"> &para;</a></span></h2>
 
 
 <ul class="mini-toc">
-<li><a href="#AppleScript-support" accesskey="1">AppleScript support</a></li>
-<li><a href="#External-editors" accesskey="2">External editors</a></li>
-<li><a href="#Finder-actions" accesskey="3">Finder actions</a></li>
+<li><a href="#AppleScript-support">AppleScript support</a></li>
+<li><a href="#External-editors">External editors</a></li>
+<li><a href="#Finder-actions">Finder actions</a></li>
 </ul>
 <hr>
 <div class="section-level-extent" id="AppleScript-support">
-<div class="nav-panel">
-<p>
-Next: <a href="#External-editors" accesskey="n" rel="next">External editors</a>, Previous: <a href="#R-and-external-applications" accesskey="p" rel="prev">R and external applications</a>, Up: <a href="#R-and-external-applications" accesskey="u" rel="up">R and external applications</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#External-editors" rel="next">External editors</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#R-and-external-applications" rel="prev">R and external applications</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#R-and-external-applications" rel="up">R and external applications</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="AppleScript-support-1"><span>4.1 AppleScript support<a class="copiable-link" href="#AppleScript-support-1"> &para;</a></span></h3>
 
 
@@ -1031,10 +933,8 @@ end try
 <hr>
 </div>
 <div class="section-level-extent" id="External-editors">
-<div class="nav-panel">
-<p>
-Next: <a href="#Finder-actions" accesskey="n" rel="next">Finder actions</a>, Previous: <a href="#AppleScript-support" accesskey="p" rel="prev">AppleScript support</a>, Up: <a href="#R-and-external-applications" accesskey="u" rel="up">R and external applications</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Finder-actions" rel="next">Finder actions</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#AppleScript-support" rel="prev">AppleScript support</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#R-and-external-applications" rel="up">R and external applications</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="External-editors-1"><span>4.2 External editors<a class="copiable-link" href="#External-editors-1"> &para;</a></span></h3>
 <p><abbr class="acronym">R</abbr> accepts the Apple Event command <em class="emph">open</em>. This means than an
 external editor can communicate with <abbr class="acronym">R</abbr> sending portions of <abbr class="acronym">R</abbr> code
@@ -1045,10 +945,8 @@ Alpha X (see <a class="uref" href="http://www.kelehers.org/alpha/">http://www.ke
 <hr>
 </div>
 <div class="section-level-extent" id="Finder-actions">
-<div class="nav-panel">
-<p>
-Previous: <a href="#External-editors" accesskey="p" rel="prev">External editors</a>, Up: <a href="#R-and-external-applications" accesskey="u" rel="up">R and external applications</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#External-editors" rel="prev">External editors</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#R-and-external-applications" rel="up">R and external applications</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Finder-actions-1"><span>4.3 Finder actions<a class="copiable-link" href="#Finder-actions-1"> &para;</a></span></h3>
 
 <p>Dragging a file on the <abbr class="acronym">R</abbr> icon, causes <abbr class="acronym">R</abbr> to source this file via
@@ -1068,10 +966,8 @@ thing</em>.
 </div>
 </div>
 <div class="chapter-level-extent" id="Quartz-device">
-<div class="nav-panel">
-<p>
-Next: <a href="#Tcl_002fTk-issues" accesskey="n" rel="next">Tcl/Tk issues</a>, Previous: <a href="#R-and-external-applications" accesskey="p" rel="prev">R and external applications</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Tcl_002fTk-issues" rel="next">Tcl/Tk issues</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#R-and-external-applications" rel="prev">R and external applications</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">R for macOS FAQ</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h2 class="chapter" id="Quartz-device-1"><span>5 Quartz device<a class="copiable-link" href="#Quartz-device-1"> &para;</a></span></h2>
 
 <p>The <code class="code">quartz()</code> device is the native graphic device in R for Mac OS
@@ -1085,16 +981,14 @@ device.
  
 
 <ul class="mini-toc">
-<li><a href="#Interactive-mode" accesskey="1">Interactive mode</a></li>
-<li><a href="#Saving-the-image" accesskey="2">Saving the image</a></li>
-<li><a href="#Copying-the-image-into-the-clipboard" accesskey="3">Copying the image into the clipboard</a></li>
+<li><a href="#Interactive-mode">Interactive mode</a></li>
+<li><a href="#Saving-the-image">Saving the image</a></li>
+<li><a href="#Copying-the-image-into-the-clipboard">Copying the image into the clipboard</a></li>
 </ul>
 <hr>
 <div class="section-level-extent" id="Interactive-mode">
-<div class="nav-panel">
-<p>
-Next: <a href="#Saving-the-image" accesskey="n" rel="next">Saving the image</a>, Previous: <a href="#Quartz-device" accesskey="p" rel="prev">Quartz device</a>, Up: <a href="#Quartz-device" accesskey="u" rel="up">Quartz device</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Saving-the-image" rel="next">Saving the image</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Quartz-device" rel="prev">Quartz device</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Quartz-device" rel="up">Quartz device</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Interactive-mode-1"><span>5.1 Interactive mode<a class="copiable-link" href="#Interactive-mode-1"> &para;</a></span></h3>
 
 <p>The quartz device allows for interaction. You can use both
@@ -1104,10 +998,8 @@ sequence you should right/control-click or hit the <kbd class="key">ESC</kbd> ke
 <hr>
 </div>
 <div class="section-level-extent" id="Saving-the-image">
-<div class="nav-panel">
-<p>
-Next: <a href="#Copying-the-image-into-the-clipboard" accesskey="n" rel="next">Copying the image into the clipboard</a>, Previous: <a href="#Interactive-mode" accesskey="p" rel="prev">Interactive mode</a>, Up: <a href="#Quartz-device" accesskey="u" rel="up">Quartz device</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Copying-the-image-into-the-clipboard" rel="next">Copying the image into the clipboard</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Interactive-mode" rel="prev">Interactive mode</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Quartz-device" rel="up">Quartz device</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Saving-the-image-1"><span>5.2 Saving the image<a class="copiable-link" href="#Saving-the-image-1"> &para;</a></span></h3>
 
 <p>You can save the content of the quartz device window into a PDF file,
@@ -1119,10 +1011,8 @@ available). For other solutions, see (see <a class="pxref" href="#Copying-the-im
 <hr>
 </div>
 <div class="section-level-extent" id="Copying-the-image-into-the-clipboard">
-<div class="nav-panel">
-<p>
-Previous: <a href="#Saving-the-image" accesskey="p" rel="prev">Saving the image</a>, Up: <a href="#Quartz-device" accesskey="u" rel="up">Quartz device</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Saving-the-image" rel="prev">Saving the image</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Quartz-device" rel="up">Quartz device</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Copying-the-image-into-the-clipboard-1"><span>5.3 Copying the image into the clipboard<a class="copiable-link" href="#Copying-the-image-into-the-clipboard-1"> &para;</a></span></h3>
 
 <p>You can copy the content of the quartz device window in the clipboard to
@@ -1138,10 +1028,8 @@ version which is of higher quality as it supports vector graphics.
 </div>
 </div>
 <div class="chapter-level-extent" id="Tcl_002fTk-issues">
-<div class="nav-panel">
-<p>
-Next: <a href="#Internationalization-of-the-R_002eapp" accesskey="n" rel="next">Internationalization of the R.app</a>, Previous: <a href="#Quartz-device" accesskey="p" rel="prev">Quartz device</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Internationalization-of-the-R_002eapp" rel="next">Internationalization of the R.app</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Quartz-device" rel="prev">Quartz device</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">R for macOS FAQ</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h2 class="chapter" id="Tcl_002fTk-issues-1"><span>6 Tcl/Tk issues<a class="copiable-link" href="#Tcl_002fTk-issues-1"> &para;</a></span></h2>
 
 <p>Each binary distribution of <abbr class="acronym">R</abbr> available through <abbr class="acronym">CRAN</abbr> is built to
@@ -1160,10 +1048,8 @@ builds do not work when used in the <small class="sc">R.APP</small> GUI.
 <hr>
 </div>
 <div class="chapter-level-extent" id="Internationalization-of-the-R_002eapp">
-<div class="nav-panel">
-<p>
-Next: <a href="#Additional-resources" accesskey="n" rel="next">Additional resources</a>, Previous: <a href="#Tcl_002fTk-issues" accesskey="p" rel="prev">Tcl/Tk issues</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Additional-resources" rel="next">Additional resources</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Tcl_002fTk-issues" rel="prev">Tcl/Tk issues</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">R for macOS FAQ</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h2 class="chapter" id="Internationalization-of-the-R_002eapp-1"><span>7 Internationalization of the R.app<a class="copiable-link" href="#Internationalization-of-the-R_002eapp-1"> &para;</a></span></h2>
 <p><abbr class="acronym">R</abbr> and the <small class="sc">R.APP</small> GUI support for internationalization. Among other
 things this means that messages and GUI elements can be translated
@@ -1200,24 +1086,20 @@ please read the developer documentation at
 <hr>
 </div>
 <div class="chapter-level-extent" id="Additional-resources">
-<div class="nav-panel">
-<p>
-Next: <a href="#Acknowledgments" accesskey="n" rel="next">Acknowledgments</a>, Previous: <a href="#Internationalization-of-the-R_002eapp" accesskey="p" rel="prev">Internationalization of the R.app</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Acknowledgments" rel="next">Acknowledgments</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Internationalization-of-the-R_002eapp" rel="prev">Internationalization of the R.app</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">R for macOS FAQ</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h2 class="chapter" id="Additional-resources-1"><span>8 Additional resources<a class="copiable-link" href="#Additional-resources-1"> &para;</a></span></h2>
 <p>Here are few references that can be of interest for macOS and/or developers.
 </p>
 
 <ul class="mini-toc">
-<li><a href="#Apple-Developer-Connection" accesskey="1">Apple Developer Connection</a></li>
-<li><a href="#The-R-for-macOS-Developer-page" accesskey="2">The R for macOS Developer page</a></li>
+<li><a href="#Apple-Developer-Connection">Apple Developer Connection</a></li>
+<li><a href="#The-R-for-macOS-Developer-page">The R for macOS Developer page</a></li>
 </ul>
 <hr>
 <div class="section-level-extent" id="Apple-Developer-Connection">
-<div class="nav-panel">
-<p>
-Next: <a href="#The-R-for-macOS-Developer-page" accesskey="n" rel="next">The R for macOS Developer page</a>, Previous: <a href="#Additional-resources" accesskey="p" rel="prev">Additional resources</a>, Up: <a href="#Additional-resources" accesskey="u" rel="up">Additional resources</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#The-R-for-macOS-Developer-page" rel="next">The R for macOS Developer page</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Additional-resources" rel="prev">Additional resources</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Additional-resources" rel="up">Additional resources</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Apple-Developer-Connection-1"><span>8.1 Apple Developer Connection<a class="copiable-link" href="#Apple-Developer-Connection-1"> &para;</a></span></h3>
 
 <p>The Apple Developer Connection (can be reached at
@@ -1230,10 +1112,8 @@ distributed through the App Store.
 <hr>
 </div>
 <div class="section-level-extent" id="The-R-for-macOS-Developer-page">
-<div class="nav-panel">
-<p>
-Previous: <a href="#Apple-Developer-Connection" accesskey="p" rel="prev">Apple Developer Connection</a>, Up: <a href="#Additional-resources" accesskey="u" rel="up">Additional resources</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Apple-Developer-Connection" rel="prev">Apple Developer Connection</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Additional-resources" rel="up">Additional resources</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="The-R-for-macOS-Developer-page-1"><span>8.2 The R for macOS Developer page<a class="copiable-link" href="#The-R-for-macOS-Developer-page-1"> &para;</a></span></h3>
 <p>There is a page dedicated to development versions for R for macOS. This page is located at
 <a class="uref" href="http://mac.R-project.org/">http://mac.R-project.org/</a> and is maintained by Simon Urbanek.
@@ -1243,10 +1123,8 @@ It contains latest nightly builds of <abbr class="acronym">R</abbr> and <small c
 </div>
 </div>
 <div class="chapter-level-extent" id="Acknowledgments">
-<div class="nav-panel">
-<p>
-Next: <a href="#Miscellaneous-questions" accesskey="n" rel="next">Miscellaneous questions</a>, Previous: <a href="#Additional-resources" accesskey="p" rel="prev">Additional resources</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="next">Miscellaneous questions</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Additional-resources" rel="prev">Additional resources</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">R for macOS FAQ</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h2 class="chapter" id="Acknowledgments-1"><span>9 Acknowledgments<a class="copiable-link" href="#Acknowledgments-1"> &para;</a></span></h2>
 
 <p>Special thanks go to Jan de Leeuw, Byron Ellis and Thomas Lumley in
@@ -1255,22 +1133,20 @@ random order. Last but not least Apple for amazing OS and GUI.
 <hr>
 </div>
 <div class="chapter-level-extent" id="Miscellaneous-questions">
-<div class="nav-panel">
-<p>
-Previous: <a href="#Acknowledgments" accesskey="p" rel="prev">Acknowledgments</a>, Up: <a href="#Top" accesskey="u" rel="up">R for macOS FAQ</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Acknowledgments" rel="prev">Acknowledgments</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">R for macOS FAQ</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h2 class="chapter" id="Miscellaneous-questions-1"><span>10 Miscellaneous questions<a class="copiable-link" href="#Miscellaneous-questions-1"> &para;</a></span></h2>
 
 <ul class="mini-toc">
-<li><a href="#How-can-I-have-a-per-session-_002eRprofile_003f" accesskey="1">How can I have a per session .Rprofile?</a></li>
-<li><a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f" accesskey="2">What happens if I drag a file on the R icon?</a></li>
-<li><a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" accesskey="3">How can I interrupt lengthy operations or output?</a></li>
-<li><a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="4">I see spurious error messages when starting R!</a></li>
-<li><a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" accesskey="5">Which BLAS is used and how can it be changed?</a></li>
-<li><a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="6">I don&rsquo;t see a thing when installing packages!</a></li>
-<li><a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="7">Why are there faint lines in image plots?</a></li>
-<li><a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="8">Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</a></li>
-<li><a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="9">What is the difference between the CRAN build and a vanilla build?</a></li>
+<li><a href="#How-can-I-have-a-per-session-_002eRprofile_003f">How can I have a per session .Rprofile?</a></li>
+<li><a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f">What happens if I drag a file on the R icon?</a></li>
+<li><a href="#How-can-I-interrupt-lengthy-operations-or-output_003f">How can I interrupt lengthy operations or output?</a></li>
+<li><a href="#I-see-spurious-error-messages-when-starting-R_0021">I see spurious error messages when starting R!</a></li>
+<li><a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f">Which BLAS is used and how can it be changed?</a></li>
+<li><a href="#I-don_0027t-see-a-thing-when-installing-packages_0021">I don&rsquo;t see a thing when installing packages!</a></li>
+<li><a href="#Why-are-there-faint-lines-in-image-plots_003f">Why are there faint lines in image plots?</a></li>
+<li><a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f">Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</a></li>
+<li><a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f">What is the difference between the CRAN build and a vanilla build?</a></li>
 <li><a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f">Why is R.home() in the R framework not versioned?</a></li>
 <li><a href="#R_002eapp-GUI-crashes-on-startup_0021">R.app GUI crashes on startup!</a></li>
 <li><a href="#Why-is-the-GUI-not-saving-my-history_003f">Why is the GUI not saving my history?</a></li>
@@ -1280,10 +1156,8 @@ Previous: <a href="#Acknowledgments" accesskey="p" rel="prev">Acknowledgments</a
 </ul>
 <hr>
 <div class="section-level-extent" id="How-can-I-have-a-per-session-_002eRprofile_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f" accesskey="n" rel="next">What happens if I drag a file on the R icon?</a>, Previous: <a href="#Miscellaneous-questions" accesskey="p" rel="prev">Miscellaneous questions</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f" rel="next">What happens if I drag a file on the R icon?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="prev">Miscellaneous questions</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="How-can-I-have-a-per-session-_002eRprofile_003f-1"><span>10.1 How can I have a per session .Rprofile?<a class="copiable-link" href="#How-can-I-have-a-per-session-_002eRprofile_003f-1"> &para;</a></span></h3>
 <p>You can by writing a <samp class="file">.Rprofile</samp> file in your favorite
 session directory and change accordingly the startup working directory using the Preferences (see <a class="pxref" href="#The-current-and-startup-working-directories">The current and startup working directories</a>).
@@ -1291,10 +1165,8 @@ session directory and change accordingly the startup working directory using the
 <hr>
 </div>
 <div class="section-level-extent" id="What-happens-if-I-drag-a-file-on-the-R-icon_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" accesskey="n" rel="next">How can I interrupt lengthy operations or output?</a>, Previous: <a href="#How-can-I-have-a-per-session-_002eRprofile_003f" accesskey="p" rel="prev">How can I have a per session .Rprofile?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" rel="next">How can I interrupt lengthy operations or output?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#How-can-I-have-a-per-session-_002eRprofile_003f" rel="prev">How can I have a per session .Rprofile?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="What-happens-if-I-drag-a-file-on-the-R-icon_003f-1"><span>10.2 What happens if I drag a file on the R icon?<a class="copiable-link" href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f-1"> &para;</a></span></h3>
 <p>In this case <abbr class="acronym">R</abbr> will try to source this file or load the image data file (see <a class="pxref" href="#Finder-actions">Finder actions</a>). If <abbr class="acronym">R</abbr> is not
 yet running it will be launched.
@@ -1302,10 +1174,8 @@ yet running it will be launched.
 <hr>
 </div>
 <div class="section-level-extent" id="How-can-I-interrupt-lengthy-operations-or-output_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="n" rel="next">I see spurious error messages when starting R!</a>, Previous: <a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f" accesskey="p" rel="prev">What happens if I drag a file on the R icon?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#I-see-spurious-error-messages-when-starting-R_0021" rel="next">I see spurious error messages when starting R!</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#What-happens-if-I-drag-a-file-on-the-R-icon_003f" rel="prev">What happens if I drag a file on the R icon?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="How-can-I-interrupt-lengthy-operations-or-output_003f-1"><span>10.3 How can I interrupt lengthy operations or output?<a class="copiable-link" href="#How-can-I-interrupt-lengthy-operations-or-output_003f-1"> &para;</a></span></h3>
 <p>In <small class="sc">R.APP</small> you can use the the <em class="emph">Stop</em> toolbar button or the <kbd class="key">ESC</kbd> (escape) key in the console window to interrupt a running calculation or output.
 </p>
@@ -1325,10 +1195,8 @@ allow interruption (if appropriate).
 <hr>
 </div>
 <div class="section-level-extent" id="I-see-spurious-error-messages-when-starting-R_0021">
-<div class="nav-panel">
-<p>
-Next: <a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" accesskey="n" rel="next">Which BLAS is used and how can it be changed?</a>, Previous: <a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" accesskey="p" rel="prev">How can I interrupt lengthy operations or output?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" rel="next">Which BLAS is used and how can it be changed?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#How-can-I-interrupt-lengthy-operations-or-output_003f" rel="prev">How can I interrupt lengthy operations or output?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="I-see-spurious-error-messages-when-starting-R_0021-1"><span>10.4 I see spurious error messages when starting R!<a class="copiable-link" href="#I-see-spurious-error-messages-when-starting-R_0021-1"> &para;</a></span></h3>
 
 <p>If you see error messages upon start of the R GUI which contain
@@ -1354,10 +1222,8 @@ include those hacks that are incompatible with your new Mac).
 <hr>
 </div>
 <div class="section-level-extent" id="Which-BLAS-is-used-and-how-can-it-be-changed_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="n" rel="next">I don&rsquo;t see a thing when installing packages!</a>, Previous: <a href="#I-see-spurious-error-messages-when-starting-R_0021" accesskey="p" rel="prev">I see spurious error messages when starting R!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" rel="next">I don&rsquo;t see a thing when installing packages!</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#I-see-spurious-error-messages-when-starting-R_0021" rel="prev">I see spurious error messages when starting R!</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Which-BLAS-is-used-and-how-can-it-be-changed_003f-1"><span>10.5 Which BLAS is used and how can it be changed?<a class="copiable-link" href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f-1"> &para;</a></span></h3>
 
 <p>The BLAS library used by <abbr class="acronym">R</abbr> depends on the way <abbr class="acronym">R</abbr> was compiled (see
@@ -1396,10 +1262,8 @@ libraries, corresponding to the configuration options used.
 <hr>
 </div>
 <div class="section-level-extent" id="I-don_0027t-see-a-thing-when-installing-packages_0021">
-<div class="nav-panel">
-<p>
-Next: <a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="n" rel="next">Why are there faint lines in image plots?</a>, Previous: <a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" accesskey="p" rel="prev">Which BLAS is used and how can it be changed?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Why-are-there-faint-lines-in-image-plots_003f" rel="next">Why are there faint lines in image plots?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Which-BLAS-is-used-and-how-can-it-be-changed_003f" rel="prev">Which BLAS is used and how can it be changed?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="I-don_0027t-see-a-thing-when-installing-packages_0021-1"><span>10.6 I don&rsquo;t see a thing when installing packages!<a class="copiable-link" href="#I-don_0027t-see-a-thing-when-installing-packages_0021-1"> &para;</a></span></h3>
 <p>The output is not produced continuously during the package
 installation. <small class="sc">R.APP</small> does its best to display the output as soon as
@@ -1414,10 +1278,8 @@ error console instead of the screen. You may want to check the
 <hr>
 </div>
 <div class="section-level-extent" id="Why-are-there-faint-lines-in-image-plots_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="n" rel="next">Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</a>, Previous: <a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" accesskey="p" rel="prev">I don&rsquo;t see a thing when installing packages!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" rel="next">Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#I-don_0027t-see-a-thing-when-installing-packages_0021" rel="prev">I don&rsquo;t see a thing when installing packages!</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Why-are-there-faint-lines-in-image-plots_003f-1"><span>10.7 Why are there faint lines in image plots?<a class="copiable-link" href="#Why-are-there-faint-lines-in-image-plots_003f-1"> &para;</a></span></h3>
 
 <p>When plots based on the <code class="code">image()</code> function are exported to PDF,
@@ -1439,10 +1301,8 @@ without border.
 <hr>
 </div>
 <div class="section-level-extent" id="Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="n" rel="next">What is the difference between the CRAN build and a vanilla build?</a>, Previous: <a href="#Why-are-there-faint-lines-in-image-plots_003f" accesskey="p" rel="prev">Why are there faint lines in image plots?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" rel="next">What is the difference between the CRAN build and a vanilla build?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Why-are-there-faint-lines-in-image-plots_003f" rel="prev">Why are there faint lines in image plots?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f-1"><span>10.8 Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?<a class="copiable-link" href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f-1"> &para;</a></span></h3>
 
 <p>The <small class="sc">R.APP</small> GUI uses Apple frameworks for text editing and thus the
@@ -1457,10 +1317,8 @@ customization, search for <code class="code">StandardKeyBinding.dict</code>.
 <hr>
 </div>
 <div class="section-level-extent" id="What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" accesskey="n" rel="next">Why is R.home() in the R framework not versioned?</a>, Previous: <a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" accesskey="p" rel="prev">Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" rel="next">Why is R.home() in the R framework not versioned?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Why-doesn_0027t-R-GUI-support-keyboard-shortcut-XYZ-_003f" rel="prev">Why doesn&rsquo;t R GUI support keyboard shortcut XYZ ?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f-1"><span>10.9 What is the difference between the CRAN build and a vanilla build?<a class="copiable-link" href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f-1"> &para;</a></span></h3>
 
 <p>The <abbr class="acronym">CRAN</abbr> build of R is slightly different from a vanilla build of R,
@@ -1480,10 +1338,8 @@ and packages are available in
 <hr>
 </div>
 <div class="section-level-extent" id="Why-is-R_002ehome_0028_0029-not-versioned_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#R_002eapp-GUI-crashes-on-startup_0021" accesskey="n" rel="next">R.app GUI crashes on startup!</a>, Previous: <a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" accesskey="p" rel="prev">What is the difference between the CRAN build and a vanilla build?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#R_002eapp-GUI-crashes-on-startup_0021" rel="next">R.app GUI crashes on startup!</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#What-is-the-difference-between-the-CRAN-build-and-a-vanilla-build_003f" rel="prev">What is the difference between the CRAN build and a vanilla build?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Why-is-R_002ehome_0028_0029-in-the-R-framework-not-versioned_003f"><span>10.10 Why is R.home() in the R framework not versioned?<a class="copiable-link" href="#Why-is-R_002ehome_0028_0029-in-the-R-framework-not-versioned_003f"> &para;</a></span></h3>
 
 <p>In the command line version of R, <code class="code">R.home()</code> always points to the
@@ -1509,10 +1365,8 @@ happens to get copied and the R version changes, it will stop working.
 <hr>
 </div>
 <div class="section-level-extent" id="R_002eapp-GUI-crashes-on-startup_0021">
-<div class="nav-panel">
-<p>
-Next: <a href="#Why-is-the-GUI-not-saving-my-history_003f" accesskey="n" rel="next">Why is the GUI not saving my history?</a>, Previous: <a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" accesskey="p" rel="prev">Why is R.home() in the R framework not versioned?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Why-is-the-GUI-not-saving-my-history_003f" rel="next">Why is the GUI not saving my history?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Why-is-R_002ehome_0028_0029-not-versioned_003f" rel="prev">Why is R.home() in the R framework not versioned?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="R_002eapp-GUI-crashes-on-startup_0021-1"><span>10.11 R.app GUI crashes on startup!<a class="copiable-link" href="#R_002eapp-GUI-crashes-on-startup_0021-1"> &para;</a></span></h3>
 
 <p>If your <small class="sc">R.APP</small> GUI crashes on startup, there are two common causes for
@@ -1551,10 +1405,8 @@ above).
 <hr>
 </div>
 <div class="section-level-extent" id="Why-is-the-GUI-not-saving-my-history_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f" accesskey="n" rel="next">I get &ldquo;command not found&rdquo; in the GUI yet it works in the Terminal &ndash; why?</a>, Previous: <a href="#R_002eapp-GUI-crashes-on-startup_0021" accesskey="p" rel="prev">R.app GUI crashes on startup!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f" rel="next">I get &ldquo;command not found&rdquo; in the GUI yet it works in the Terminal &ndash; why?</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#R_002eapp-GUI-crashes-on-startup_0021" rel="prev">R.app GUI crashes on startup!</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="Why-is-the-GUI-not-saving-my-history_003f-1"><span>10.12 Why is the GUI not saving my history?<a class="copiable-link" href="#Why-is-the-GUI-not-saving-my-history_003f-1"> &para;</a></span></h3>
 
 <p><small class="sc">R.APP</small> will by default save the history in a <code class="code">.Rapp.history</code> file
@@ -1569,10 +1421,8 @@ save the history of the <small class="sc">R.APP</small> session: this means that
 <hr>
 </div>
 <div class="section-level-extent" id="I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f">
-<div class="nav-panel">
-<p>
-Next: <a href="#I-see-no-text-in-a-Quartz-plot_0021" accesskey="n" rel="next">I see no text in a Quartz plot!</a>, Previous: <a href="#Why-is-the-GUI-not-saving-my-history_003f" accesskey="p" rel="prev">Why is the GUI not saving my history?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#I-see-no-text-in-a-Quartz-plot_0021" rel="next">I see no text in a Quartz plot!</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Why-is-the-GUI-not-saving-my-history_003f" rel="prev">Why is the GUI not saving my history?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f-1"><span>10.13 I get &ldquo;command not found&rdquo; in the GUI yet it works in the Terminal &ndash; why?<a class="copiable-link" href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f-1"> &para;</a></span></h3>
 
 <p>When executing system commands (for example directly via <code class="code">system</code> or indirectly via functions that call other programs such as <code class="code">install.packages</code>) the locations in which the shell is looking for programs is governed by the <code class="code">PATH</code> environment variable. That variable may be set differently for R started from an interactive shell and for R started in the GUI. You can use <code class="code">Sys.getenv(&quot;PATH&quot;)</code> to verify the current setting.
@@ -1590,10 +1440,8 @@ selectively modify the existing <code class="code">PATH</code> variable via
 <hr>
 </div>
 <div class="section-level-extent" id="I-see-no-text-in-a-Quartz-plot_0021">
-<div class="nav-panel">
-<p>
-Next: <a href="#I-cannot-attach-debugger-to-R" accesskey="n" rel="next">I cannot attach debugger to R</a>, Previous: <a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f" accesskey="p" rel="prev">I get &ldquo;command not found&rdquo; in the GUI yet it works in the Terminal &ndash; why?</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#I-cannot-attach-debugger-to-R" rel="next">I cannot attach debugger to R</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#I-get-_0060_0060command-not-found_0027_0027-in-the-GUI-yet-it-works-in-the-Terminal-_002d_002d-why_003f" rel="prev">I get &ldquo;command not found&rdquo; in the GUI yet it works in the Terminal &ndash; why?</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="I-see-no-text-in-a-Quartz-plot_0021-1"><span>10.14 I see no text in a Quartz plot!<a class="copiable-link" href="#I-see-no-text-in-a-Quartz-plot_0021-1"> &para;</a></span></h3>
 
 <p>Typically this means that you have corrupted fonts in your system. Open
@@ -1609,10 +1457,8 @@ appear as it should), remove such fonts.
 <hr>
 </div>
 <div class="section-level-extent" id="I-cannot-attach-debugger-to-R">
-<div class="nav-panel">
-<p>
-Previous: <a href="#I-see-no-text-in-a-Quartz-plot_0021" accesskey="p" rel="prev">I see no text in a Quartz plot!</a>, Up: <a href="#Miscellaneous-questions" accesskey="u" rel="up">Miscellaneous questions</a> &nbsp; </p>
-</div>
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#I-see-no-text-in-a-Quartz-plot_0021" rel="prev">I see no text in a Quartz plot!</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Miscellaneous-questions" rel="up">Miscellaneous questions</a></span></span><span class="nav-button"> &nbsp; </span></p>
 <h3 class="section" id="I-cannot-attach-debugger-to-R-1"><span>10.15 I cannot attach debugger to R<a class="copiable-link" href="#I-cannot-attach-debugger-to-R-1"> &para;</a></span></h3>
 
 <p>R processes installed using Apple installer cannot be attached to by

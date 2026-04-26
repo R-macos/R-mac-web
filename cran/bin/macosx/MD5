@@ -73,3 +73,6 @@ MD5(big-sur-arm64/base/R-4.5.2-arm64.pkg)= c2339c7f3727abe5bc4b7b3be9aa51c5
 MD5(big-sur-x86_64/base/R-4.5.2-x86_64.pkg)= 32dcef9dee1fedb9d20ce8c1ee227963
 MD5(big-sur-arm64/base/R-4.5.3-arm64.pkg)= 43d803c199640c0c717d996d16e30a53
 MD5(big-sur-x86_64/base/R-4.5.3-x86_64.pkg)= e53fe4febdf569b26c09ecce9998f0ea
+MD5(big-sur-x86_64/base/R-4.6.0-x86_64.pkg)= e80f557900718a00acdb74415d54d9e1
+MD5(sonoma-arm64/base/R-4.6.0-arm64.pkg)= cf66f3fa578eb639061122cf35d7b296
+MD5(Mac-GUI-1.83.tar.gz)= fbd745392eca01f07308c4ae34eaf18b
