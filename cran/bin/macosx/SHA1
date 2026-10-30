@@ -78,3 +78,6 @@ SHA1(sonoma-arm64/base/R-4.6.0-arm64.pkg)= 85775cbe3ba6242d2a2f3693a76422e3303bd
 SHA1(Mac-GUI-1.83.tar.gz)= 60ecf6ca9ff0964f0f0cdcfc5294ae69ea38c49c
 SHA1(big-sur-x86_64/base/R-4.6.1-x86_64.pkg)= 8d3c9e7a71dcba7602aaaf948b574e2e9d29844e
 SHA1(sonoma-arm64/base/R-4.6.1-arm64.pkg)= fc9f4ada15589e8e037b9bf05563d21e97181635
+SHA1(big-sur-x86_64/base/R-4.6.2-x86_64.pkg)= a93eca903bb78fcfe67d851e24e0b83e54112db0
+SHA1(sonoma-arm64/base/R-4.6.2-arm64.pkg)= 89f81b9fb203e5f713d74804aa03e729ae414a0b
+SHA1(Mac-GUI-1.84.tar.gz)= 713fd04aae6e2cbee34ff7769067ab3cc2e8a9dc
